@@ -1,0 +1,28 @@
+#cpanel{
+  background:#262626 url("/assets/cp/cp-bg.png");
+  width:650px;
+  box-shadow:rgba(0,0,0,0.60) 0 0 10px;
+  border-radius:5px 5px 0 0;
+  position:relative;
+  position:absolute;
+  top:0;
+  left:50%;
+  margin-left:-325px;
+  z-index:101;
+}
+
+.ui-tabs-hide{
+  position:absolute;
+  left:-10000px
+}
+
+// @import url(cpanel.top-bar.scss);
+// @import url(cpanel.bottom-bar.scss);
+// @import url(cpanel.tabs.scss);
+// @import url(cpanel.panels.scss);
+// @import url(panel.profile.scss);
+// @import url(panel.music.scss);
+// @import url(panel.account.scss);
+// @import url(panel.gallery.scss);
+// @import url(panel.stats.scss);
+

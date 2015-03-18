@@ -1,0 +1,38 @@
+<h2 class="title" {{bindAttr class="album.title_disabled:invisible"}}>{{album.title}}</h2>
+<div class="data">
+  <ul>
+    <li {{bindAttr class="album.release_date_disabled:invisible"}}>Released: {{album.release_year}}</li>
+    <li {{bindAttr class="album.record_label_disabled:invisible"}}>© {{album.record_label}}</li>
+    <li class="links">
+
+      {{#unless album.download_disabled}}
+        <a {{action "getAlbum" on="click"}} class="button">{{buyLinkText}}</a>
+      {{/unless}}
+
+      <div class="menu share">
+        
+        {{#unless album.share_disabled}}
+        <span class="label">Share</span>
+        {{/unless}}
+
+        <ul>
+          <li>
+            <a href="#">Facebook</a>
+          </li>
+          <li>
+            <a href="#">Twitter</a>
+          </li>
+          <li>
+            <a href="#">Copy Link</a>
+          </li>
+          <li>
+            <a href="#">Like on Facebook</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="pal">
+      <img {{bindAttr class="album.parental_advisory_disabled:invisible"}} src="/assets/parental_advisory_label_2.png"></img>
+    </li>
+  </ul>
+</div>

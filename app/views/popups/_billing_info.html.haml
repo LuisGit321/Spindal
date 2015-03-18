@@ -1,0 +1,82 @@
+%form.popup.window.account.billing-info
+  %header
+    %ul
+      %li.title Billing Information
+      %li.exit
+        %a.exit{:href => "#"} Exit
+  .content
+    %ul.rows
+      %li.row
+        %label Edit your Billing Information below.
+        .help
+          %span.icon ?
+          %span.ui-tooltip-bottom Enter your Billing Information below. Click Save to save your settings.
+      %li.row.half.card-type
+        %label Card Type
+        %select
+          %option
+            American Express
+            %option
+              Discover
+              %option
+                MasterCard
+                %option{:selected => ""}
+                  Visa
+        .help
+          %span.icon ?
+          %span.ui-tooltip-bottom Select your card type.
+      %li.row.big.card-number
+        %label Card Number
+        %input{:placeholder => "**** **** **** 7865", :type => "number"}
+          .help
+            %span.icon ?
+            %span.ui-tooltip-bottom Enter your credit card number.
+      %li.row.big.security-code
+        %label Security Code
+        %input{:type => "number"}
+          %a.what-is-this.security-code{:href => "#"} What is this?
+          .help
+            %span.icon ?
+            %span.ui-tooltip-bottom
+              Enter the security code found on your credit card.
+              %a.security-code{:href => "#"} What is this?
+      %li.row.big.expiration-date
+        %label Expiration Date
+        %select.month
+          %option 1 - JAN
+          %option 2 - FEB
+          %option 3 - MAR
+          %option 4 - APR
+          %option 5 - MAY
+          %option 6 - JUN
+          %option 7 - JUL
+          %option 8 - AUG
+          %option 9 - SEP
+          %option 10 - OCT
+          %option 11 - NOV
+          %option 12 - DEC
+        %select.year
+          %option 2012
+          %option 2013
+          %option 2014
+          %option 2015
+          %option 2016
+          %option 2017
+          %option 2018
+          %option 2019
+          %option 2020
+        .help
+          %span.icon ?
+          %span.ui-tooltip-bottom Enter the expiration date on your card.
+      %li.row.big.zip-code
+        %label Billing Zip Code
+        %input{:type => "number"}
+          .help
+            %span.icon ?
+            %span.ui-tooltip-bottom Enter the Billing Zip/Postal Code.
+  %footer
+    %ul
+      %li
+        %a.save Save
+      %li
+        %a.cancel Cancel

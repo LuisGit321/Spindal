@@ -1,0 +1,40 @@
+  <header>
+    <ul>
+      <li class="title">Bio
+      <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="rows">
+      <li class="row">
+        <label>Write or paste your band Biography.</label>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Write or paste your band Biography. Include any information you want your fans to know about your band.</span>
+        </div>
+      <li class="row textarea">
+        <div class="textarea-scroll">
+          {{view Ember.TextArea valueBinding="band.bio" placeholder="
+          
+              EXAMPLE:
+
+              METALLICA
+
+              Formed in 1981 when James Hetfield responded to an advertisement that 
+              drummer Lars Ulrich had posted in a local newspaper. 
+
+              James Hetfield - Lead Vocals, Guitar
+
+              Kirk Hammet - Lead Guitarist
+
+              Lars Ulrich - Drums
+
+              Robert Trujillo - Bass"}}
+        </div>
+    </ul>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="save" {{action "save" on="click"}}>OK</a>
+    </ul>
+  </footer>

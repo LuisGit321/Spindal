@@ -1,0 +1,162 @@
+.popup footer{
+background:rgba(30,30,30,0.80);
+-webkit-box-shadow:inset rgba(255,255,255,0.10) 0 1px 0,rgba(0,0,0,0.60) 0 -1px 0;
+-moz-box-shadow:inset rgba(255,255,255,0.10) 0 1px 0,rgba(0,0,0,0.60) 0 -1px 0;
+box-shadow:inset rgba(255,255,255,0.10) 0 1px 0,rgba(0,0,0,0.60) 0 -1px 0;
+zoom:1;
+-webkit-border-radius:0 0 4px 4px;
+-moz-border-radius:0 0 4px 4px;
+border-radius:0 0 4px 4px;
+position:relative;
+z-index:1000;
+}
+
+.popup footer:before,.popup footer:after{
+content:"";
+display:table}
+
+.popup footer:after{
+clear:both}
+
+.popup footer ul{
+zoom:1;
+padding:12px 17px;
+}
+
+.popup footer ul:before,.popup footer ul:after{
+content:"";
+display:table}
+
+.popup footer ul:after{
+clear:both}
+
+.popup footer ul li{
+float:right;
+margin-left:12px;
+}
+
+.popup footer ul li.left{
+float:left;
+margin-left:0}
+
+.popup footer ul li a.delete{
+display:block;
+text-align:center;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+width:86px;
+height:32px;
+background:#666;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+background:url("/assets/popups/button.png");
+-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;
+-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;
+box-shadow:rgba(255,255,255,0.07) 0 1px 0;
+font:bold 13px/31px "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+color:#fff;
+text-shadow:rgba(0,0,0,0.99) 0 -1px 0;
+-webkit-font-smoothing:antialiased;
+border:none;
+cursor:pointer;
+width:124px;
+background:url("/assets/popups/button-dim.png")}
+
+.popup footer ul li a.delete:hover,.popup footer ul li a.delete:focus{
+background-position:0 -32px}
+
+.popup footer ul li a.delete:active,.popup footer ul li a.delete.active{
+background-position:0 -64px}
+
+.popup footer ul li a.cancel{
+display:block;
+text-align:center;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+width:86px;
+height:32px;
+background:#666;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+background:url("/assets/popups/button.png");
+-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;
+-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;
+box-shadow:rgba(255,255,255,0.07) 0 1px 0;
+font:bold 13px/31px "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+color:#fff;
+text-shadow:rgba(0,0,0,0.99) 0 -1px 0;
+-webkit-font-smoothing:antialiased;
+border:none;
+cursor:pointer;
+}
+
+.popup footer ul li a.cancel:hover,.popup footer ul li a.cancel:focus{
+background-position:0 -32px}
+
+.popup footer ul li a.cancel:active,.popup footer ul li a.cancel.active{
+background-position:0 -64px}
+
+.popup footer ul li a.save,.popup footer ul li a.yes,.popup footer ul li a.ok{
+display:block;
+text-align:center;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+width:86px;
+height:32px;
+background:#666;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+background:url("/assets/popups/button.png");
+-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;
+-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;
+box-shadow:rgba(255,255,255,0.07) 0 1px 0;
+font:bold 13px/31px "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+color:#fff;
+text-shadow:rgba(0,0,0,0.99) 0 -1px 0;
+-webkit-font-smoothing:antialiased;
+border:none;
+cursor:pointer;
+background:url("/assets/popups/button-em.png") -1px -1px;
+border:1px solid transparent;
+cursor:pointer;
+}
+
+.popup footer ul li a.save:hover,.popup footer ul li a.yes:hover,.popup footer ul li a.ok:hover,.popup footer ul li a.save:focus,.popup footer ul li a.yes:focus,.popup footer ul li a.ok:focus{
+background-position:0 -32px}
+
+.popup footer ul li a.save:active,.popup footer ul li a.yes:active,.popup footer ul li a.ok:active,.popup footer ul li a.save.active,.popup footer ul li a.yes.active,.popup footer ul li a.ok.active{
+background-position:0 -64px}
+
+.popup footer ul li a.save:hover,.popup footer ul li a.yes:hover,.popup footer ul li a.ok:hover,.popup footer ul li a.save:focus,.popup footer ul li a.yes:focus,.popup footer ul li a.ok:focus{
+background-position:-1px -33px;
+-webkit-box-shadow:rgba(41,121,206,0.80) 0 0 5px;
+-moz-box-shadow:rgba(41,121,206,0.80) 0 0 5px;
+box-shadow:rgba(41,121,206,0.80) 0 0 5px;
+border-color:rgba(41,121,206,0.80)}
+
+.popup footer ul li a.save:active,.popup footer ul li a.yes:active,.popup footer ul li a.ok:active,.popup footer ul li a.save.active,.popup footer ul li a.yes.active,.popup footer ul li a.ok.active{
+background-position:-1px -65px;
+-webkit-box-shadow:rgba(41,121,206,0.80) 0 0 5px;
+-moz-box-shadow:rgba(41,121,206,0.80) 0 0 5px;
+box-shadow:rgba(41,121,206,0.80) 0 0 5px;
+border-color:rgba(41,121,206,0.80)}
+
+.popup.message.confirm ul{
+padding-left:93px;
+}
+
+.popup.message.confirm ul li{
+float:left}
+

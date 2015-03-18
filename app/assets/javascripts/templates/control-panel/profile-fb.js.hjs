@@ -1,0 +1,29 @@
+  <header>
+    <ul>
+      <li class="title">Facebook
+      <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="rows">
+      <li class="row label">
+        <label>Write or paste your Facebook URL below.</label>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enter or paste your Facebook web URL below so your fans be linked directly to your Facebook page. </span>
+        </div>
+      <li class="row big url">
+        <label>Facebook URL</label>
+          {{view Ember.TextField valueBinding="band.fb_url" placeholder="www.facebook.com/yourpage" class="validate"}}
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enter your Facebook web URL below.</span>
+        </div>
+    </ul>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="save" {{action "save" on="click"}}>Save</a>
+      <li><a class="cancel" {{action "close" on="click"}}>Cancel</a>
+    </ul>
+  </footer>

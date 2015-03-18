@@ -1,0 +1,6 @@
+%form{method: :post, action: '/', enctype: 'multipart/form-data', class: 'form-inline well'}
+  %fieldset
+    .control-group
+      %label{for: 'file', class: 'control-label'} File
+      %input{id: 'file', name: 'file', type: 'file'}/
+      %input{type: :submit, value: 'Upload', class: 'btn btn-primary'}/

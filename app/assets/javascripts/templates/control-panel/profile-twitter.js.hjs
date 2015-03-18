@@ -1,0 +1,29 @@
+  <header>
+    <ul>
+      <li class="title">Twitter
+      <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="rows">
+      <li class="row label">
+        <label>Write or paste your Twitter URL below.</label>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enter or paste your Twitter web URL below so your fans be linked directly to your Twitter page. </span>
+        </div>
+      <li class="row big url">
+        <label>Twitter URL</label>
+          {{view Ember.TextField valueBinding="band.twitter_url" placeholder="www.twitter.com/#!/yourpage" class="validate"}}
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enter your Twitter web URL below.</span>
+        </div>
+    </ul>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="save" {{action "save" on="click"}}>Save</a>
+      <li><a class="cancel" {{action "close" on="click"}}>Cancel</a>
+    </ul>
+  </footer>

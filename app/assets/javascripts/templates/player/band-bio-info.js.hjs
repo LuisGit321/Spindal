@@ -1,0 +1,25 @@
+<a class="pane hide" href="#" {{action "togglePane" on="click"}}>
+	<img src="/assets/arrow-left.png" alt="Hide menu">			
+</a>
+<div class="pane-widget">
+	<div class="pane-menu">
+		<div class="title">
+			<h1>Biography</h1>	
+		</div>
+	</div>	
+		
+	<div class="pane-container">
+		<div class="body">
+			{{{ format_bio band.bio }}}
+		</div>					
+	</div>	
+</div>
+
+
+
+
+
+
+
+
+

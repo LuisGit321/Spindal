@@ -1,0 +1,29 @@
+<header>
+  <ul>
+    <li class="title">Lyrics
+    <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+  </ul>
+</header>
+<div class="content">
+  <ul class="rows">
+    <li class="row input">
+      {{view Ember.TextField valueBinding="title" placeholder="Video Title"}}
+    <li class="row">
+      <label>Add Video link from Youtube&reg; or Vimeo&reg; below.</label>
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-top">Paste the link to a video below from either the Youtube&reg; or Vimeo&reg; video. Need more help? <a href="#">Click here</a></span>
+      </div>
+    <li class="row textarea">
+    <div class="textarea-scroll">
+        {{view Ember.TextArea valueBinding="url" placeholder="http://www.youtube.com/watch?v=4vkqBfv8OMM"}}
+    </div>
+
+  </ul>
+</div>
+<footer>
+  <ul>
+    <li><a class="save" {{action "save" on="click"}}>Save</a>
+    <li><a class="cancel" {{action "close" on="click"}}>Cancel</a>
+  </ul>
+</footer>

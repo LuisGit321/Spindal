@@ -1,0 +1,16 @@
+<a href="#" class="delete" {{action "delete" on="click"}}>
+	<img src="/assets/delete-x.png"/>
+</a>
+
+{{#unless empty}}
+	<img {{bindAttr src="photo.file.thumb.url"}}/>
+{{else}}
+	<a class="upload" {{action "select" on="click"}}></a>
+	<input class="photo-file" name="photo[file]" type="file" accept="image/*" {{action "upload" on="change"}} />
+{{/unless}}
+
+<input type="hidden" name="band_id" {{bindAttr value="photo.band_id"}}>
+<input type="hidden" name="song_id" {{bindAttr value="photo.song_id"}}>
+
+<input type="hidden" name="order" {{bindAttr value="photo.order"}}>
+<input type="hidden" name="_id" {{bindAttr value="photo._id"}}>

@@ -1,0 +1,42 @@
+<div class="buy-popup-head">
+	<h1><img src="/assets/player/download-album.png" width="151" height="25" alt="Download Song"></h1>
+	<a {{action "close" on="click"}} href="#"><img src="/assets/player/close-popup.png" width="11" height="11" alt="Close"></a>
+</div>
+
+<div class="content-buy-popup">
+
+	<div class="album-cover"><img {{bindAttr src="album.cover_image.preview.url"}} width="185" height="185" alt="Album Cover">
+	</div>
+
+	<div class="album-detail">
+		<h2>{{song.title}}</h2>
+		<h1>${{song.price}}</h1>
+		<span><img src="/assets/player/download-start-auto.png" width="127" height="53" alt="Your download will start immediatly after checkout."></span>
+	</div>
+
+	<p>
+		<img src="/assets/player/payment-direct-artist.png" width="343" height="28" alt="Your payment will go directly to the Artist.">
+	</p>
+
+	{{#if song.purchaseKey}}
+		<script> 
+			window.dgFlow = new PAYPAL.apps.DGFlow({ trigger: 'submitBtn'}); 
+		</script>
+
+		<form {{bindAttr action="song.purchaseUrl"}}> 
+			<input id="paykey" type="hidden" name="token" {{bindAttr value="song.purchaseKey"}}>
+			<input {{action "closeDialog" on="click"}} class="checkout-button" type="submit" id="submitBtn" value="">
+		</form>
+
+	{{else}}
+		{{#if song.purchaseError}}
+			<p> {{song.purchaseErrorReason}} </p>
+		{{else}}
+			<p class="loading-paypal"><img src="/assets/progress2.gif" alt="Please wait.."/></p>
+		{{/if}}
+	{{/if}}
+
+</div>
+
+<div class="buy-popup-foot"><img src="/assets/player/payment_ways_img.jpg" width="348" height="35" alt="Payment">
+</div>

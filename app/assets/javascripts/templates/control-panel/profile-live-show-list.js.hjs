@@ -1,0 +1,35 @@
+  <header>
+    <ul>
+      <li class="title">Store
+      <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="rows">
+      <li class="row">
+        <label>Enter your information below for Live shows.</label>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enter information for your Live shows. You can turn on and off the &ldquo;Buy&rdquo; tickets link by clicking the URL blue light.</span>
+        </div>
+    </ul>
+    <ul class="thead">
+      <li class="date">Date
+      <li class="venue">Venue
+      <li class="location">Location
+      <li class="tickets">Tickets
+      <li class="status" {{action "createLiveShow" on="click"}}>
+    </ul>
+    <div id="events">
+      <table>
+        {{#each liveShowList}}
+          {{view App.Views.ControlPanel.LiveShow liveShowBinding="this"}}
+        {{/each}}
+      </table>
+    </div>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="save" {{action "close" on="click"}}>OK</a>
+    </ul>
+  </footer>

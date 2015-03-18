@@ -1,0 +1,170 @@
+.menu.tracks
+  p 0 0 200px
+  relative()
+  z-index 1000
+  .tracks.accordion
+    bt 1px solid b20
+    bb 1px solid w40
+    counter-reset tracknum
+    transition 1s ease all
+    
+    div.title
+      bt 1px solid w40
+      bb 1px solid b20
+      p 0 2em
+      lhh x*2 - 3px
+      cursor pointer
+      counter-increment tracknum
+      relative()
+
+      h3.track.title
+        white-space nowrap
+        overflow hidden
+        text-overflow ellipsis
+        pl 1.25em
+        s 12px
+
+      a.toggle.play
+        absolute top 3px left 5px
+        ti -999em
+        o 0
+        d block
+        r 17px
+        bg url(../i/icon-play-pause.png) left top no-repeat
+
+      &:hover
+        box-shadow inset b6 0 0 5px
+        bg hsla(0,0,71,.6)
+        a.toggle.play
+          o 1
+
+      &:active
+        a.toggle.play
+          bgp 0 -17px
+
+      &.ui-state-active
+        box-shadow inset b10 0 3px 2px
+        bg hsla(0,0,71,.8)
+        bb transparent
+        a.toggle.play
+          o 1
+          bgp -17px 0
+        &:hover
+          a.toggle.play
+            bgp -17px -17px
+
+      h3.track.title
+        &:before
+          content counter(tracknum) ".\0020"
+          absolute top 0 left 1.5em
+          ta right
+          w 1.5em
+                      
+    div.data
+      bb 1px solid b20
+      bg hsla(0,0,71,.8)
+      box-shadow inset b10 0 -3px 2px
+      p 0 x*2 0 x*3.25
+      d none
+      relative()
+
+      .toggle.volume
+        r 25px
+        absolute top -25px right 1.75em
+        ti -999em
+        bg url(../i/icon-volume.png) left top
+        z-index 10000
+        &:hover, &.active
+          bgp 0 -25px
+        &.active
+          .input
+            d block
+
+        .input
+          bg b80
+          box-shadow inset b10 0 0 2px
+          p 3px
+          border-radius 6px
+          absolute top -1em right -1em
+          d none
+          
+          .volume
+            w 80px
+            h 6px
+            bt 1px solid b30
+            bb 1px solid b60
+            border-radius 4px
+            relative()
+            bg m200
+            box-shadow inset b20 1px 1px 2px
+            .current, .slider
+              absolute top 0 left 0
+            .current
+              background linear-gradient(top, #4d92c7, #0c6ab3)
+              h 6px
+              border-radius 3px
+            .slider
+              bg url(../i/volume-slider.png) no-repeat
+              r 20px
+              ml -8px
+              top -5px
+              cursor pointer
+
+      .track.length
+        w 100%
+        h 5px
+        border-radius 3px
+        bt 1px solid b30
+        bg #fff
+        box-shadow inset b15 1px 1px 2px, w30 0 1px 0
+        relative()
+
+        .played, .buffer, .slider
+          absolute top 0 left 0
+          ti -999em
+
+        .played, .buffer
+          h 5px
+          border-radius 3px
+        .buffer
+          background linear-gradient(top, m59, #000)
+        .played
+          background linear-gradient(top, #3382bf, #0063af)
+        .slider
+          r 10px
+          background url(../i/slider.png) no-repeat
+          top -2px
+          ml -5px
+          cursor pointer
+
+      ul.track.stats
+        m 0 0 .25em
+        li
+          display inline-block
+          s x*.75
+          &.length.played
+            w 25%
+          &.total.plays
+            w 50%
+            text-align center
+          &.length.unplayed
+            w 25%
+            ta right
+
+      .menu.track
+        m 0 -6% .75em
+        relative()
+        > ul
+          clearfix()
+          > li
+            d table-cell
+            
+            &.lyrics, &.share
+              w 31%
+              > a
+                buttondark()
+              
+            &.buy
+              w 49%
+              a
+                buttonblue()

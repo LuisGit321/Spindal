@@ -1,0 +1,26 @@
+  <header>
+    <ul>
+      <li class="title">iTunes Link
+      <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="rows">
+      <li class="row url">
+        <label>iTunes Link</label>
+        {{view Ember.TextField valueBinding="media.itunes_store_link" placeholder="http://itunes.apple.com/us/album/sabo" class="validate"}}
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">You can directly link your song or album to your existing iTunes page for your fans to purchase your music. 
+        </div>
+      <li class="desc">
+        To find your iTunes direct link click below:<br>
+        <a href="http://itunes.apple.com/linkmaker/" target="_blank">http://itunes.apple.com/linkmaker/</a>
+    </ul>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="save" {{action "setiTunesLink" on="click"}}>Save</a>
+      <li><a class="cancel" {{action "close" on="click"}}>Cancel</a>
+    </ul>
+  </footer>

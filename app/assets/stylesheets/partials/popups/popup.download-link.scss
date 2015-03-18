@@ -1,0 +1,45 @@
+.popup.download-link{
+z-index:10000;
+}
+
+.popup.download-link .content{
+height:100px;
+}
+
+.popup.download-link .content ul.rows{
+padding-top:9px;
+}
+
+.popup.download-link .content ul.rows li.row{
+width:358px;
+position:relative;
+margin-bottom:6px;
+}
+
+.popup.download-link .content ul.rows li.row label{
+left:6px}
+
+.popup.download-link .content ul.rows li.row input{
+width:244px;
+left:82px}
+
+.popup.download-link .content ul.rows li.desc{
+font:bold 13px/17px "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+color:#ccc;
+-webkit-font-smoothing:antialiased;
+text-shadow:rgba(0,0,0,0.99) 0 -1px 0;
+padding:0 55px;
+}
+
+.popup.download-link .content ul.rows li.desc a{
+color:#ccc;
+text-decoration:underline}
+
+.popup.download-link.amazon-link .content ul.rows{
+padding-top:28px;
+}
+
+.popup.download-link.amazon-link .content ul.rows li.row input{
+width:240px;
+left:91px}
+

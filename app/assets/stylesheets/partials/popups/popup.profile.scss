@@ -1,0 +1,408 @@
+#Arial a{
+font-family:Arial}
+
+#ArialBold a{
+font-family:Arial;
+font-weight:bold !important}
+
+#Clarendon a{
+font-family:Clarendon}
+
+#ClarendonBold a{
+font-family:Clarendon;
+font-weight:bold !important}
+
+#Courier a{
+font-family:Courier}
+
+#CourierNew a{
+font-family:Courier;
+font-weight:bold !important}
+
+#Helvetica a{
+font-family:Helvetica,HelveticaHeue,"Helvetica Neue"}
+
+#FranklinGothic a{
+font-family:"Franklin Gothic"}
+
+#LucidaSans a{
+font-family:"Lucida Sans"}
+
+#Meta a{
+font-family:Meta}
+
+#MetaBold a{
+font-family:Meta;
+font-weight:bold !important}
+
+#TimesNewRoman a{
+font-family:"Times New Roman"}
+
+#TimesNewRomanBold a{
+font-family:"Times New Roman";
+font-weight:bold !important}
+
+#Verdana a{
+font-family:Verdana}
+
+#VerdanaBold a{
+font-family:Verdana;
+font-weight:bold !important}
+
+.popup.profile .content ul.rows li.row{
+margin-bottom:12px;
+}
+
+.popup.profile .content ul.rows li.row label{
+left:13px}
+
+.popup.band-logo .content ul.rows li.row{
+margin-bottom:16px;
+}
+
+.popup.band-logo .content ul.rows li.row.band-name input{
+left:93px}
+
+.popup.band-logo .content ul.rows li.row.font.face a.selectBox{
+width:130px !important;
+}
+
+.popup.band-logo .content ul.rows li.row.font.face .selector{
+left:55px;
+top:5px;
+z-index:100000;
+position:absolute;
+top:2px;
+right:28px;
+}
+
+.popup.band-logo .content ul.rows li.row.font.face .selector .selector-dropdown{
+width:155px;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px;
+-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;
+-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;
+box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;
+background:#1e1e1e;
+margin:7px 0 8px;
+height:24px;
+}
+
+.popup.band-logo .content ul.rows li.row.font.face .selector .selector-dropdown div.selector-arrow{
+top:3px;
+right:3px;
+z-index:1000}
+
+.popup.band-logo .content ul.rows li.row.font.face .selector .selector-dropdown ul#fontList{
+position:relative;
+top:2px;
+left:-5px;
+z-index:999;
+width:145px;
+-webkit-box-shadow:none;
+-moz-box-shadow:none;
+box-shadow:none;
+background:#1e1e1e;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px;
+line-height:1.5em;
+height:1.5em;
+min-height:1.5em;
+overflow:hidden;
+}
+
+.popup.band-logo .content ul.rows li.row.font.face .selector .selector-dropdown ul#fontList.active{
+top:24px;
+width:153px;
+height:200px;
+background:#282828;
+-webkit-box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.30) 2px 2px 4px;
+-moz-box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.30) 2px 2px 4px;
+box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.30) 2px 2px 4px;
+overflow:auto;
+}
+
+.popup.band-logo .content ul.rows li.row.font.face .selector .selector-dropdown ul#fontList.active li a:hover{
+background:#1a81c9;
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #338fcf), color-stop(1, #0073c3));
+background:-webkit-linear-gradient(top, #338fcf 0%, #0073c3 100%);
+background:-moz-linear-gradient(top, #338fcf 0%, #0073c3 100%);
+background:linear-gradient(top, #338fcf 0%, #0073c3 100%);
+color:#fff}
+
+.popup.band-logo .content ul.rows li.row.font.face .selector .selector-dropdown ul#fontList li.selected,.popup.band-logo .content ul.rows li.row.font.face .selector .selector-dropdown ul#fontList.active li{
+display:block}
+
+.popup.band-logo .content ul.rows li.row.font.face .selector .selector-dropdown ul#fontList li{
+display:none;
+}
+
+.popup.band-logo .content ul.rows li.row.font.face .selector .selector-dropdown ul#fontList li a{
+display:block;
+text-overflow:ellipsis;
+white-space:nowrap;
+overflow:hidden;
+font-weight:normal;
+padding:0 5px;
+cursor:default}
+
+.popup.band-logo .content ul.rows li.row.font.color a.selectBox{
+left:84px;
+width:126px}
+
+.popup.band-logo .content ul.rows li.row.font.alignment a.selectBox{
+left:89px;
+width:121px}
+
+.popup.band-logo .content ul.rows li.row.font.size input{
+display:block;
+position:absolute;
+top:8px;
+right:auto;
+bottom:auto;
+left:88px;
+width:102px;
+height:24px;
+margin:0;
+padding:6px 0 6px 8px;
+background:#1e1e1e;
+border:none;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px;
+-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;
+-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;
+box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;
+font:bold 12px/1 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif}
+
+.popup.band-logo .content ul.rows li.row.font.size input[type=number]::-webkit-inner-spin-button{
+background:url("/assets/popups/input-number.png") top left;
+height:8px;
+width:16px;
+-webkit-appearance:none}
+
+.popup.band-logo .content ul.rows li.row.font.size input[type=number]::-webkit-outer-spin-button{
+-webkit-appearance:none}
+
+.popup.band-logo .content ul.rows li.row.font span.unit{
+font:bold 13px/40px "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+padding-left:7px;
+color:#a0a0a0;
+text-shadow:rgba(0,0,0,0.99) 0 -1px 0;
+-webkit-font-smoothing:antialiased;
+position:absolute;
+top:0;
+left:190px}
+
+.popup.news .content ul.rows li.row{
+margin-bottom:13px;
+}
+
+.popup.news .content ul.rows li.row label{
+left:30px}
+
+.popup.news .content ul.rows li.row.label label,.popup.news .content ul.rows li.row.blog.url label{
+left:13px}
+
+.popup.news .content ul.rows li.row.half input,.popup.news .content ul.rows li.row.half a.selectBox{
+left:96px;
+width:114px}
+
+.popup.news .content ul.rows li.row.half.blog.url input{
+left:74px;
+width:136px}
+
+.popup.news .content ul.rows li.row.topBox
+{
+  margin-bottom: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  
+  border-bottom: 0px solid #141414;
+  
+}
+
+.popup.news .content ul.rows li.row.middleBox
+{
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 0px solid #141414;
+  
+  
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+.popup.news .content ul.rows li.row.bottomBox
+{
+   border-top: 1px solid rgba(255, 255, 255, 0.05);
+   margin-bottom: 13px;  
+   border-top-left-radius: 0px;
+   border-top-right-radius: 0px;
+}
+
+
+.popup.news .content ul.rows li.row.email a.selectBox{
+left:165px;
+width:300px}
+
+.popup.news .content ul.rows li.row.blog input{
+width: 368px;
+margin-left: 67px;
+}
+
+.popup.news-email .content ul.rows li.row.email input{
+width: 368px;
+margin-left: 67px;
+}
+
+.popup.news .content ul.rows li.row.api input{
+left:165px;
+width:300px}
+
+.popup.url .content ul.rows li.row{
+margin-bottom:15px;
+}
+
+
+
+.popup.url .content ul.rows li.row.url input{
+left:115px;
+width:347px}
+
+.popup.live ul.rows li.row{
+margin-bottom:9px}
+
+ul.thead{
+background:url("/assets/popups/form-live-thead.png") top left no-repeat;
+display:block;
+height:26px;
+line-height:26px;
+}
+
+ul.thead li{
+display:table-cell;
+text-align:center;
+color:transparent}
+
+#events{
+max-height:271px;
+overflow:hidden;
+overflow-x:hidden;
+overflow-y:scroll;
+position:relative;
+z-index:0;
+}
+
+ul li.date, #events table tr th.date,#events table tr td.date{
+min-width:66px}
+
+ul li.venue, #events table tr th.venue,#events table tr td.venue{
+min-width:140px}
+
+ul li.location, #events table tr th.location,#events table tr td.location{
+min-width:140px}
+
+ul li.tickets, #events table tr th.tickets,#events table tr td.tickets{
+min-width:137px}
+
+ul li.status, #events table tr th.status,#events table tr td.status{
+min-width:40px}
+
+#events table tbody tr{
+background:#343638;
+}
+
+#events table tbody tr:nth-of-type(even){
+background:#3e4042}
+
+#events table tbody tr td .light{
+margin:6px 3px 9px}
+
+#events table tbody tr td.date span.num{
+font:bold 12px/35px "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+color:#a0a0a0;
+text-shadow:rgba(0,0,0,0.80) 0 -1px 0;
+width:18px;
+text-align:right;
+display:inline-block}
+
+#events table tbody tr td.date .add{
+display:inline-block;
+border:none;
+padding:0;
+height:21px;
+width:21px;
+margin:8px 0 0 6px;
+background:url("/assets/cp/song-lyrics.png") top left no-repeat;
+text-indent:-999em;
+}
+
+#events table tbody tr td.date .add:hover,#events table tbody tr td.date .add:focus{
+background-position:0 -21px}
+
+#events table tbody tr td.date .add:active{
+background-position:0 -42px}
+
+#events table tbody tr td.venue,#events table tbody tr td.location,#events table tbody tr td.tickets{
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+
+#events table tbody tr td.venue input,#events table tbody tr td.location input,#events table tbody tr td.tickets input{
+display:inline-block;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+width:130px;
+height:20px;
+margin:6px 5px 10px;
+padding:4px 2px;
+background:transparent;
+border:0;
+font:bold 12px/1 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+-webkit-font-smoothing:antialiased;
+color:#fff;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px;
+}
+
+#events table tbody tr td.venue input:focus,#events table tbody tr td.location input:focus,#events table tbody tr td.tickets input:focus{
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #323232), color-stop(1, #262626));
+background:-webkit-linear-gradient(top, #323232 0%, #262626 100%);
+background:-moz-linear-gradient(top, #323232 0%, #262626 100%);
+background:linear-gradient(top, #323232 0%, #262626 100%);
+-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.13) 0 1px 2px;
+-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.13) 0 1px 2px;
+box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.13) 0 1px 2px}
+
+#events table tbody tr td.tickets input{
+width:99px;
+margin:5px 0 0}
+
+#events table tbody tr td.status{
+text-align:center;
+}
+
+#events table tbody tr td.status a.delete{
+display:inline-block;
+height:21px;
+width:19px;
+margin:7px 2px 7px 0;
+background:url("/assets/cp/song-delete.png") top left no-repeat;
+text-indent:-999em;
+}
+
+#events table tbody tr td.status a.delete:hover,#events table tbody tr td.status a.delete:focus{
+background-position:0 -21px}
+
+#events table tbody tr td.status a.delete:active{
+background-position:0 -42px}
+
+.popup.url .content ul.rows li.row.url input.error-message{
+color : #ff6666;}

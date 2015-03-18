@@ -1,0 +1,54 @@
+[
+  { "title": "Sink or Swim",
+    "cover_image": "/i/albums/album-01-q90.jpg",
+    "release_year": "2007",
+    "songs": [
+      { "index": "1", "title": "Boomboxes and Dictionaries" },
+      { "index": "2", "title": "I Coulda Been a Contender" },
+      { "index": "3", "title": "Wooderson" },
+      { "index": "4", "title": "We Came to Dance" },
+      { "index": "5", "title": "1930" },
+      { "index": "6", "title": "The Navesink Banks" },
+      { "index": "7", "title": "Red in the Morning" },
+      { "index": "8", "title": "I'da Called You Woody, Joe" },
+      { "index": "9", "title": "Angry Johnny and the Radio" },
+      { "index": "10", "title": "Drive" },
+      { "index": "11", "title": "We're Getting a Divorce, You Keep the Diner" },
+      { "index": "12", "title": "Red at Night" }
+    ]
+  },
+  { "title": "The '59 Sound",
+    "cover_image": "/i/albums/album-02-q90.jpg",
+    "release_year": "2008",
+    "songs": [
+      { "index": 1, "title": "Great Expectations" },
+      { "index": 2, "title": "The '59 Sound" },
+      { "index": 3, "title": "Old White Lincoln" },
+      { "index": 4, "title": "High Lonesome" },
+      { "index": 5, "title": "Film Noir" },
+      { "index": 6, "title": "Miles Davis & The Cool" },
+      { "index": 7, "title": "The Patient Ferris Wheel" },
+      { "index": 8, "title": "Casanova, Baby!" },
+      { "index": 9, "title": "Even Cowgirls Get the Blues" },
+      { "index": 10, "title": "Meet Me by the River's Edge" },
+      { "index": 11, "title": "Here's Looking at You, Kid" },
+      { "index": 12, "title": "The Backseat" }
+    ]
+  },
+  { "title": "American Slang",
+    "cover_image": "/i/albums/album-03-q90.jpg",
+    "release_year": "2010",
+    "songs": [
+      { "index": 1, "title": "American Slang" },
+      { "index": 2, "title": "Stay Lucky" },
+      { "index": 3, "title": "Bring It On" },
+      { "index": 4, "title": "The Diamond Church Street Choir" },
+      { "index": 5, "title": "The Queen of Lower Chelsea" },
+      { "index": 6, "title": "Orphans" },
+      { "index": 7, "title": "Boxer" },
+      { "index": 8, "title": "Old Haunts" },
+      { "index": 9, "title": "The Spirit of Jazz" },
+      { "index": 10, "title": "We Did It When We Were Young" }
+    ]
+  }
+]

@@ -1,0 +1,324 @@
+#profile-panel form ul.rows{
+padding-left:3px;
+padding-right:17px;
+}
+
+#profile-panel form ul.rows li{
+zoom:1;
+position:relative;
+}
+
+#profile-panel form ul.rows li:before,#profile-panel form ul.rows li:after{
+content:"";
+display:table}
+
+#profile-panel form ul.rows li:after{
+clear:both}
+
+#profile-panel form ul.rows li.row{
+width:100%;
+margin-left:14px;
+margin-bottom:19px;
+}
+
+#profile-panel form ul.rows li.row.third{
+width:196px;
+}
+
+#profile-panel form ul.rows li.row.third a.edit{
+display:block;
+text-align:center;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+width:86px;
+height:32px;
+background:#666;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+background:url("/assets/popups/button.png");
+-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;
+-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;
+box-shadow:rgba(255,255,255,0.07) 0 1px 0;
+font:bold 13px/31px "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+color:#fff;
+text-shadow:rgba(0,0,0,0.99) 0 -1px 0;
+-webkit-font-smoothing:antialiased;
+border:none;
+cursor:pointer;
+width:133px;
+background:url("/assets/cp/button-dim-133.png");
+position:absolute;
+top:4px;
+left:31px}
+
+#profile-panel form ul.rows li.row.third a.edit:hover,#profile-panel form ul.rows li.row.third a.edit:focus{
+background-position:0 -32px}
+
+#profile-panel form ul.rows li.row.third a.edit:active,#profile-panel form ul.rows li.row.third a.edit.active{
+background-position:0 -64px}
+
+#profile-panel form ul.rows li.row.half{
+width:301px;
+margin-bottom:0;
+}
+
+#profile-panel form ul.rows li.row.half label{
+left:11px}
+
+#profile-panel form ul.rows li.row.half input,#profile-panel form ul.rows li.row.half a.selectBox{
+left:117px;
+width:155px}
+
+#profile-panel form ul.rows li.row.two-third{
+width:406px}
+
+#profile-panel form ul.rows li.background{
+height:216px;
+}
+
+#profile-panel form ul.rows li.background .light{
+position:absolute;
+bottom:11px;
+left:27px;
+top:auto}
+
+#profile-panel form ul.rows li.background label{
+line-height:20px;
+position:absolute;
+bottom:11px;
+left:52px}
+
+#profile-panel form ul.rows li.background .home-background-image{
+height:167px;
+width:167px;
+position:absolute;
+top:12px;
+left:15px;
+background:rgba(0,0,0,0.10);
+background:#1a1b1c;
+-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;
+-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;
+box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;
+}
+
+#profile-panel form ul.rows li.background .home-background-image img.thumbnail {
+	min-height: 167px;
+	display: block;
+}
+
+#profile-panel form ul.rows li.background .home-background-image p{
+position:absolute;
+top:46px;
+left:0;
+font:bold 21px/1 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+color:#323232;
+text-align:center;
+-webkit-font-smoothing:antialiased;
+text-shadow:rgba(0,0,0,0.90) 0 -1px 0}
+
+#profile-panel form ul.rows li.background .home-background-image input.background-file{
+opacity:0;}
+
+#profile-panel form ul.rows li.background .home-background-image a.upload{
+display:block;
+background:url("/assets/popups/cover-art-upload.png");
+height:80px;
+width:80px;
+margin:43px;
+opacity:0;
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+text-indent:-99999em;
+overflow:hidden;
+text-align:left;
+position: relative;
+top: -167px;}
+
+#profile-panel form ul.rows li.background .home-background-image a.upload:hover{
+background-position:0 -80px}
+
+#profile-panel form ul.rows li.background .home-background-image a.upload:active{
+background-position:0 -160px}
+
+#profile-panel form ul.rows li.background .home-background-image:hover p{
+display:none}
+
+#profile-panel form ul.rows li.background .home-background-image:hover a.upload{
+opacity:1;
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100)}
+
+#profile-panel form ul.rows li.genre label{
+left:10px}
+
+#profile-panel form ul.rows li.genre a.selectBox{
+width:106px !important;
+left:83px}
+
+#profile-panel form ul.rows li.currency a.selectBox{
+width:140px !important;
+}
+
+#profile-panel form ul.rows li.location input{
+width:119px;
+}
+
+#profile-panel form ul.rows li.location input.city{
+left:9px}
+
+#profile-panel form ul.rows li.location input.state{
+left:135px}
+
+#profile-panel form ul.rows li.location input.country{
+left:261px}
+
+#profile-panel form ul.rows li.band-logo .selector{
+position:absolute;
+top:4px;
+left:108px;
+left:108px;
+width:263px;
+}
+
+#profile-panel form ul.rows li.band-logo .selector .selector-dropdown{
+width:263px;
+height:32px;
+background:rgba(0,0,0,0.25);
+background:rgba(30,30,30,0.50);
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;
+-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;
+box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.75) 0 1px 1px,inset rgba(0,0,0,0.13) 0 0 7px;
+margin:0;
+padding:0 3px;
+z-index:1;
+}
+
+#profile-panel form ul.rows li.band-logo .selector .selector-dropdown:hover .selector-label,#profile-panel form ul.rows li.band-logo .selector .selector-dropdown:focus .selector-label{
+color:#ebebeb}
+
+#profile-panel form ul.rows li.band-logo .selector .selector-dropdown.active{
+height:64px;
+background:#1e1e1e;
+-webkit-box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.60) 2px 2px 4px;
+-moz-box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.60) 2px 2px 4px;
+box-shadow:inset rgba(0,0,0,0.13) 0 0 7px,rgba(0,0,0,0.60) 2px 2px 4px;
+border-bottom:none;
+position:absolute;
+top:0;
+left:0;
+z-index:9999;
+}
+
+#profile-panel form ul.rows li.band-logo .selector .selector-dropdown.active .selector-options li a.upload.band-logo{
+display:block}
+
+#profile-panel form ul.rows li.band-logo .selector .selector-dropdown.active .selector-arrow{
+background-position:0 -36px}
+
+#profile-panel form ul.rows li.band-logo .selector .selector-dropdown .selector-arrow{
+cursor:pointer;
+position:absolute;
+top:3px;
+right:3px;
+}
+
+#profile-panel form ul.rows li.band-logo .selector .selector-dropdown .selector-arrow:hover{
+background-position:0 -18px}
+
+#profile-panel form ul.rows li.band-logo .selector .selector-dropdown .selector-dropdown-menu{
+background:transparent;
+-webkit-box-shadow:none;
+-moz-box-shadow:none;
+box-shadow:none}
+
+#profile-panel form ul.rows li.band-logo .selector .selector-dropdown .selector-options li a{
+display:block;
+margin:3px 0;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+width:236px;
+height:26px;
+line-height:26px;
+text-shadow:rgba(0,0,0,0.80) 0 -1px 0;
+-webkit-border-radius:4px;
+-moz-border-radius:4px;
+border-radius:4px;
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #787878), color-stop(0.5, #6d6d6d), color-stop(0.5, #565656), color-stop(1, #4d4d4d));
+background:-webkit-linear-gradient(top, #787878 0%, #6d6d6d 50%, #565656 50%, #4d4d4d 100%);
+background:-moz-linear-gradient(top, #787878 0%, #6d6d6d 50%, #565656 50%, #4d4d4d 100%);
+background:linear-gradient(top, #787878 0%, #6d6d6d 50%, #565656 50%, #4d4d4d 100%);
+-webkit-box-shadow:rgba(0,0,0,0.50) 0 1px 2px;
+-moz-box-shadow:rgba(0,0,0,0.50) 0 1px 2px;
+box-shadow:rgba(0,0,0,0.50) 0 1px 2px;
+border:1px solid #232323;
+text-align:center;
+}
+
+#profile-panel form ul.rows li.band-logo .selector .selector-dropdown .selector-options li a:hover,#profile-panel form ul.rows li.band-logo .selector .selector-dropdown .selector-options li a:focus{
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #999), color-stop(0.5, #8a8a8a), color-stop(0.5, #6e6e6e), color-stop(1, #626262));
+background:-webkit-linear-gradient(top, #999 0%, #8a8a8a 50%, #6e6e6e 50%, #626262 100%);
+background:-moz-linear-gradient(top, #999 0%, #8a8a8a 50%, #6e6e6e 50%, #626262 100%);
+background:linear-gradient(top, #999 0%, #8a8a8a 50%, #6e6e6e 50%, #626262 100%);
+color:#ebebeb}
+
+#profile-panel form ul.rows li.band-logo .selector .selector-dropdown .selector-options li a:active{
+background:#787878;
+-webkit-box-shadow:rgba(33,29,30,0.65) 0 2px 2px,inset rgba(0,0,0,0.20) 0 0 5px;
+-moz-box-shadow:rgba(33,29,30,0.65) 0 2px 2px,inset rgba(0,0,0,0.20) 0 0 5px;
+box-shadow:rgba(33,29,30,0.65) 0 2px 2px,inset rgba(0,0,0,0.20) 0 0 5px;
+color:#b4b4b4}
+
+#profile-panel form ul.rows li.band-logo .selector .selector-dropdown .selector-options li a.upload.band-logo{
+display:none}
+
+#profile-panel form ul.rows li.section{
+float:left;
+margin-left:14px;
+}
+
+#profile-panel form ul.rows li.section.band-name{
+width:406px;
+margin-bottom:12px;
+margin-top:-6px;
+}
+
+#profile-panel form ul.rows li.section.band-name p.url{
+text-shadow:rgba(0,0,0,0.99) 0 -1px 0;
+padding:2px 8px;
+font:bold 13px/1.5 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+color:#a0a0a0;
+-webkit-font-smoothing:antialiased}
+
+#profile-panel form ul.rows li.section.band-name .help{
+position:absolute;
+bottom:4px;
+right:9px;
+top:auto}
+
+#profile-panel form ul.rows li.section.get-paid{
+width:617px;
+margin-bottom:13px;
+margin-top:-10px}
+
+#profile-panel form ul.rows li.desc{
+padding:10px 19px 0;
+clear:both;
+font:12px/1.5 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+color:#c8c8c8;
+-webkit-font-smoothing:antialiased;
+}
+
+#profile-panel form ul.rows li.desc a{
+color:#c8c8c8;
+text-decoration:underline}
+
+
+

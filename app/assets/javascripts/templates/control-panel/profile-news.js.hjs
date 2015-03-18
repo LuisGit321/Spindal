@@ -1,0 +1,127 @@
+  <header>
+    <ul>
+      <li class="title">News
+      <li class="exit"><a class="exit" {{action "close" on="click"}}>Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="rows">
+      <li class="row label">
+        <label>Enter your information below to feed into your News section.</label>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enter your information below to feed into your News Section.</span>
+        </div>
+      <li class="row half facebook">
+      	{{view App.Views.ControlPanel.Light disabledBinding="news.news_fb_disabled" classBinding="this.disabled"}}
+        <label>Facebook</label>
+        {{view Ember.TextField valueBinding="news.fb_handle" id="fb_handle_id"  placeholder="facebook username"   }}
+        <div class="help">
+	      <span class="icon">?</span>
+	      <span class="ui-tooltip-bottom">Enter your Facebook Username below. This will allow your facebook Wall information to appear in your News 
+	    </div>
+      </li>
+      
+      <li class="row half instagram">
+      	{{view App.Views.ControlPanel.Light disabledBinding="news.news_instagram_disabled" classBinding="this.disabled"}}
+        <label>Instagram</label>
+        {{view Ember.TextField valueBinding="news.instagram_handle" id="instagram_handle_id"  placeholder="username"   }}
+        <div class="help">
+	      <span class="icon">?</span>
+	      <span class="ui-tooltip-bottom">Enter your Instagram Username below. This will allow your Instagram post to appear in your News 
+	    </div>
+      </li>
+      
+      <li class="row half twitter">
+        {{view App.Views.ControlPanel.Light disabledBinding="news.news_twitter_disabled" classBinding="this.disabled"}}
+        <label>Twitter</label>
+        
+          {{view  Ember.TextField valueBinding="news.twitter_handle" id="twitter_handle_id"  placeholder="username"}}
+        
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enter your Twitter Username. Your Twitter posts will appear in your News Feed. You can turn on and off 
+        </div>
+          
+      <li class="row half blog">
+      {{view App.Views.ControlPanel.Light disabledBinding="news.news_blog_disabled" classBinding="this.disabled"}}
+        <label>Blog</label>
+
+        {{view App.Views.ControlPanel.SpindalSelect
+          viewName="band_blog_platform"
+          contentBinding="App.Controllers.ControlPanel.appConstants.blogPlatform"
+          optionLabelPath="content.name"
+          optionValuePath="content._id"
+          prompt="Blog Platform"
+          initValBinding="App.Controllers.ControlPanel.band.details.blog_platform_id"
+          selectionBinding="App.Controllers.ControlPanel.band.details.selected_blog_platform"
+          id="blog_plateform_id"
+        }}
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Select your existing Blog Platform below. You can turn on and off the Blog feed into your News section 
+        </div>
+      <li class="row blog url">
+        <label>Blog URL</label>
+        
+          {{view Ember.TextField valueBinding="news.blog_url" id="blog_url_id"  placeholder="www.yourblogurl" type="text" }}
+          	
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enter or aste the URL of your current Blog.</span>
+        </div>
+      
+      
+      <li class="row topBox third email signup">
+        {{view App.Views.ControlPanel.Light disabledBinding="news.news_email_disabled" classBinding="this.disabled"}}
+        <label>Email Sign Up Field</label>
+        
+        {{view App.Views.ControlPanel.SpindalSelect
+          viewName="band_email_provider"
+          contentBinding="App.Controllers.ControlPanel.appConstants.emailProvider"
+          optionLabelPath="content.name"
+          optionValuePath="content._id"
+          prompt="Email Provider"
+          initVal="App.Controllers.ControlPanel.band.details.email_provider_id"
+          selectionBinding="App.Controllers.ControlPanel.band.details.selected_email_provider"
+          id="email_provider_id"
+        }}
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Select from the supported Email providers below. This will allow you to easily collect your fans emails
+        </div>
+      <li class="row middleBox api">
+        <label>API KEY</label>
+        <div id="loading" class="hidden"></div>
+        <div id="verifedKey" class="hidden"></div>
+          {{view Ember.TextField id="email_key_id" valueBinding="news.email_api_key" placeholder="EXAMPLE: cd93fe0e1b18949a6c41e08be0f80e2-us1"}}
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">You will need to enter or paste your API Key below to capture email addresses.  
+        </div>
+      <li class="row bottomBox email list">
+        <label>Email List</label>
+        <!-- App.Models.EmailList -->
+         {{view App.Views.ControlPanel.SpindalSelect
+          viewName="band_email_list"
+          contentBinding="App.Controllers.ControlPanel.emailList" 
+          selectionBinding="App.Controllers.ControlPanel.band.details.selected_email_list"
+          initValBinding="band.email_list"
+          optionLabelPath="content.name"
+          optionValuePath="content.web_id"
+          prompt="Email List"
+          id="email_list_id"
+        }}
+        
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Select where you would like your email addresses to be saved from the lists below. The list will FIRST need
+        </div>
+      
+    </ul>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="save" {{action "save" on="click"}}>OK</a>
+    </ul>
+  </footer> 

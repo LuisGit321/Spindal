@@ -1,0 +1,35 @@
+ul.gallery-arrows
+  d block
+  absolute top 50% right 0
+  z-index 1
+  mt -25px
+  h 70px
+  w 100px
+  transition opacity .15s ease
+  opacity 0
+  &.active
+    opacity 1
+  li
+    float left
+    a
+      d block
+      w 50px
+      h 70px
+      bgc rgba(40,40,40,.8)
+      hide-text()
+      box-shadow b80 0 1px 1px, inset w15 1px 1px 0
+      &.gallery-prev
+        background-image url(../i/cp/gallery-arrows.png)
+        background-position left top
+        border-radius 3px 0 0 3px
+      &.gallery-next
+        background-image url(../i/cp/gallery-arrows.png)
+        background-position -50px top
+
+      &:hover, &:focus
+        bgc rgba(55,55,55,.8)
+
+      &:active, &.active
+        bgc rgba(55,55,55,.8)
+        box-shadow inset b100 0 1px 1px, w15 0 1px 0
+  

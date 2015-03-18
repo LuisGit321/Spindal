@@ -1,0 +1,16 @@
+<header>
+  <ul>
+    <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+  </ul>
+</header>
+<div class="content">
+  <div class="msg">
+    <p>Are you sure you want to Delete this Cover Art ?</p>
+  </div>
+</div>
+<footer>
+  <ul>
+    <li><a class="yes" {{action "deleteAlbumCover" on="click"}}>Yes</a>
+    <li><a class="cancel" {{action "close" on="click"}}>Cancel</a>
+  </ul>
+</footer>

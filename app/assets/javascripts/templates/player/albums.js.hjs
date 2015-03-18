@@ -1,0 +1,19 @@
+{{#each albums}}
+	{{#unless this.visibility_disabled}}
+		<li class="album">
+		  <div class="album cover">
+		    <ul class="switch">
+		      <li class="prev">
+		        <a class="prev-album" href="#" title="Previous Album">Prev</a>
+		      </li>
+		      <li class="next">
+		        <a class="next-album" href="#" title="Next Album">Next Album</a>
+		      </li>
+		    </ul>
+			    <img {{bindAttr src="this.cover_image.display.url"}} alt="Album Cover"/>
+		  </div>
+		  {{view App.Views.Sidebar.AlbumsDetails albumBinding="this"}}
+	  	{{view App.Views.Sidebar.SongList albumBinding="this" songsBinding="songList"}}
+	  </li>
+  {{/unless}}
+{{/each}}

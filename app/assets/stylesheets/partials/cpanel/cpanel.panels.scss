@@ -1,0 +1,56 @@
+#cpanel .panel{
+display:block;
+height:516px;
+overflow: hidden;
+width: 650px;
+}
+
+#cpanel .panel.ui-tabs-hide{
+position:absolute;
+left:-10000px}
+
+#cpanel .panel h2{
+font:bold 16px/28px "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+-webkit-font-smoothing:antialiased;
+color:#c8c8c8;
+text-shadow:rgba(0,0,0,0.80) 0 -1px 1px;
+-webkit-text-fill-color:-webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #b1b1b1));
+-webkit-text-fill-color:-webkit-linear-gradient(top, #fff 0%, #b1b1b1 100%);
+-webkit-text-fill-color:-moz-linear-gradient(top, #fff 0%, #b1b1b1 100%);
+-webkit-text-fill-color:linear-gradient(top, #fff 0%, #b1b1b1 100%);
+-webkit-text-stroke:rgba(255,255,255,0.50) 0 1px 0;
+padding-left:.5em;
+border-bottom:1px solid #141414;
+-webkit-box-shadow:rgba(255,255,255,0.05) 0 1px 0;
+-moz-box-shadow:rgba(255,255,255,0.05) 0 1px 0;
+box-shadow:rgba(255,255,255,0.05) 0 1px 0}
+
+#cpanel .panel .content{
+zoom:1;
+color:#c8c8c8;
+-webkit-font-smoothing:antialiased;
+padding:8px 0 0;
+}
+
+#cpanel .panel .content:before,#cpanel .panel .content:after{
+content:"";
+display:table}
+
+#cpanel .panel .content:after{
+clear:both}
+
+#cpanel .panel .content p{
+font:12px/1.5 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+text-shadow:rgba(0,0,0,0.90) 0 -1px 0;
+padding:0 8px 1.25em;
+}
+
+#cpanel .panel .content p.url{
+margin-top:-.5em;
+font:bold 13px/1.5 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+color:#a0a0a0}
+
+#cpanel .panel .content p a{
+text-decoration:underline;
+color:#c8c8c8}
+

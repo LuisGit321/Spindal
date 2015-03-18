@@ -1,0 +1,17 @@
+<div id="albums">
+  <ul class="albums">
+    {{#each albumList}}
+      {{view App.Views.ControlPanel.AlbumListItem albumBinding="this"}}
+    {{/each}}
+  </ul>
+  <nav class="nav">
+    <a class="prev-set" href="#">Prev</a>
+    <a class="next-set" href="#">Next</a>
+    <div class="active"></div>
+  </nav>
+  <menu class="rollover">
+    <a class="add" href="#" {{action "addAlbum" on="click"}}>Add</a>
+    <a class="help" href="#">Help</a>
+  </menu>
+</div>
+{{view App.Views.ControlPanel.SongList songsBinding="currAlbum.songList"}}

@@ -1,0 +1,90 @@
+<a class="pane hide" href="#" {{action "togglePane" on="click"}}>
+	<img src="/assets/arrow-left.png" alt="Hide menu">			
+</a>
+<div class="pane-widget">
+	<div class="pane-menu">
+		<div class="title">
+			<h1>News</h1>	
+		</div>
+		
+		<div id="menu">
+			<ul>
+				<li>
+					<a id="all-news" class="selected" href="#">All</a>					
+				</li>
+				<li>
+					<a id="fb-news" href="#">	
+						Facebook
+					</a>
+				</li>
+				<li>
+					<a id="twitter-news" href="#">
+						Twitter
+					<a>
+				</li>
+				<li>
+					<a id="instagram-news" href="#">
+						Instagram
+					</a>
+				</li>
+				<li>
+					<a id="blog-news" href="#">
+						Blog
+					</a>
+				</li>
+			</ul>
+			
+			
+		</div>	
+	</div>		
+	<div id="loading-container" class="pane-container hidden">
+		<div id="loading">
+			loading...
+		</div>
+	</div>	
+	<div id ="news-container" class="pane-container">
+		{{#if content.length }}
+	<ul>
+		{{#each content}}
+			<li>
+				<div id="news-detail">
+					<div id="icon" {{bindAttr class="feed_type"}}>
+					</div>
+					<div id="detail-box">
+						
+						<h2>	
+							{{{ author }}} 
+							
+						</h2>
+						
+						<div id="summary" {{bindAttr class="feed_type"}}>
+							{{#if isInstagram}}
+								{{{title}}}
+							{{/if}}
+							{{#if summary.length }}
+								{{{summary}}}
+							{{else}}
+								{{title}}	
+							{{/if}}
+						</div>					
+						<br/>
+						<label id="newfeed-published">{{{ date }}}</label>
+						
+						
+					</div>			
+				</div>
+			</li>		
+		{{/each}}
+	</ul>
+{{else}}
+	<div id="noFeedError" class="hidden">
+		Unable to fetch content. Please try later !
+	</div>
+{{/if}}
+							
+	</div>	
+</div>
+
+
+
+

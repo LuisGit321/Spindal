@@ -1,0 +1,170 @@
+.albums{
+position:relative;height:100%;padding-top:25px}
+
+.albums ul.albums{
+height:100%;}
+
+.albums ul.albums li.album{
+width:300px;}
+
+
+.albums ul.albums li.album .album.cover{
+padding:0 25px 9px;}
+
+
+.albums ul.albums li.album .album.cover img{
+  height: 250px;
+  width: 250px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  box-shadow: rgba(0,0,0,0.25) 0 0 4px;
+  display:block}
+
+
+.albums ul.albums li.album .album.cover ul.switch{
+  position:absolute;
+  top:0;
+  left:25px;
+  height:250px;
+  width:250px;
+  -webkit-transition:none;
+  -moz-transition:none;
+  z-index:1000;
+  opacity:0;
+  filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+
+
+.albums ul.albums li.album .album.cover ul.switch:hover{
+  opacity:1;
+  filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100)
+}
+
+
+.albums ul.albums li.album .album.cover ul.switch li a{
+  display:block;
+  width:41px;
+  height:60px;
+  position:absolute;
+  top:92px;
+  z-index:100;
+  text-indent:-999em;
+  background:rgba(0,0,0,0.80) url("/assets/album-nav-arrows.png") left top no-repeat;-webkit-transition:none;-moz-transition:none;}
+
+
+.albums ul.albums li.album .album.cover ul.switch li a.prev-album{
+  left: 1px;
+  border-radius:0 2px 2px 0;
+}
+
+
+.albums ul.albums li.album .album.cover ul.switch li a.next-album{
+  right: 1px;
+  background-position:-41px 0;
+  border-radius:2px 0 0 2px;
+}
+
+
+.albums ul.albums li.album .album.cover ul.switch li a:hover,.albums ul.albums li.album .album.cover ul.switch li a:focus{
+background-color:rgba(26,114,213,0.80)}
+
+.albums ul.albums li.album .album.cover ul.switch li a:active{
+background-color:rgba(26,114,213,0.90)}
+
+
+.albums ul.albums li.album .album.title h2{
+  padding:0 30px;
+  font-weight:bold;
+  line-height:33px;
+  cursor:pointer;
+  border-top:1px solid transparent;
+  font-size: 14px;
+}
+
+
+.albums ul.albums li.album .album.title h2:hover{
+background:rgba(181,181,181,0.60)}
+
+
+.albums ul.albums li.album .album.title h2:active,
+.albums ul.albums li.album .album.title h2.active {
+  border-top: 1px solid rgba(0,0,0,.2);
+  background: rgba(201,201,201,.8) url(/assets/bg-indent.png);
+}
+
+
+.albums ul.albums li.album .album.title .data{
+  padding:0 30px .5em;
+  display:none;
+  background: rgba(201,201,201,.8) url(/assets/bg-indent.png);
+  }
+
+.albums ul.albums li.album .album.title .data > ul{
+font:11px/1.5 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;}
+
+
+.albums ul.albums li.album .album.title .data > ul > li.links {
+  padding:.5em 0 0;
+}
+
+.albums ul.albums li.album .album.title .data > ul > li.links > a{
+margin-right:.5em;font:12px/1.5;}
+
+
+.albums ul.albums li.album .album.title .data > ul > li.links > a.button{
+
+  display:inline-block;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #3985c1), color-stop(1, #0767b1));background:-webkit-linear-gradient(top, #3985c1 0%, #0767b1 100%);background:-moz-linear-gradient(top, #3985c1 0%, #0767b1 100%);background:linear-gradient(top, #3985c1 0%, #0767b1 100%);-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;
+  font:bold 12px/1.5 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+  width:118px;
+  text-align:center;
+  color:#fff;
+  -webkit-font-smoothing:antialiased;
+  text-shadow:rgba(0,0,0,0.40) 0 -1px 0;
+  border:1px solid rgba(0,0,0,0.15);
+  box-shadow:rgba(0,0,0,0.45) 1px 1px 2px;
+  cursor: pointer;
+}
+
+
+.albums ul.albums li.album .album.title .data > ul > li.links .menu.share ul{
+left:auto;right:-49%}
+
+.albums ul.albums li.album .album.title .data > ul > li.pal {
+  padding-top: 7px;
+}
+
+.buy-album-song { 
+  z-index: 99999;
+  background: none !important;
+
+  .buy-popup-head { 
+    float:left; width:100%; background:url(/assets/player/bg_popup.jpg) top repeat; height:43px; border-bottom:1px solid #acacac; position:relative; border-radius:1px 1px 0 0; -moz-border-radius:1px 1px 0 0; -khtml-border-radius:1px 1px 0 0; -ohtml-border-radius:1px 1px 0 0; -webkit-border-radius:1px 1px 0 0;
+  }
+
+  .buy-popup-head h1 { float:left; width:100%; text-align:center; height:43px; }
+  .buy-popup-head h1 img { margin:10px 0 0 0;}
+  .buy-popup-head a { position:absolute; right:10px; top:11px; width:11px; height:11px; z-index:1;}
+
+  .content-buy-popup { float:left; width:100%; background:rgba(255, 255, 255, 0.8); height:319px;}
+  .content-buy-popup p { float:left; width:100%; margin:12px 0 2px 0; text-align:center;}
+  
+  .album-cover { float:left; width:185px; height:185px; margin:20px 20px 0 20px;}
+  .album-cover img { float:left; width:185px; height:185px; box-shadow:0px 0px 10px #666; -moz-box-shadow:0px 0px 10px #666; -khtml-box-shadow:0px 0px 10px #666; -ohtml-box-shadow:0px 0px 10px #666; -webkit-box-shadow:0px 0px 10px #666;}
+  
+  .album-detail { float:left; width:170px; margin:25px 0 0 0;}
+  .album-detail h2 { float:left; width:135px; border-bottom:1px solid #999; padding:0 0 10px 35px; background:url(/assets/player/music_icon.png) 0px 5px no-repeat; font:bold 16px 'Arial'; color:#555; min-height:30px;}
+  .album-detail h2.albumName { float:left; width:170px; border-bottom:1px solid #999; padding:10px 0 0 0; font:bold 16px 'Arial'; color:#555; background:none; text-align:center; min-height: 40px}
+  .album-detail h1 { float:left; width:170px; border-bottom:1px solid #999; border-top:1px solid #fff; font:bold 36px 'Arial'; color:#555555; text-align:center; padding:9px 0 11px 0;}
+  .album-detail span { float:left; width:100%; text-align:center; border-top:1px solid #fff;}
+  .album-detail span img { margin:7px 0 0 0;}
+  
+  .loading-paypal {float:left;}
+  
+  .checkout-button { border:none; margin-left:24px; width:365px; background:url(/assets/player/checkout_now.png) no-repeat; background-position:center top; height:57px;}
+  .checkout-button:hover { background:url(/assets/player/checkout_now.png) no-repeat; background-position:center -56px;}
+  .checkout-button:focus { background:url(/assets/player/checkout_now.png) no-repeat; background-position:center -112px;}
+  
+  .buy-popup-foot { float:left; width:100%; background:url(/assets/player/bg_popup.jpg) top repeat; height:58px; border-top:1px solid #acacac; position:relative; text-align:center; border-radius:0px 0px 1px 1px; -moz-border-radius:0px 0px 1px 1px; -khtml-border-radius:0px 0px 1px 1px; -ohtml-border-radius:0px 0px 1px 1px; -webkit-border-radius:0px 0px 1px 1px;}
+  .buy-popup-foot img { margin:11px 0 0 0;}
+}

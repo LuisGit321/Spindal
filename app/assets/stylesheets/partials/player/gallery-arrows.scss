@@ -1,0 +1,56 @@
+ul.gallery-arrows{
+display:block;
+position:absolute;
+top:50%;
+right:0;
+z-index:1;
+margin-top:-25px;
+height:70px;
+width:100px;
+-webkit-transition:opacity .15s ease;
+-moz-transition:opacity .15s ease;
+transition:opacity .15s ease;
+opacity:0;
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+
+ul.gallery-arrows.active{
+opacity:1;
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100)}
+
+ul.gallery-arrows li{
+float:left;
+}
+
+ul.gallery-arrows li a{
+display:block;
+width:50px;
+height:70px;
+background-color:rgba(40,40,40,0.80);
+text-indent:-99999em;
+overflow:hidden;
+text-align:left;
+-webkit-box-shadow:rgba(0,0,0,0.80) 0 1px 1px,inset rgba(255,255,255,0.15) 1px 1px 0;
+-moz-box-shadow:rgba(0,0,0,0.80) 0 1px 1px,inset rgba(255,255,255,0.15) 1px 1px 0;
+box-shadow:rgba(0,0,0,0.80) 0 1px 1px,inset rgba(255,255,255,0.15) 1px 1px 0;
+}
+
+ul.gallery-arrows li a.gallery-prev{
+background-image:url("/assets/cp/gallery-arrows.png");
+background-position:left top;
+-webkit-border-radius:3px 0 0 3px;
+-moz-border-radius:3px 0 0 3px;
+border-radius:3px 0 0 3px}
+
+ul.gallery-arrows li a.gallery-next{
+background-image:url("/assets/cp/gallery-arrows.png");
+background-position:-50px top}
+
+ul.gallery-arrows li a:hover,ul.gallery-arrows li a:focus{
+background-color:rgba(55,55,55,0.80)}
+
+ul.gallery-arrows li a:active,ul.gallery-arrows li a.active{
+background-color:rgba(55,55,55,0.80);
+-webkit-box-shadow:inset #000 0 1px 1px,rgba(255,255,255,0.15) 0 1px 0;
+-moz-box-shadow:inset #000 0 1px 1px,rgba(255,255,255,0.15) 0 1px 0;
+box-shadow:inset #000 0 1px 1px,rgba(255,255,255,0.15) 0 1px 0}

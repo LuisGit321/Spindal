@@ -1,0 +1,25 @@
+%form.popup.message.download-link.itunes-song-link
+  %header
+    %ul
+      %li.title iTunes Song Link
+      %li.exit
+        %a.exit{:href => "#"} Exit
+  .content
+    %ul.rows
+      %li.row.url
+        %label iTunes Link
+        %input{:placeholder => "http://itunes.apple.com/us/album/sabo", :type => "text"}
+          .help
+            %span.icon ?
+            %span.ui-tooltip-bottom
+              You can directly link your song to your existing iTunes page for your fans to purchase your music.
+      %li.desc
+        To find your iTunes direct link click below:
+        %br
+          %a{:href => "http://itunes.apple.com/linkmaker/"} http://itunes.apple.com/linkmaker/
+  %footer
+    %ul
+      %li
+        %a.save Save
+      %li
+        %a.cancel Cancel

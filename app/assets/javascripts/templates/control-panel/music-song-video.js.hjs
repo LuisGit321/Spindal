@@ -1,0 +1,29 @@
+  <header>
+    <ul>
+      <li class="title">Video
+      <li class="name">{{song.title}}</li>
+      <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="rows">
+      <li class="row">
+        <label>Embed Video from Youtube&reg; or Vimeo&reg; below.</label>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-top">Paste the embed code below from either the Youtube&reg; or Vimeo&reg; video. Need more help? <a href="#">Click here</a></span>
+        </div>
+      <li class="row textarea">
+        <div class="textarea-scroll">
+        {{view Ember.TextArea valueBinding="song.video_embed_tag" placeholder="Embed Sample:
+
+          <iframe width='420' height='345' src='http://www.youtube.com/embed/
+          b62FfUf78V0' frameborder='0' allowfullscreen></iframe>"}}
+        </div>
+    </ul>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="save" {{action "setVideo" on="click"}}>OK</a>
+    </ul>
+  </footer>

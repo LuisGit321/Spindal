@@ -1,0 +1,294 @@
+#Arial a
+  font-family Arial
+#ArialBold a
+  font-family Arial
+  font-weight bold !important
+#Clarendon a
+  font-family Clarendon
+#ClarendonBold a
+  font-family Clarendon
+  font-weight bold !important
+#Courier a
+  font-family Courier
+#CourierNew a
+  font-family Courier
+  font-weight bold !important
+#Helvetica a
+  font-family Helvetica, HelveticaHeue, "Helvetica Neue"
+#FranklinGothic a
+  font-family "Franklin Gothic"
+#LucidaSans a
+  font-family "Lucida Sans"
+#Meta a
+  font-family Meta
+#MetaBold a
+  font-family Meta
+  font-weight bold !important
+#TimesNewRoman a
+  font-family "Times New Roman"
+#TimesNewRomanBold a
+  font-family "Times New Roman"
+  font-weight bold !important
+#Verdana a
+  font-family Verdana
+#VerdanaBold a
+  font-family Verdana
+  font-weight bold !important
+
+.popup.profile
+  .content
+    ul.rows
+      li.row
+        mb 12px
+        label
+          left 13px
+
+.popup.band-logo
+  .content
+    ul.rows
+      li.row
+        mb 16px
+        &.band-name
+          input
+            left 93px
+        &.font
+          &.face
+            a.selectBox
+              d none !important
+
+            .selector
+              left 55px
+              top 5px
+              z 100000
+              absolute top 2px right 28px
+
+              .selector-dropdown
+                w 155px
+                border-radius 3px
+                box-shadow w7 0 1px 0, inset b37 0 1px 1px, inset b7 0 0 7px
+                bg m30
+                m 7px 0 8px
+                h 24px
+
+                div.selector-arrow
+                  top 3px
+                  right 3px
+                  z 1000
+
+                ul#fontList
+                  relative top 2px left -5px
+                  z 999
+                  w 145px
+                  box-shadow none
+                  bg m30
+                  border-radius 3px
+                  lh 1.5em
+                  h 1.5em
+                  min-height 1.5em
+                  overflow hidden
+                  &.active
+                    top 24px
+                    w 153px
+                    h 200px
+                    bg m40
+                    box-shadow inset b13 0 0 7px, b30 2px 2px 4px
+                    overflow auto
+                    li a:hover
+                      bg #1a81c9
+                      background linear-gradient(top, #338fcf, #0073c3)
+                      c #fff
+                    
+                  li.selected
+                  &.active li
+                    d block
+
+                  li
+                    d none
+                    a
+                      d block
+                      text-overflow ellipsis
+                      white-space nowrap
+                      overflow hidden
+                      font-weight normal
+                      p 0 5px
+                      cursor default
+
+
+          &.color
+            a.selectBox
+              left 84px
+              w 126px
+          &.alignment
+            a.selectBox
+              left 89px
+              w 121px
+          &.size
+            input
+              d block
+              position absolute
+              top 8px
+              right auto
+              bottom auto
+              left 88px
+              w 54px + 28px + 20px
+              h 24px
+              m 0
+              p 6px 0 6px 8px
+              bg m30
+              b none
+              border-radius 3px
+              box-shadow w7 0 1px 0, inset b75 0 1px 1px, inset b13 0 0 7px
+              f bold 12px/1 sans
+            input[type=number]::-webkit-inner-spin-button
+              bg url(../i/popups/input-number.png) top left
+              h 8px
+              w 16px
+              -webkit-appearance none
+            input[type=number]::-webkit-outer-spin-button
+              -webkit-appearance none
+          span.unit
+            f bold 13px/40px sans
+            pl 7px
+            c m160
+            text-shadow b99 0 -1px 0
+            aa()
+            absolute top 0 left 190px
+
+.popup.news
+  .content
+    ul.rows
+      li.row
+        mb 17px
+        label
+          left 30px
+        &.label, &.blog.url
+          label
+            left 13px
+        &.half
+          input, a.selectBox
+            left 96px
+            w 114px
+          &.blog.url
+            input
+              left 74px
+              w 136px
+        &.email
+          a.selectBox
+            left 207px
+            w 255px
+        &.api
+          input
+            left 95px
+            w 335px
+
+.popup.url
+
+  .content
+    ul.rows
+      li.row
+        mb 15px
+        &.url
+          input
+            left 115px
+            w 347px
+
+.popup.live
+  ul.rows
+    li.row
+      mb 9px
+
+ul.thead
+  bg url(../i/popups/form-live-thead.png) top left no-repeat
+  d block
+  lhh 26px
+  li
+    display table-cell
+    ta center
+    c transparent
+
+#events
+  max-height 270px + 1px
+  overflow hidden
+  overflow-x hidden
+  overflow-y scroll
+  relative()
+  z-index 0
+  table
+    tr
+      th, td
+        &.date
+          min-width 66px
+        &.venue
+          min-width 140px
+        &.location
+          min-width 140px
+        &.tickets
+          min-width 137px
+        &.status
+          min-width 40px
+    tbody
+      tr
+        bg rgb(52,54,56)
+        &:nth-of-type(even)
+          bg rgb(62,64,66)
+        td
+          .light
+            m 6px 3px 9px
+          &.date
+            span.num
+              f bold 12px/35px sans
+              c m160
+              text-shadow b80 0 -1px 0
+              w 18px
+              ta right
+              d inline-block
+            .add
+              d inline-block
+              b none
+              p 0
+              r 21px
+              m 8px 0 0 6px
+              bg url(../i/cp/song-lyrics.png) top left no-repeat
+              ti -999em
+              &:hover, &:focus
+                bgp 0 -21px
+              &:active
+                bgp 0 -42px
+          &.venue, &.location, &.tickets
+            white-space nowrap
+            overflow hidden
+            text-overflow ellipsis
+            input
+              d inline-block
+              bxs()
+              w 130px
+              h 20px
+              m 6px 5px 10px
+              p 4px 2px
+              bg transparent
+              b 0
+              f bold 12px/1 sans
+              aa()
+              c #fff
+              border-radius 3px
+              &:focus
+                background linear-gradient(top, m50, m38)
+                box-shadow w7 0 1px 0, inset b13 0 1px 2px
+          &.tickets
+            input
+              w 99px
+              m 5px 0 0
+              
+          &.status
+            ta center
+            a.delete
+              d inline-block
+              h 21px
+              w 19px
+              m 7px 2px 7px 0
+              bg url(../i/cp/song-delete.png) top left no-repeat
+              ti -999em
+              &:hover, &:focus
+                bgp 0 -21px
+              &:active
+                bgp 0 -42px

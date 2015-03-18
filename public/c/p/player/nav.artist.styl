@@ -1,0 +1,83 @@
+nav.artist
+  mt -200px
+  transition .3s ease all
+  relative()
+  z-index 500
+  &.pushed
+    mt -138px
+  &.pushed-title
+    top 64px
+  ul li a, dl dt
+    d block
+    ts w50 0 1px 0
+    f bold 1em/2 sans
+    tt uppercase
+    p 0 2em
+
+  ul
+    li
+      a
+        &:hover, &:focus
+          box-shadow inset b6 0 0 5px
+          bg hsla(0,0,71,.6)
+        &:active
+          box-shadow inset b8 0 0 5px
+          bg hsla(0,0,71,.8)
+  dl
+    dt
+      &:hover
+        box-shadow inset b6 0 0 5px
+        bg hsla(0,0,71,.6)
+      &.ui-state-active
+        box-shadow inset b8 0 0 5px
+        bg hsla(0,0,71,.8)
+      a
+        d block
+
+  dd
+    bb 1px solid b20
+    bg hsla(0,0,71,.8)
+    box-shadow inset b10 0 -3px 2px
+    p 0 x*2 x*.5
+    d none
+    clearfix()
+
+    a
+      buttondark()
+      &.show-gallery-arrows
+        &:active
+          f bold 12px/1.8 sans
+          c link
+          bg transparent
+
+    form
+      background linear-gradient(top, m135, m199)
+      p 1px
+      relative()
+      input
+        d block
+        &[type="text"]
+          f 10px/1 sans
+          h 19px
+          bg #fff
+          box-shadow inset b20 1px 2px 1px
+          w 100%
+          m 0
+          p 4px 3px 5px
+          b none
+          box-sizing border-box
+        &[type='submit']
+          w 21px
+          h 19px
+          bg #000
+          absolute top 1px right 1px
+          b none
+          p 0
+          bg url(../i/news-submit.png) left top no-repeat
+          ti -999em
+          box-shadow b20 -1px 0 2px
+          cursor pointer
+          &:hover
+            bgp left -19px
+          &:active
+            bgp left -38px

@@ -1,0 +1,28 @@
+%form.popup.window.gallery.video.textarea
+  %header
+    %ul
+      %li.title Lyrics
+      %li.exit
+        %a.exit{:href => "#"} Exit
+  .content
+    %ul.rows
+      %li.row.input
+        %input{:placeholder => "Video Title", :type => "text"}/
+      %li.row
+        %label Embed Video from Youtube® or Vimeo® below.
+        .help
+          %span.icon ?
+          %span.ui-tooltip-top
+            Paste the embed code below from either the Youtube® or Vimeo® video. Need more help?
+            %a{:href => "#"} Click here
+      %li.row.textarea
+        .textarea-scroll
+          %textarea
+            Embed Sample:
+            %iframe{:allowfullscreen => "", :frameborder => "0", :height => "345", :src => "http://www.youtube.com/embed/\r\nb62FfUf78V0", :width => "420"}
+  %footer
+    %ul
+      %li
+        %a.save Save
+      %li
+        %a.cancel Cancel

@@ -1,0 +1,25 @@
+  <header>
+    <ul>
+      <li class="title">Lyrics
+      <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="rows">
+      <li class="row transition-style select">
+        <label>Write or paste Lyrics below.</label>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-top">Enter the Lyrics below and space out text to be read clearly.</span>
+        </div>
+      <li class="row textarea">
+        <div class="textarea-scroll">
+        {{view Ember.TextArea valueBinding="song.lyrics" name="lyrics"}}
+        </div>
+    </ul>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="save" {{action "setLyrics" on="click"}}>OK</a>
+    </ul>
+  </footer>

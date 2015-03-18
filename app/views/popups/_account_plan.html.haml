@@ -1,0 +1,34 @@
+%form.popup.window.account.plan
+  %header
+    %ul
+      %li.title Plan
+      %li.exit
+        %a.exit{:href => "#"} Exit
+  .content
+    %ul.rows
+      %li.row.label
+        %label You currently have a Silver Plan.
+        .help
+          %span.icon ?
+          %span.ui-tooltip-bottom Your current plan is shown below. You can upgrade or downgrade your account by selecting a different plan.
+      %li.desc
+        You currently have an active Spindal Silver Plan account subscription. Your subscription will automatically renew and you will be charged $8.00 on December 8th, 2011 unless you
+        %a.cancel-plan{:href => "#"} cancel
+        your recurring payment.
+      %li.row.plan
+        %ul.plans
+          %li.plan.silver.active
+            %img{:alt => "Silver Plan", :src => "i/popups/plan-silver.png"}/
+          %li.plan.gold
+            %img{:alt => "Gold Plan", :src => "i/popups/plan-gold.png"}/
+          %li.plan.platinum
+            %img{:alt => "Platinum Plan", :src => "i/popups/plan-platinum.png"}/
+        %li.cancel
+          Want to CANCEL your Spindal account?
+          %a.cancel-plan{:href => "#"} Click here
+  %footer
+    %ul
+      %li
+        %a.save Save
+      %li
+        %a.cancel Cancel

@@ -1,0 +1,29 @@
+    <header>
+      <ul>
+        <li class="title">Store
+        <li class="exit"><a class="exit" {{action "close" on="click"}}>Exit</a>
+      </ul>
+    </header>
+    <div class="content">
+      <ul class="rows">
+        <li class="row label">
+          <label>Write or paste your Store URL below.</label>
+          <div class="help">
+            <span class="icon">?</span>
+            <span class="ui-tooltip-bottom">Enter or paste your Web Store URL below so your fans be linked directly to your Online Store page. </span>
+          </div>
+        <li class="row big url">
+          <label>Store URL</label>
+          {{view Ember.TextField valueBinding="band.store_url" placeholder="www.shopify.com/yourpage" class="validate"}}
+          <div class="help">
+            <span class="icon">?</span>
+            <span class="ui-tooltip-bottom">Enter or paste your Web Store URL. If you don’t have an Online Store to sell your merch, we recommend Shopify, or Big Cartel.</span>
+          </div>
+      </ul>
+    </div>
+    <footer>
+      <ul>
+        <li><a class="save" {{action "save" on="click"}}>Save</a>
+        <li><a class="cancel" {{action "close" on="click"}}>Cancel</a>
+      </ul>
+    </footer>

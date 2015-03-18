@@ -1,0 +1,58 @@
+.lightbox-screen
+  content ''
+  w 100%
+  h 100%
+  bg b60
+  relative()
+  position fixed
+  top 0
+  right 0
+  bottom 0
+  left 0
+  z 9998
+  transition .5s ease-in-out opacity
+
+.popup
+  d block
+  clearfix()
+  fixed top -1000px left 50%
+  bg m54 url(../i/popups/bg.png)
+  box-shadow b75 0 0 8px
+  border-radius 5px
+  z 9999
+  transform rotateY(-90deg) rotateX(45deg) scale(.25)
+  transition .15s ease opacity
+  opacity 0
+  &.visible
+    opacity 1
+    transform rotateY(0deg) scale(1)
+
+  &.window
+    w 525px
+    h 455px
+    ml -263px
+    transition .5s ease-in-out -webkit-transform, .5s ease-in-out opacity
+    
+  &.message
+    w 394px
+    h 178px
+    ml -197px
+
+  input::-webkit-input-placeholder
+    c #fff !important
+    aa()
+  input:-moz-placeholder
+    c #fff !impotant
+    aa()
+
+@import 'header'
+@import 'content'
+@import 'footer'
+@import 'popup.profile'
+@import 'popup.slideshow'
+@import 'popup.album-settings'
+@import 'popup.textarea'
+@import 'popup.custom-price'
+@import 'popup.account'
+@import 'popup.upload-song'
+@import 'popup.download-link'

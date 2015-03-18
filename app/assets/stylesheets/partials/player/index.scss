@@ -1,0 +1,42 @@
+#spindal{
+  background:rgba(255,255,255,0.80);
+  width:300px;
+  position:relative;
+  left:-300px;
+  z-index:100;
+  min-height: 100%;
+  box-shadow:rgba(0,0,0,0.25) 1px 0 3px;
+  -webkit-transition:1s ease all;
+  -moz-transition:1s ease all;
+  transition:1s ease all;
+}
+
+#empowered {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  z-index: 100;
+  border-top: 1px solid rgba(0,0,0,.2)
+}
+
+#spindal.active{left:0}
+#spindal header.artist{
+  padding:25px 25px 2px;
+  position:relative;
+  z-index: 2;
+}
+
+#spindal header.artist #band_logo div img.logo{display:block}
+
+#spindal header.artist #band_logo #band_text
+{width: 225px; min-height: 75px;max-height: 250px; word-wrap: break-word; overflow:hidden;}
+
+// @import url(a.show.hide.menu.scss);
+// @import url(a.play.big.scss);
+// @import url(section.albums.scss);
+// @import url(menu.share.scss);
+// @import url(menu.tracks.scss);
+// @import url(nav.profile.scss);
+// @import url(ul.bgs.scss);
+// @import url(panes.scss);
+// @import url(gallery-arrows.scss);

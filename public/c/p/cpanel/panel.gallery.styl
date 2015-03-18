@@ -1,0 +1,160 @@
+#gallery-panel
+  ul.tabs
+    h 57px
+    w 650px
+    p 9px 7px 10px 16px
+    relative()
+    &:after
+      absolute bottom 0px left 0
+      w 650px
+      h 5px
+      content ''
+      d block
+      bg url(../i/cp/gallery-bg-shadow.png) no-repeat
+    li.row
+      w 302px
+      h 38px
+      mr 11px
+      m 0 11px 0 0
+      p 4px 4px 4px 6px
+      fl()
+      bg b25
+      box-shadow w7 0 1px 0, inset b37 0 1px 1px, inset b7 0 0 7px
+      .light
+        top 9px
+        left 7px
+      a
+        d block
+        w 265px
+        lhh 30px
+        bg #666
+        ta center
+        c #fff
+        float right
+        box-shadow b75 0 1px 3px
+        hide-text()
+        border-radius 3px
+        &#gallery-photos-tab
+          bg #000 url(../i/cp/gallery-tabs.jpg) left top no-repeat
+          &:hover, &:focus
+            bgp 0 -30px
+          &:active, &.active
+            bgp 0 -60px
+        &#gallery-videos-tab
+          bg #000 url(../i/cp/gallery-tabs.jpg) -265px top no-repeat
+          &:hover, &:focus
+            bgp -265px -30px
+          &:active, &.active
+            bgp -265px -60px
+      &.ui-tabs-selected
+        a#gallery-photos-tab
+          bgp 0 -60px
+        a#gallery-videos-tab
+          bgp -265px -60px
+
+  div.panel
+    overflow-y scroll
+    h 460px
+    w 650px
+    bg m54 url(../i/cp/gallery-bg.png) no-repeat
+
+    ul.rows
+      pr 0
+      ml 12px
+      relative()
+      z 10000
+      li.row
+        w 290px
+        bg b35
+        &.label
+          w 591px
+        &.transition-time
+          input
+            d block
+            position absolute
+            top 8px
+            right auto
+            bottom auto
+            left 116px
+            w 54px
+            h 24px
+            m 0
+            p 6px 0 6px 8px
+            bg m30
+            b none
+            border-radius 3px
+            box-shadow w7 0 1px 0, inset b75 0 1px 1px, inset b13 0 0 7px
+            f bold 12px/1 sans
+          input[type=number]::-webkit-inner-spin-button
+            bg url(../i/popups/input-number.png) top left
+            h 8px
+            w 16px
+            -webkit-appearance none
+          input[type=number]::-webkit-outer-spin-button
+            -webkit-appearance none
+          span.unit
+            f bold 13px/40px sans
+            pl 7px
+            c m160
+            text-shadow b99 0 -1px 0
+            aa()
+            absolute top 0 left 170px
+        &.transition-style
+          ml 9px
+        label
+          left 11px
+    ul.images, ul.video
+      clearfix()
+      p 0 0 0 23px
+      li.image
+        r 89px
+        m 0 5px 11px 6px
+        fl()
+        bg m30
+        relative()
+        &.empty, &.add
+          cursor pointer
+          box-shadow w7 0 1px 0, inset  b37 0 1px 1px, inset b7 0 0 7px
+          &:before
+            d block
+            content ''
+        &.empty
+          &:before
+            relative top 28px
+            content 'Upload Image'
+            f bold 14px/1.2 sans
+            ta center
+            c m70
+            text-shadow b99 0 -1px 0
+            aa()
+          a.upload
+            d block
+            bg url(../i/popups/screenshot-upload.png) -12px -12px
+            r 65px
+            m 12px
+            opacity 0
+            hide-text()
+            &:hover
+              bgp -12px -101px
+            &:active
+              bgp -12px -190px
+          &:hover
+            &:before
+              d none
+            a.upload
+              opacity 1
+          
+        &.add
+          &:before
+            r 41px
+            relative top 24px left 24px
+            bg url(../i/popups/screenshot-add.png)
+            box-shadow b22 0 2px 2px
+          &:hover:before, &:focus:before
+            bgp 0 -41px
+          &:active:before
+            bgp 0 -82px
+
+    &#gallery-videos
+      li.image:before
+        content 'Embed Video'

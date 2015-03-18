@@ -1,0 +1,24 @@
+<script>
+	function closePaypalWindow() {
+		if (window.opener){ 
+			window.close(); 
+		} 
+		else if(top.dgFlow.isOpen() == true){ 
+			top.dgFlow.closeFlow(); 
+		}
+	}
+</script>
+
+<div style="background:#FFF;">
+	<div>This window needs a Design</div>
+	<div>Transaction successfully completed</div>
+	<br/>
+	<div>
+		<a href="#" onclick="closePaypalWindow()">Close Window</a>
+		<a href="/download_song">Link to download Song</a>
+	</div>
+	
+	<div>
+		<%= @result.response.inspect %>
+	</div>
+</div>

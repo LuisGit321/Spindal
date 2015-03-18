@@ -1,0 +1,21 @@
+%form.popup.message.custom-price
+  %header
+    %ul
+      %li.title Custom Price
+      %li.exit
+        %a.exit{:href => "#"} Exit
+  .content
+    %ul.rows
+      %li.row
+        %label Set Custom Price
+        %input{:placeholder => "$ 1.50", :type => "text"}
+          %span.unit US Dollars
+          .help
+            %span.icon ?
+            %span.ui-tooltip-bottom Help.
+  %footer
+    %ul
+      %li
+        %a.save Save
+      %li
+        %a.cancel Cancel

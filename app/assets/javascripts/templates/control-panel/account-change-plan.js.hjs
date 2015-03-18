@@ -1,0 +1,63 @@
+<header>
+  <ul>
+    <li class="title">Plan
+    <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+  </ul>
+</header>
+<div class="content">
+  <ul class="rows">
+    <li class="row label">
+      <label>You currently have a {{plan.capName}} Plan.</label>
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-bottom">Your current plan is shown below. You can upgrade or downgrade your account by selecting a different plan.</span>
+      </div>
+    <li class="desc">You currently have an active Spindal {{plan.capName}} Plan account subscription. Your subscription will automatically renew and you will be charged $8.00 on December 8th, 2011 unless you <a class="cancel-account" href="#" {{action "confirmCancelAccount" on="click"}}>cancel</a> your recurring payment.
+    <li class="row plan">
+      <ul class="plans">
+
+      {{#each availablePlans}}
+        {{#view App.Views.ControlPanel.Plan infoBinding="this"}}
+            <img alt="{{capName}} Plan" {{bindAttr src="imgUrl"}} {{action "selectPlan" on="click"}}>
+            <input type="hidden" name="plan_id" {{bindAttr value="info._id"}}>
+        {{/view}}
+      {{/each}}
+
+      </ul>
+    <li class="cancel">Want to CANCEL your Spindal account? <a class="cancel-account" href="#" {{action "confirmCancelAccount" on="click"}}>Click here</a>
+  </ul>
+</div>
+<footer>
+  <ul>
+    <li><a class="save confirm-plan" {{action "confirmPlanChange" on="click"}}>Save</a>
+    <li><a class="cancel" {{action "close" on="click"}}>Cancel</a>
+  </ul>
+</footer>
+<form class="popup message confirm-plan">
+  <header>
+    <ul>
+      <li class="title">Plan Change Confirmation
+      <li class="exit"><a class="exit" href="#" {{action "closeConfirmPlanChange" on="click"}}>Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <div class="msg">
+      <p>Confirm Your New Plan: Gold Plan</p>
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-bottom">Please read carefully. If you have any questions, please <a href="#">click here</a>.</span>
+      </div>
+      <small>
+        <p>You will receive immediate access to your new Plan’s features. If you are downgrading your account, all album information will
+        be lost  for albums not included in your new plan.</p>
+        <p>You will be charged the new rate for your new plan on your next billing cycle. <a href="#">Read more</a>.</p>
+      </small>
+    </div>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="ok" {{action "savePlan" on="click"}}>Confirm Plan</a>
+      <li><a class="cancel" {{action "closeConfirmPlanChange" on="click"}}>Cancel</a>
+    </ul>
+  </footer>
+</form>

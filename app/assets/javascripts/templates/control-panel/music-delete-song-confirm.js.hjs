@@ -1,0 +1,20 @@
+  <header>
+    <ul>
+      <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <div class="msg">
+      <p>Are you sure you want to Delete this Song?</p>
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-bottom">Any MP3, lyrics, photos or video assicated with this song will be deleted.</span>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="yes" {{action "deleteSong" on="click"}}>Yes</a>
+      <li><a class="cancel" {{action "close" on="click"}}>Cancel</a>
+    </ul>
+  </footer>

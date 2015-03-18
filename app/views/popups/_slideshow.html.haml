@@ -1,0 +1,71 @@
+%form.popup.window.slideshow
+  %header
+    %ul
+      %li.title Slideshow
+      %li.name Song Name
+      %li.exit
+        %a.exit{:href => "#"} Exit
+  .content
+    %ul.rows
+      %li.row.transition-time.select
+        %label Transition Time
+        %input{:step => "0.5", :type => "number", :value => "3.5"}
+          %span.unit sec.
+          .help
+            %span.icon ?
+            %span.ui-tooltip-top Help.
+      %li.row.transition-style.select
+        %label Transition Style
+        %select
+          %option Normal
+          %option Slide
+          %option Fade
+        .help
+          %span.icon ?
+          %span.ui-tooltip-top Help.
+    %ul.images
+      %li.image.empty
+        %a.upload Upload
+      %li.image.empty
+        %a.upload Upload
+      %li.image.empty
+        %a.upload Upload
+      %li.image.empty
+        %a.upload Upload
+      %li.image.empty
+        %a.upload Upload
+      %li.image.empty
+        %a.upload Upload
+      %li.image.empty
+        %a.upload Upload
+      %li.image.empty
+        %a.upload Upload
+      %li.image.empty
+        %a.upload Upload
+      %li.image.empty
+        %a.upload Upload
+      %li.image.empty
+        %a.upload Upload
+      %li.image.empty
+        %a.upload Upload
+      %li.image.empty
+        %a.upload Upload
+      %li.image.empty
+        %a.upload Upload
+      %li.image.empty
+        %a.upload Upload
+      %li.image.empty
+        %a.upload Upload
+      %li.image.empty
+        %a.upload Upload
+      %li.image.empty
+        %a.upload Upload
+      %li.image.empty
+        %a.upload Upload
+      %li.image.add
+  %footer
+    %ul
+      %li
+        %a.save Save
+      %li
+        %a.cancel Cancel

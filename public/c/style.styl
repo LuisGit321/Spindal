@@ -1,0 +1,44 @@
+@import 'n/index'
+@import 'm/all'
+
+x = 13px
+
+df()
+  s x
+  lh 1.5
+  ff sans
+  c #1b1b1b
+
+link = #000
+hover = link
+
+a
+  c link
+  td none
+  &:hover, &:focus
+    c hover
+
+html, body
+  height 100%
+  overflow-y hidden
+
+body
+  df()
+  bg m38 url(../i/cp/cp-bg.png)
+  -webkit-perspective 1000
+
+  .light
+    d inline-block
+    r 20px
+    bg url(../i/cp/light.png) top center no-repeat
+    cursor pointer
+    &.disabled
+      bgp 0 -20px
+
+@import 'p/tooltip'
+@import 'j/jquery.selectBox'
+@import 'j/jquery.jscrollpane'
+@import 'j/jquery-ui'
+@import 'p/player'
+@import 'p/cpanel'
+@import 'p/popups'

@@ -1,0 +1,14 @@
+== Welcome to Spindal.
+
+Start up Rails and visit /index to get the modified homepage (should be visually identical,
+just reoriented for dynamic web bits).
+
+== Requirements
+
+MongoDB
+Ruby 1.9.x
+Redis
+
+== Setup
+
+run rake db:seed to fill the database with some test fixture data.

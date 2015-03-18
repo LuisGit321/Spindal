@@ -1,0 +1,77 @@
+  <header>
+    <ul>
+      <li class="title">Band Logo
+      <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="rows">
+      <li class="row">
+        <label>Create Your Band Logo.</label>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Create your Band Logo by entering the information below.</span>
+        </div>
+        
+      <li class="row band-name">
+        <label>Band Name</label>
+          {{ view Ember.TextField valueBinding="logo.band_logo_name" }}   
+       
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enter your Band Name to appear in your Profile Player.</span>
+        </div>
+
+      <li class="row half font face">
+        <label>Font</label>
+        {{view App.Views.ControlPanel.SpindalSelect
+          name="fontSelector" id="fontSelector"
+          contentBinding="App.Constants.ControlPanel.logoFonts"
+          optionLabelPath="content.name"
+          optionValuePath="content.value"
+          prompt="Font" initValBinding="logo.font_name" selectionBinding="logo.selected_font" 
+        }}
+        
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Select from the fonts below to best represent your Band.</span>
+        </div>
+
+      <li class="row half font color">
+        <label>Font Color</label>
+        {{#view App.LogoColorPickerView fontColorBinding="logo.font_color" id="font_color"}}
+      		<div class="color-preview" style="background-color: {{unbound fontColor}} "></div> 
+    		{{/view}}
+        
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Select from the color chart below to best represent your Band.</span>
+        </div>
+
+      <li class="row half font size">
+        <label>Font Size</label>
+        <input type="number" class="logo-font-size" {{bindAttr value="logo.font_size"}} {{action "fontSizeChanged" on="click"}} {{action "fontSizeChanged" on="change"}}">
+        <span class="unit">px</span>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Adjust the font size below.</span>
+        </div>
+
+      <li class="row half font alignment">
+        <label>Alignment</label>
+        {{view App.Views.ControlPanel.SpindalSelect
+        name="alignmentSelector" id="alignmentSelector"
+        contentBinding="App.Constants.ControlPanel.logoAlignments"
+        optionLabelPath="content.name"
+        optionValuePath="content.value" prompt="Alignment" initValBinding="logo.alignment" selectionBinding="logo.selected_alignment"}}
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Select the Alignment below.</span>
+        </div>
+    </ul>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="save" {{action "save" on="click"}}>OK</a>
+    </ul>
+  </footer>

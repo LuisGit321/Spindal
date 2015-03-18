@@ -1,0 +1,182 @@
+#profile-panel
+  form
+    ul.rows
+      pl 3px
+      pr 17px
+      li
+        clearfix()
+        relative()
+        &.row
+          w 100%
+          ml 14px
+          mb 19px
+          &.third
+            w 196px
+            a.edit
+              button-dim-133()
+              absolute top 4px left 31px
+          &.half
+            w 301px
+            mb 0
+            label
+              left 11px
+            input, a.selectBox
+              left 117px
+              w 155px
+          &.two-third
+            w 406px
+
+        &.background
+          h 216px
+          .light
+            absolute bottom 11px left 27px
+            top auto
+          label
+            lh 20px
+            absolute bottom 11px left 52px
+
+          .home-background-image
+            r 167px
+            absolute top 12px left 15px
+            bg b10
+            bg #1a1b1c
+            box-shadow w7 0 1px 0, inset b37 0 1px 1px, inset b7 0 0 7px
+
+            p
+              absolute top 46px left 0
+              f bold 21px/1 sans
+              c m50
+              ta center
+              aa()
+              text-shadow b90 0 -1px 0
+
+            a.upload
+              d block
+              bg url(../i/popups/cover-art-upload.png)
+              r 80px
+              m 43px
+              opacity 0
+              hide-text()
+              &:hover
+                bgp 0 -80px
+              &:active
+                bgp 0 -160px
+
+            &:hover
+              p
+                d none
+              a.upload
+                opacity 1
+
+        &.genre
+          label
+            left 10px
+          a.selectBox
+            w 106px
+            left 83px
+
+        &.location
+          input
+            w 119px
+            &.city
+              left 9px
+            &.state
+              left 135px
+            &.country
+              left 261px
+
+        &.band-logo
+          .selector
+            absolute top 4px left 108px
+            left 108px
+            w 263px
+
+            .selector-dropdown
+              w 263px
+              h 32px
+              bg b25
+              bg rgba(30,30,30,.5)
+              border-radius 5px
+              box-shadow w7 0 1px 0, inset b75 0 1px 1px, inset b13 0 0 7px
+              m 0
+              p 0 3px
+              z 1
+              &:hover, &:focus
+                .selector-label
+                  c m235
+
+              &.active
+                h 64px
+                bg m30
+                box-shadow inset b13 0 0 7px, b60 2px 2px 4px
+                bb none
+                absolute top 0 left 0
+                z 9999
+                .selector-options li a.upload.band-logo
+                  d block
+                .selector-arrow
+                  bgp 0 -36px
+
+              .selector-arrow
+                cursor pointer
+                absolute top 3px right 3px
+                &:hover
+                  bgp 0 -18px
+
+              .selector-dropdown-menu
+                bg transparent
+                box-shadow none
+
+              .selector-options li a
+                d block
+                m 3px 0
+                bxs()
+                w 236px
+                lhh 26px
+                text-shadow b80 0 -1px 0
+                border-radius 4px
+                background linear-gradient(top, m120, m109 50%, m86 50%,  m77)
+                box-shadow b50 0 1px 2px
+                b 1px solid m35
+                ta center
+                &:hover, &:focus
+                  background linear-gradient(top, m153, m138 50%, m110 50%,  m98)
+                  c m235
+                &:active
+                  bg m120
+                  box-shadow rgba(33,29,30,.65) 0 2px 2px, inset b20 0 0 5px
+                  c m180
+                &.upload.band-logo
+                  d none
+
+        &.section 
+          fl()
+          ml 14px
+          &.band-name
+            w 406px
+            mb 12px
+            mt -6px
+            p.url
+              text-shadow b99 0 -1px 0
+              p 2px 8px
+              f bold 13px/1.5 sans
+              c m160
+              aa()
+            .help
+              absolute bottom 4px right 9px
+              top auto
+
+          &.get-paid
+            w 617px
+            mb 13px
+            mt -10px
+
+        &.desc
+          p 10px 19px 0
+          clear both
+          f 12px/1.5 sans
+          c m200
+          aa()
+          a
+            c m200
+            td underline

@@ -1,0 +1,64 @@
+<ul class="thead">
+  <li class="name">Name
+  <li class="upload">Upload Song
+  <li class="download">Download
+  <li class="lyrics">Lyrics
+  <li class="fullscreen">Full Screen
+  <li class="add-song"><a href="#" class="add-song" title="Add song" {{action "createSong" on="click"}}>Add song</a>
+</ul>
+<div id="songs">
+  <table>
+    <tbody>
+    {{#each songs}}
+      {{#view App.Views.ControlPanel.SongListItem songBinding="this"}}
+      <td class="name">
+        <span {{bindAttr class="song.opening_song num"}} {{action "selectOpeningSong" on="click"}}>{{song.track_no}}</span>
+        {{view App.Views.ControlPanel.Light disabledBinding="song.disabled" classBinding="this.disabled" }}
+        {{view Ember.TextField valueBinding="song.title" name="name" class="name" placeholder="Song Name"}}
+      </td>
+
+      <td class="upload">
+        {{#view App.Views.ControlPanel.UploadButton fileUploadingBinding="song.fileUploading" classBinding="this.fileUploading:hidden"}}
+          <a href="#" {{action "uploadSong" on="click" target="parentView"}}>Upload</a>
+        {{/view}}
+        {{view App.Views.ControlPanel.Check fileEncodedBinding="song.fileEncoded" classBinding="this.fileEncoded:visible"}}
+        {{view App.Views.ControlPanel.Spinner fileUploadingBinding="song.fileUploading" classBinding="this.fileUploading:visible"}}
+      </td>
+
+      <td class="download">
+        {{view App.Views.ControlPanel.Light disabledBinding="song.download_disabled" classBinding="this.disabled" }}
+        {{view App.Views.ControlPanel.SpindalSelect
+        name="downloadType"
+        contentBinding="App.Constants.ControlPanel.songDownloadTypes"
+        optionLabelPath="content.name"
+        optionValuePath="content.value"
+        initValBinding="song.download_type" selectionBinding="song.selected_download_type" class="download-type"}}
+      </td>
+
+      <td class="lyrics">
+        {{view App.Views.ControlPanel.Light disabledBinding="song.lyrics_disabled" classBinding="this.disabled" }}
+
+        <a class="add" href="#" {{action "setLyrics" on="click"}}>&plus;</a>
+      </td>
+
+      <td class="fullscreen">
+        {{view App.Views.ControlPanel.Light disabledBinding="song.fullscreen_disabled" classBinding="this.disabled" }}
+        <div class="selector">
+          <div class="selector-dropdown">
+            <ul class="selector-options selector-dropdown-menu">
+              <li><a class="slideshow" href="#" {{action "editSlideshow" on="click"}}>Slideshow</a></li>
+              <li><a class="video" href="#" {{action "editVideo" on="click"}}>Video</a></li>
+            </ul>
+            <div class="selector-arrow"></div>
+          </div>
+        </div>
+      </td>
+
+      <td class="status">
+        <a class="delete" {{action "deleteSong" on="click"}}>Delete</a>
+      </td>
+      {{/view}}
+    {{/each}}
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,171 @@
+@import url(font/regular.css.scss);
+
+html,body{
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+body{
+  font-size:13px;
+  line-height:1.5;
+  font-family:"Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+  color:#1b1b1b;
+  background:#262626 url("/assets/cp/cp-bg.png");    
+  -webkit-perspective:1000;
+}
+
+body.background {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body .light{
+  display:inline-block;
+  height:20px;
+  width:20px;
+  background:url("/assets/cp/light.png") top center no-repeat;
+  cursor:pointer;
+}
+
+body .light.disabled{
+  background-position:0 -20px
+}
+
+#container
+{
+  z-index: 2;
+  overflow-y: scroll;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+#bg {
+  position:fixed; 
+  top:-50%; 
+  left:-50%; 
+  width:200%; 
+  height:200%;
+  z-index: -1;
+
+  img {
+    position:absolute; 
+    top:0; 
+    left:0; 
+    right:0; 
+    bottom:0; 
+    margin:auto; 
+    min-width:50%;
+    min-height:50%;
+  }
+}
+
+// @import url(partials/tooltip.scss);
+// @import url(partials/news.scss);
+// @import url(jquery/selectBox.scss);
+// @import url(jquery/jscrollpane.scss);
+// @import url(jquery/jquery-ui.scss);
+// @import url(partials/player/index.scss);
+// @import url(partials/cpanel/index.scss);
+// @import url(partials/popups/index.scss);
+
+.invisible{
+  display: none !important;
+}
+
+span.ajax-loading{
+  display:block;
+  position:absolute;
+  top:10px;
+  right:10px;
+  padding:10px;
+  z-index:1;
+}
+
+span.dirty-resource{
+  display:none;
+  position:absolute;
+  top:1%;
+  left:83%;
+  z-index:1;
+}
+
+span.song-encoding {
+  display:none;
+  position:absolute;
+  top:1%;
+  left:80%;
+  z-index:1;  
+}
+
+.hidden{
+  display:none;
+}
+
+.pane-widget .pane-menu
+{
+  
+ position: relative;
+  width: 107.5%;
+  top: -80px;
+  height: 61px;
+  padding-top: 12px;
+  background: rgba(201, 201, 201, 0.8);
+  
+}
+
+.pane-widget .pane-menu #menu
+{
+  float: left;
+  margin-top: 10px;
+}
+
+.pane-widget .pane-menu #menu a
+{
+  top: 10px;
+  right: -8px;  
+}
+
+  
+
+.pane-widget .pane-menu .title
+{
+  min-width: 175px;
+  max-width: 300px;
+  float: left;
+  color: #494949;
+  padding-left: 20px;
+  
+}
+
+.pane-widget .pane-container
+{
+  height: 610px;
+  overflow-y: auto;
+  width: 107.5%;
+  opacity: 0.8;
+  border-top: 1px solid #DDD;
+  position: relative;
+  top: -80px;
+}
+
+.pane-container ul
+{
+  width: 100%;
+}
+
+.pane-container li
+{
+  padding-bottom: 5px;
+  
+  padding-top: 10px;
+  width: 100%;
+
+  border-bottom: 1px solid rgba(163, 163, 163, 0.8);
+  border-top: 1px solid rgba(224, 224, 224, 0.8);
+
+}

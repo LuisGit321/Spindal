@@ -1,0 +1,299 @@
+.popup.account .content ul.rows li.row{
+  margin-bottom:12px;
+}
+
+.popup.account .content ul.rows li.row label{
+  left:13px
+}
+
+.popup.account-info .content ul.rows li.row input{
+  left:93px
+}
+
+.popup.account-info .content ul.rows li.row.last-name{
+  margin-left:13px
+}
+
+.popup.account-info .content ul.rows li.row.band-name{
+  margin-bottom:0
+}
+
+.popup.account-info .content ul.rows li.row.password input{
+  left:143px
+}
+
+.popup.account-info .content ul.rows li.desc{
+  font:bold 10px/20px "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+  color:#999;
+  padding-left:30px;
+  -webkit-font-smoothing:antialiased;
+  text-shadow:rgba(0,0,0,0.99) 0 -1px 0;
+  margin-bottom:12px;
+}
+
+
+.popup.billing-info .content ul.rows li.row{
+  margin-bottom:14px
+}
+
+
+.popup.billing-info .content ul.rows li.row input::-webkit-outer-spin-button,.popup.billing-info .content ul.rows li.row input::-webkit-inner-spin-button{
+  -webkit-appearance:none;
+  margin:0
+}
+
+
+.popup.billing-info .content ul.rows li.row.card-type a.selectBox{
+  left:91px;
+  width:120px
+}
+
+.popup.billing-info .content ul.rows li.row.card-number input{
+  left:141px;
+}
+
+.popup.billing-info .content ul.rows li.row.security-code input,.popup.billing-info .content ul.rows li.row.expiration-date input,.popup.billing-info .content ul.rows li.row.zip-code input{
+  height:24px;
+  padding:6px .5em 5px;
+  font:bold 13px/1 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+  top:10px;
+  width:103px;
+  left:121px;
+}
+
+.popup.billing-info .content ul.rows li.row.security-code a.what-is-this{
+  display:block;
+  text-decoration:underline;
+  font:bold 10px/1.5 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+  position:absolute;
+  top:13px;
+  left:234px;
+  color:#999;
+  text-shadow:rgba(0,0,0,0.99) 0 -1px 0;
+}
+
+.popup.billing-info .content ul.rows li.row.expiration-date a.selectBox.month{
+  left:121px;
+  width:96px;
+}
+
+.popup.billing-info .content ul.rows li.row.expiration-date a.selectBox.year{
+  left:224px;
+  width:70px;
+}
+
+.popup.security-code{
+  height:423px;
+  width:393px;
+}
+
+.popup.security-code .content{
+  height:329px;
+}
+
+.popup.plan .content ul.rows li.row.label{
+  margin-bottom:0;
+  zoom:1;
+}
+
+.popup.plan .content ul.rows li.row.label:before,.popup.plan .content ul.rows li.row.label:after{
+  content:"";
+  display:table;
+}
+
+.popup.plan .content ul.rows li.row.label:after{
+  clear:both;
+}
+
+.popup.plan .content ul.rows li.row.plan{
+  height:215px;
+  margin-bottom:0
+}
+
+.popup.plan .content ul.rows li.row.plan ul.plans{
+  zoom:1;
+  padding:8px 0 7px
+}
+
+.popup.plan .content ul.rows li.row.plan ul.plans:before,.popup.plan .content ul.rows li.row.plan ul.plans:after{
+  content:"";
+  display:table;
+}
+
+.popup.plan .content ul.rows li.row.plan ul.plans:after{
+  clear:both
+}
+
+.popup.plan .content ul.rows li.row.plan ul.plans li.plan{
+  float:left;
+  width:151px;
+  height:200px;
+  background:#1e1e1e;
+  border-radius:3px;
+  box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 0,inset rgba(0,0,0,0.07) 0 0 7px;
+  margin-left:9px;
+  cursor:pointer;
+  position:relative;
+}
+
+.popup.plan .content ul.rows li.row.plan ul.plans li.plan:hover,
+.popup.plan .content ul.rows li.row.plan ul.plans li.plan:focus{
+  background:#1e1e1e url("/assets/popups/plan-hover.png");
+}
+
+.popup.plan .content ul.rows li.row.plan ul.plans li.plan.active:after{
+  content:'';
+  width:169px;
+  height:215px;
+  position:absolute;
+  top:-8px;
+  left:-9px;
+  background:url("/assets/popups/plan-selected.png");
+}
+
+.popup.plan .content ul.rows li.desc{
+  clear:both;
+  padding:5px 22px;
+  font:12px/1.5 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+  color:#c8c8c8;
+  -webkit-font-smoothing:antialiased;
+  text-shadow:rgba(0,0,0,0.99) 0 -1px 0;
+}
+
+.popup.plan .content ul.rows li.desc a{
+  color:#c8c8c8;
+  text-decoration:underline;
+}
+
+.popup.plan .content ul.rows li.cancel{
+  font:bold 13px/26px "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+  padding:0 22px;
+  color:#a0a0a0;
+  text-shadow:rgba(0,0,0,0.99) 0 -1px 0;
+  -webkit-font-smoothing:antialiased;
+}
+
+.popup.plan .content ul.rows li.cancel a{
+  color:#a0a0a0;
+  text-decoration:underline
+}
+
+.popup.cancel-account{
+  height:283px;
+  z-index:10000
+}
+
+.popup.cancel-account .content{
+  height:188px;
+}
+
+.popup.cancel-account .content .msg{
+  padding:1em 14px;
+  position:relative;
+  text-align:left
+}
+
+.popup.cancel-account .content .msg p{
+  font:bold 15px/1 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+  margin-bottom:.75em
+}
+
+.popup.cancel-account .content .msg small{
+  display:block;
+  text-align:left;
+  padding-right:44px
+}
+
+.popup.cancel-account .content .msg small p{
+  font:11px/1.5 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+  color:#c8c8c8;
+  -webkit-font-smoothing:antialiased;
+  text-shadow:rgba(0,0,0,0.99) 0 -1px 0;
+  margin-bottom:.75em
+}
+
+.popup.cancel-account .content .msg small p a{
+  color:#c8c8c8;
+  text-decoration:underline
+}
+
+.popup.cancel-account .content .msg .help{
+  position:absolute;
+  top:14px;
+  right:15px
+}
+
+.popup.cancel-account footer ul li a.ok{
+  width:133px;
+  background:url("/assets/cp/button-dim-133.png");
+  border:none
+}
+
+.popup.cancel-account footer ul li a.ok:hover,.popup.cancel-account footer ul li a.ok:focus{
+  background-position:0 -32px
+}
+
+.popup.cancel-account footer ul li a.ok:active,.popup.cancel-account footer ul li a.ok.active{
+  background-position:0 -64px
+}
+
+.popup.confirm-plan{
+  height:259px;
+  z-index:10000
+}
+
+.popup.confirm-plan .content{
+  height:164px
+}
+
+.popup.confirm-plan .content .msg{
+  padding:1em 14px;
+  position:relative;
+  text-align:left
+}
+
+.popup.confirm-plan .content .msg p{
+  font:bold 15px/1 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+  margin-bottom:.75em
+}
+
+.popup.confirm-plan .content .msg small{
+  display:block;
+  text-align:left;
+  padding-right:44px
+
+}
+
+.popup.confirm-plan .content .msg small p{
+  font:11px/1.5 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+  color:#c8c8c8;
+  -webkit-font-smoothing:antialiased;
+  text-shadow:rgba(0,0,0,0.99) 0 -1px 0;
+  margin-bottom:.75em
+}
+
+.popup.confirm-plan .content .msg small p a{
+  color:#c8c8c8;
+  text-decoration:underline
+}
+
+.popup.confirm-plan .content .msg .help{
+  position:absolute;
+  top:14px;
+  right:15px
+}
+
+.popup.confirm-plan footer ul li a.ok{
+  width:133px;
+  background:url("/assets/cp/button-dim-133.png");
+  border:none
+}
+
+.popup.confirm-plan footer ul li a.ok:hover,.popup.confirm-plan footer ul li a.ok:focus{
+  background-position:0 -32px;
+}
+
+.popup.confirm-plan footer ul li a.ok:active,.popup.confirm-plan footer ul li a.ok.active{
+  background-position:0 -64px;
+}
+

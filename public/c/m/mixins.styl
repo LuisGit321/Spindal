@@ -1,0 +1,165 @@
+serif = Georgia, 'serif'
+mono = Consolas, 'Lucida Console', Monaco, Courier New, monospace
+sans = 'Helvetica Neue', Arial, Helvetica, sans-serif
+lucida = 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif 
+
+buttondark()
+  d inline-block
+  p 0 10px
+  f bold 12px/1.8 sans
+  c link
+  ta center
+  text-shadow w50 0 1px 0
+  cursor pointer
+  &:hover, &.active, &:active
+    c #fff
+    text-shadow b30 0 1px 0
+    aa()
+  &:hover, &.active
+    border-radius .9em
+    box-shadow inset b50 1px 1px 2px
+    bg b30
+  &:active, &.active
+    bg b50
+
+buttonblue()
+  d block
+  p 0 10px
+  f bold 12px/1.8 sans
+  ta center
+  text-shadow w50 0 1px 0
+  c #0063af
+  &:hover, &.active
+    border-radius .9em
+    box-shadow inset b50 1px 1px 2px
+    bg w50
+  &:active, &.active
+    bg w60
+
+button()
+  b none
+  d inline-block
+  b 1px solid b40
+  border-radius 3px
+  cursor pointer
+  p 0 .7em
+  df()
+  lh m*2px - 3px
+  text-shadow b50 0 0 5px
+  background linear-gradient(top, m70 0%, m55 100%)
+  box-shadow inset w10 0 0 3px, w8 0 1px 0
+  color txt
+  &:hover
+    background linear-gradient(top, m75 0%, m65 100%)
+  &:active
+    background linear-gradient(top, m50 0%, m65 100%)
+  &.disabled
+    cursor default
+    opacity .75
+    &:hover
+      background linear-gradient(top, m80 0%, m60 100%)
+  &[disabled]:active, &[disabled]:hover
+    background #EEEEEE
+
+button-window()
+  d block
+  ta center
+  bxs()
+  w 86px
+  h 32px
+  bg #666
+  border-radius 5px
+  bg url(../i/popups/button.png)
+  box-shadow w7 0 1px 0
+  f bold 13px/31px sans
+  c #fff
+  text-shadow b99 0 -1px 0
+  aa()
+  b none
+  cursor pointer
+  &:hover, &:focus
+    bgp 0 -32px
+  &:active, &.active
+    bgp 0 -64px
+
+button-window-dim()
+  button-window()
+  w 124px
+  bg url(../i/popups/button-dim.png) 
+
+button-dim()
+  button-window()
+  w 174px
+  bg url(../i/cp/button-dim.png) 
+
+button-dim-133()
+  button-window()
+  w 133px
+  bg url(../i/cp/button-dim-133.png) 
+
+button-window-em()
+  button-window()
+  bg url(../i/popups/button-em.png) -1px -1px
+  b 1px solid transparent
+  cursor pointer
+  &:hover, &:focus
+    bgp -1px -33px
+    box-shadow rgba(41,121,206,.8) 0 0 5px
+    bc rgba(41,121,206,.8)
+  &:active, &.active
+    bgp -1px -65px
+    box-shadow rgba(41,121,206,.8) 0 0 5px
+    bc rgba(41,121,206,.8)
+
+span.amp
+  font-family Baskerville,Palatino,"Book Antiqua",serif
+  font-style italic
+
+.error::-webkit-input-placeholder
+  color rgb(255,0,0)
+
+.error:-moz-placeholder
+  color rgb(255,0,0)
+
+*:rselection
+  bg #ffffe0
+
+*::-moz-selection
+  bg #ffffe0
+
+*::-webkit-selection
+  bg #ffffe0
+
+ir()
+  display block
+  text-indent -999em
+  overflow hidden
+  background-repeat no-repeat
+  text-align left
+  direction ltr
+
+invisible()
+  visibility hidden
+
+hidden()
+  display none
+  invisible()
+
+visuallyhidden()
+  position absolute
+  clip rect(0 0 0 0)
+  overflow hidden
+  margin -1px
+  padding 0
+  height 1px
+  width 1px
+  border 0
+
+visuallyhiddenfocusable()
+  &:active, &:focus
+    position static
+    clip auto
+    overflow visible
+    height auto
+    margin 0
+    width auto

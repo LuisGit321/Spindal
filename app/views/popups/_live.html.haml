@@ -1,0 +1,57 @@
+%form.popup.window.profile.live
+  %header
+    %ul
+      %li.title Store
+      %li.exit
+        %a.exit{:href => "#"} Exit
+  .content
+    %ul.rows
+      %li.row
+        %label Enter your information below for Live shows.
+        .help
+          %span.icon ?
+          %span.ui-tooltip-bottom Enter information for your Live shows. You can turn on and off the “Buy” tickets link by clicking the URL blue light.
+    %ul.thead
+      %li.date Date
+      %li.venue Venue
+      %li.location Location
+      %li.tickets Tickets
+      %li.status +
+    #events
+      %table
+        %tr
+          %td.date
+            %span.num 1
+            %a.add{:href => "#"} +
+          %td.venue
+            %input.name{:placeholder => "Name"}/
+          %td.location
+            %input.location{:placeholder => "City, State"}/
+          %td.tickets
+            %span.light
+            %input.url{:placeholder => "URL"}/
+          %td.status
+            %a.delete
+              Delete
+              %a/
+        %tr
+          %td.date
+            %span.num 2
+            %a.add{:href => "#"} +
+          %td.venue
+            %input.name{:placeholder => "Name"}/
+          %td.location
+            %input.location{:placeholder => "City, State"}/
+          %td.tickets
+            %span.light
+            %input.url{:placeholder => "URL"}/
+          %td.status
+            %a.delete
+              Delete
+              %a/
+  %footer
+    %ul
+      %li
+        %a.save Save
+      %li
+        %a.cancel Cancel

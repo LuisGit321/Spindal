@@ -1,0 +1,7 @@
+	<a target="" {{bindAttr href="bandHomeURL"}}>
+	{{#if imageEmpty}}
+		<span id="band_text">{{bandLogoName}}</span>
+	{{else}}
+		<img class="logo" {{bindAttr src="logo.file.url"}} alt="Band Logo"></img>
+	{{/if}}
+	</a>

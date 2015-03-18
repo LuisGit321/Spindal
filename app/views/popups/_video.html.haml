@@ -1,0 +1,25 @@
+%form.popup.window.profile.store.url
+  %header
+    %ul
+      %li.title Store
+      %li.exit
+        %a.exit{:href => "#"} Exit
+  .content
+    %ul.rows
+      %li.row.label
+        %label Write or paste your Store URL below.
+        .help
+          %span.icon ?
+          %span.ui-tooltip-bottom Enter or paste your Web Store URL below so your fans be linked directly to your Online Store page.
+      %li.row.big.url
+        %label Store URL
+        %input{:placeholder => "www.shopify.com/yourstore", :type => "text"}
+          .help
+            %span.icon ?
+            %span.ui-tooltip-bottom Enter or paste your Web Store URL. If you don’t have an Online Store to sell your merch, we recommend Shopify, or Big Cartel.
+  %footer
+    %ul
+      %li
+        %a.save Save
+      %li
+        %a.cancel Cancel

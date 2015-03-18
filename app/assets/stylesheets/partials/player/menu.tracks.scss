@@ -1,0 +1,584 @@
+.menu.tracks{
+position:relative;
+z-index:1;
+padding-bottom: 70px}
+
+.menu.tracks .tracks.accordion {
+  border-top:1px solid rgba(167,167,167,0.80);
+  border-bottom:1px solid rgba(255,255,255,0.80);
+  counter-reset:tracknum;
+  -webkit-transition:1s ease all;
+  -moz-transition:1s ease all;
+  transition:1s ease all;
+}
+
+.menu.tracks .tracks.accordion div.data:nth-last-child(-n+10) .menu.share ul {
+  top: auto;
+  bottom: 24px;
+ }
+
+// .menu.tracks .tracks.accordion div.title {
+//   border-top:1px solid rgba(255,255,255,0.80);
+//   border-bottom:1px solid rgba(167,167,167,0.80);
+//   padding: 0 30px;
+//   height: 23px;
+//   line-height:23px;
+//   cursor:pointer;
+//   counter-increment:tracknum;
+//   position:relative
+// }
+
+.menu.tracks .tracks.accordion label {
+  border-top:1px solid rgba(255,255,255,0.80);
+  border-bottom:1px solid rgba(167,167,167,0.80);
+  width: 300px;
+  padding: 0 66px 0 30px;
+  display: table;
+  height: 33px;
+  line-height:33px;
+  cursor:pointer;
+  position:relative;
+  font-size: 13px;
+}
+
+.menu.tracks .tracks.accordion label:hover {
+  background: rgba(201,201,201,.8) url(/assets/bg-indent.png);
+}
+
+.menu.tracks .tracks.accordion input:checked ~ label {
+  background: rgba(201,201,201,.8) url(/assets/bg-indent.png);
+  border-bottom: transparent;
+  height: 35px;
+}
+
+.menu.tracks .tracks.accordion div.title h3.track.title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  padding-left: 1.5em;
+}
+
+.menu.tracks .tracks.accordion div.title a.toggle.play {
+  position:absolute;
+  top:3px;
+  left:5px;
+  text-indent:-999em;
+  opacity:0;
+  display:block;
+  height:17px;
+  width:17px;
+  background:url("/assets/icon-play-pause.png") left top no-repeat;
+}
+
+// .menu.tracks .tracks.accordion div.title:hover {
+//   background: rgba(201,201,201,.8) url(/assets/bg-indent.png);
+// }
+
+// .ac-container input:checked ~ div.title {
+//   background: rgba(201,201,201,.8) url(/assets/bg-indent.png);
+//   border-bottom: transparent;
+//   height: 26px;
+// }
+
+// .menu.tracks .tracks.accordion div.title:hover a.toggle.play{
+// opacity:1}
+
+// .menu.tracks .tracks.accordion div.title:active a.toggle.play{
+// background-position:0 -17px}
+
+
+// .menu.tracks .tracks.accordion div.title.ui-state-active a.toggle.play {
+//   opacity:1;
+//   background-position:-17px 0}
+
+
+// .menu.tracks .tracks.accordion div.title.ui-state-active:hover a.toggle.play{
+// background-position:-17px -17px}
+
+
+.menu.tracks .tracks.accordion div.title span.track.num {
+  position:absolute;
+  top:-1px;
+  left:2em;
+  text-align:right;
+  width:1.5em
+}
+
+.menu.tracks .tracks.accordion div.data {
+  border-bottom:1px solid rgba(167,167,167,0.80);
+  background: rgba(201,201,201,.8) url(/assets/bg-indent.png);
+  padding: 0 30px 0 20px;
+  position:relative;
+  margin-top: -1px;
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+
+.menu.tracks .tracks.accordion input:checked ~ div.data {
+  height: 56px;
+  overflow: visible;
+  -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+}
+
+.menu.tracks .tracks.accordion input {
+  display: none;
+}
+
+// .menu.tracks .tracks.accordion div.data .toggle.volume{
+//   height: 13px;
+//   width: 15px;
+//   position:absolute;
+//   top: -21px;
+//   right: 9px;
+//   text-indent:-999em;
+//   background:url("/assets/icon-volume.png") left top;
+//   z-index:10000;
+//   cursor: pointer;
+// }
+
+
+// .menu.tracks .tracks.accordion div.data .toggle.volume:hover {
+// background-position:0 -13px}
+
+// .menu.tracks .tracks.accordion div.data .toggle.volume.active{
+// background-position:0 -26px}
+
+// .menu.tracks .tracks.accordion div.data .toggle.volume.active .input{
+// display:block}
+
+
+// .menu.tracks .tracks.accordion div.data .toggle.volume .input {
+//   background: url(/assets/icon-volume-bar.png) top left no-repeat;
+//   width: 16px;
+//   height: 47px;
+//   position: absolute;
+//   top: 17px;
+//   left: 4px;
+//   display:none;
+// }
+
+
+// .menu.tracks .tracks.accordion div.data .toggle.volume .input .volume {
+//   width: 6px;
+//   height: 47px;
+//   position:relative;
+//   background: url("/assets/icon-volume-bar.png");
+//   border-radius: 4px;
+//   box-shadow: rgba(255,255,255,.35) 1px 1px 0;
+
+// }
+
+
+// .menu.tracks .tracks.accordion div.data .toggle.volume .input .volume .slider {
+//   background: url("/assets/icon-volume-knob.png") no-repeat;
+//   position: absolute;
+//   height: 16px;
+//   width: 16px;
+//   margin-top: -10px;
+//   margin-left: -5px;
+//   cursor:pointer
+// }
+
+
+// .menu.tracks .tracks.accordion div.data .track.length{
+//   width:175px;
+//   height:6px;
+//   border-radius:3px;
+//   border-top:1px solid rgba(0,0,0,.5);
+//   background:#fff;
+//   box-shadow:inset rgba(0,0,0,0.25) 1px 1px 2px,rgba(255,255,255,0.30) 0 1px 0;
+//   position:relative;
+
+// }
+
+
+// .menu.tracks .tracks.accordion div.data .track.length .played,.menu.tracks .tracks.accordion div.data .track.length .buffer,.menu.tracks .tracks.accordion div.data .track.length .slider{
+// position:absolute;
+// top:0;
+// left:0;
+// text-indent:-999em}
+
+
+// .menu.tracks .tracks.accordion div.data .track.length .played,
+// .menu.tracks .tracks.accordion div.data .track.length .buffer{
+// height:5px;
+// border-radius:3px}
+
+
+// .menu.tracks .tracks.accordion div.data .track.length .buffer{
+//   background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #3b3b3b), color-stop(1, #000));
+//   background:-webkit-linear-gradient(top, #3b3b3b 0%, #000 100%);
+//   background:-moz-linear-gradient(top, #3b3b3b 0%, #000 100%);
+//   background:linear-gradient(top, #3b3b3b 0%, #000 100%)
+// }
+
+
+// .menu.tracks .tracks.accordion div.data .track.length .played{
+// background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #3382bf), color-stop(1, #0063af));
+// background:-webkit-linear-gradient(top, #3382bf 0%, #0063af 100%);
+// background:-moz-linear-gradient(top, #3382bf 0%, #0063af 100%);
+// background:linear-gradient(top, #3382bf 0%, #0063af 100%)}
+
+
+// .menu.tracks .tracks.accordion div.data .track.length .slider{
+// height:10px;
+// width:10px;
+// background:url("/assets/slider.png") no-repeat;
+// top:-2px;
+// margin-left:-5px;
+// cursor:pointer}
+
+
+// .menu.tracks .tracks.accordion div.data ul.track.stats{
+//   padding: 2px 0;
+//   width: 175px;
+//   height: 15px;
+
+// }
+
+
+// .menu.tracks .tracks.accordion div.data ul.track.stats li{
+//   float: left;
+//   font-size: 10px;
+//   line-height: 15px;
+// }
+
+
+// .menu.tracks .tracks.accordion div.data ul.track.stats li.length.played{
+//   width: 40px}
+
+
+// .menu.tracks .tracks.accordion div.data ul.track.stats li.total.plays{
+//   width: 95px;
+//   text-align:center
+// }
+
+
+// .menu.tracks .tracks.accordion div.data ul.track.stats li.length.unplayed{
+//   width:40px;
+//   text-align:right}
+
+
+.menu.tracks .tracks.accordion div.data .menu.track {
+  margin:6px 0px 5px 5px;
+  position: absolute;
+  top: 19px;
+  width: 242px;
+}
+
+.menu.tracks .tracks.accordion div.data .menu.track > ul{
+zoom:1;
+}
+
+.menu.tracks .tracks.accordion div.data .menu.track > ul:before,.menu.tracks .tracks.accordion div.data .menu.track > ul:after{
+content:"";
+display:table}
+
+.menu.tracks .tracks.accordion div.data .menu.track > ul:after{
+clear:both}
+
+.menu.tracks .tracks.accordion div.data .menu.track > ul > li{
+display:table-cell;
+}
+
+
+// .menu.tracks .tracks.accordion div.data .menu.track > ul > li.lyrics,
+// .menu.tracks .tracks.accordion div.data .menu.track > ul > li.share {
+// width:30%;
+// }
+
+
+.menu.tracks .tracks.accordion div.data .menu.track > ul > li.lyrics > a,
+.menu.tracks .tracks.accordion div.data .menu.track > ul > li.share > a {
+  display: block;
+  font:bold 12px/1.8 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+  color:#000;
+  text-align:center;
+  text-shadow:rgba(255,255,255,0.50) 0 1px 0;
+  cursor:pointer;
+  width:82px;
+}
+
+
+.menu.tracks .tracks.accordion div.data .menu.track > ul > li.lyrics > a:hover,.menu.tracks .tracks.accordion div.data .menu.track > ul > li.share > a:hover,.menu.tracks .tracks.accordion div.data .menu.track > ul > li.lyrics > a.active,.menu.tracks .tracks.accordion div.data .menu.track > ul > li.share > a.active,.menu.tracks .tracks.accordion div.data .menu.track > ul > li.lyrics > a:active,.menu.tracks .tracks.accordion div.data .menu.track > ul > li.share > a:active{
+color:#fff;
+text-shadow:rgba(0,0,0,0.30) 0 1px 0;
+-webkit-font-smoothing:antialiased}
+
+
+.menu.tracks .tracks.accordion div.data .menu.track > ul > li.lyrics > a:hover,.menu.tracks .tracks.accordion div.data .menu.track > ul > li.share > a:hover,.menu.tracks .tracks.accordion div.data .menu.track > ul > li.lyrics > a.active,.menu.tracks .tracks.accordion div.data .menu.track > ul > li.share > a.active{
+-webkit-border-radius:.9em;
+-moz-border-radius:.9em;
+border-radius:.9em;
+-webkit-box-shadow:inset rgba(0,0,0,0.50) 1px 1px 2px;
+-moz-box-shadow:inset rgba(0,0,0,0.50) 1px 1px 2px;
+box-shadow:inset rgba(0,0,0,0.50) 1px 1px 2px;
+background:rgba(0,0,0,0.30)}
+
+
+.menu.tracks .tracks.accordion div.data .menu.track > ul > li.lyrics > a:active,.menu.tracks .tracks.accordion div.data .menu.track > ul > li.share > a:active,.menu.tracks .tracks.accordion div.data .menu.track > ul > li.lyrics > a.active,.menu.tracks .tracks.accordion div.data .menu.track > ul > li.share > a.active{
+background:rgba(0,0,0,0.50)}
+
+
+.menu.tracks .tracks.accordion div.data .menu.track > ul > li.buy{
+width:43%;
+}
+
+
+.menu.tracks .tracks.accordion div.data .menu.track > ul > li.buy a{
+display:block;
+padding:0 10px;
+font:bold 12px/1.8 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+text-align:center;
+text-shadow:rgba(255,255,255,0.50) 0 1px 0;
+color:#0063af;
+cursor: pointer;
+}
+
+
+.menu.tracks .tracks.accordion div.data .menu.track > ul > li.buy a:hover,.menu.tracks .tracks.accordion div.data .menu.track > ul > li.buy a.active{
+-webkit-border-radius:.9em;
+-moz-border-radius:.9em;
+border-radius:.9em;
+-webkit-box-shadow:inset rgba(0,0,0,0.50) 1px 1px 2px;
+-moz-box-shadow:inset rgba(0,0,0,0.50) 1px 1px 2px;
+box-shadow:inset rgba(0,0,0,0.50) 1px 1px 2px;
+background:rgba(255,255,255,0.50)}
+
+
+.menu.tracks .tracks.accordion div.data .menu.track > ul > li.buy a:active,.menu.tracks .tracks.accordion div.data .menu.track > ul > li.buy a.active{
+background:rgba(255,255,255,0.60)}
+
+/* --- Player Styles (skin) --- */
+
+ .jp-controls {
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 20px;
+  width: 245px;
+  list-style: none;
+  margin: 0;
+}
+ .jp-controls li {
+  display: inline;
+  float: left;
+  margin-right: 5px;
+}
+ .jp-controls li a.jp-play,
+ .jp-controls li a.jp-pause {
+  display: block;
+  position: relative;
+  left: -15px;
+  top: -26px;
+  text-indent: -9999px;
+  height: 19px;
+  width: 19px;
+  opacity: 1;
+}
+
+ .jp-controls li a.jp-play {
+  background: url(/assets/play-btn.png) left top no-repeat;
+}
+
+ .jp-controls li a.jp-pause {
+  background: url(/assets/pause-btn.png) left top no-repeat;
+}
+
+.menu.tracks .tracks.accordion div.title:hover a.jp-play{
+opacity:1}
+
+.menu.tracks .tracks.accordion div.title:active a.jp-play{
+opacity:0}
+
+.menu.tracks .tracks.accordion div.title:active a.jp-pause{
+opacity:1}
+
+// .menu.tracks .tracks.accordion div.title.ui-state-active a.toggle.jp-play {
+//   opacity:1;
+//   background-position:-17px 0}
+
+// .menu.tracks .tracks.accordion div.title.ui-state-active:hover a.toggle.jp-play{
+// background-position:-17px -17px}
+
+// .menu.tracks .tracks.accordion div.data {
+//   position: relative;
+// }
+
+.jp-audio {
+  max-height: 78px;
+  position: relative;
+  min-height: 56px;
+}
+
+.jp-gui {
+  position: relative;
+}
+
+ .jp-controls li a.jp-volume-max {
+  display: block;
+  position: absolute;
+  left: 257px;
+  top: -25px;
+  color: #666666;
+  width: 14px;
+  height: 12px;
+  background: url(/assets/icon-volume.png) left top no-repeat;
+}
+
+.menu.tracks .tracks.accordion div.data .jp-controls li a.jp-volume-max:hover {
+background-position:0 -13px}
+
+.menu.tracks .tracks.accordion div.data .jp-controls li a.jp-volume-max.active{
+background-position:0 -26px}
+
+ .jp-progress {
+  background: white;
+  height: 6px;
+  width: 220px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -101px;
+  -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+ .jp-progress .jp-seek-bar {
+  height: 6px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3b3b3b), color-stop(100%, #000000));
+  background-image: -webkit-linear-gradient(top, #3b3b3b 0%, #000000 100%);
+  background-image: -moz-linear-gradient(top, #3b3b3b 0%, #000000 100%);
+  background-image: -o-linear-gradient(top, #3b3b3b 0%, #000000 100%);
+  background-image: linear-gradient(top, #3b3b3b 0%, #000000 100%);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+ .jp-progress .jp-seek-bar .jp-play-bar {
+  height: 6px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3382bf), color-stop(100%, #0063af));
+  background-image: -webkit-linear-gradient(top, #3382bf 0%, #0063af 100%);
+  background-image: -moz-linear-gradient(top, #3382bf 0%, #0063af 100%);
+  background-image: -o-linear-gradient(top, #3382bf 0%, #0063af 100%);
+  background-image: linear-gradient(top, #3382bf 0%, #0063af 100%);
+  *zoom: 1;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  position: relative;
+  width: 100%;
+}
+ .jp-progress .jp-seek-bar .jp-play-bar:before,  .jp-progress .jp-seek-bar .jp-play-bar:after {
+  display: table;
+  content: "";
+}
+ .jp-progress .jp-seek-bar .jp-play-bar:after {
+  clear: both;
+}
+ .jp-progress .jp-seek-bar .ui-slider-handle {
+  background: url(/assets/play-knob.png) right top no-repeat !important;
+  width: 10px;
+  height: 11px;
+  position: absolute !important;
+  right: 0 !important;
+  top: 0;
+  margin-top: -2px;
+  cursor: pointer;
+  outline: none;
+  display: inline;
+  float: right;
+  border: none;
+}
+ .jp-progress .ui-slider {
+  border: none;
+}
+ .jp-volume-bar {
+  background: url(/assets/vol-control-grove.png) left top no-repeat;
+  width: 7px;
+  height: 48px;
+  position: absolute;
+  left: 260px;
+  top: -3px;
+  border: none;
+}
+ .jp-volume-bar .ui-slider-handle {
+  background: none;
+  background: url(/assets/vol-knob.png) left top no-repeat;
+  border: none;
+  outline: none;
+  margin-left: -5px;
+  margin-bottom: -8px;
+  height: 17px !important;
+  width: 16px !important;
+  position: absolute;
+}
+ .jp-time-holder {
+  height: 20px;
+  width: 218px;
+  *zoom: 1;
+  position: absolute;
+  top: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  left: 50%;
+  margin-left: -99px;
+}
+ .jp-time-holder:before,  .jp-time-holder:after {
+  display: table;
+  content: "";
+}
+ .jp-time-holder:after {
+  clear: both;
+}
+ .jp-time-holder .jp-current-time {
+  display: inline;
+  float: left;
+  font-size: 10px;
+  margin-left: 1px;
+}
+ .jp-time-holder .jp-duration {
+  display: inline;
+  float: right;
+  font-size: 10px;
+}
+ .jp-title {
+  position: absolute;
+  top: 1px;
+  left: 30px;
+  color: rgba(0, 0, 0, 0.8);
+}
+ .jp-title ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ .jp-title ul li {
+  font-size: 12px;
+}
+.num-of-plays {
+  position: absolute;
+  top: 10px;
+  left: 106px;
+}
+ .num-of-plays span {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.8);
+}

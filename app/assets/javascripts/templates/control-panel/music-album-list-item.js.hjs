@@ -1,0 +1,10 @@
+<a href="#" {{action "changeAlbum" on="click"}}>
+	{{#if album.visibility_disabled}}
+		<img src="/assets/cp/hidden-album.png"/>
+	{{else}}
+	  {{#if album.cover_image.preview.url}}
+	    <img {{bindAttr src="album.cover_image.preview.url"}} />
+	  {{/if}}
+  {{/if}}
+  <span class="settings" {{action "showSettings" on="click"}}>Album Settings</span>
+</a>

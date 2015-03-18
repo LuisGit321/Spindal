@@ -1,0 +1,24 @@
+.well
+  %h3 Uploads
+
+.hero-unit
+  = direct_upload_form_for @uploader do |f|
+    = hidden_field_tag :utf8
+    = hidden_field_tag 'key', @uploader.key
+    = hidden_field_tag 'AWSAccessKeyId', @uploader.aws_access_key_id
+    = hidden_field_tag 'acl', @uploader.acl
+    = hidden_field_tag 'success_action_redirect', @uploader.success_action_redirect
+    = hidden_field_tag 'policy', @uploader.policy
+    = hidden_field_tag 'signature', @uploader.signature
+
+    = file_field_tag :file
+    = f.submit 'Upload to S3', :class => 'btn btn-primary'
+
+- if params.any?
+  .well
+    %h2 Params inspection
+    - params.each_pair do |key, value|
+      - unless key.eql?('action') or key.eql?('controller')
+        %p
+          %b= key.titleize
+          %i= value

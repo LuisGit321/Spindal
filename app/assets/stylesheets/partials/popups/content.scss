@@ -1,0 +1,235 @@
+form div.help{
+position:absolute;
+top:13px;
+right:7px;
+width:14px;
+height:15px;
+}
+
+form div.help span.icon{
+display:block;
+width:14px;
+font:bold 11px/15px "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+text-align:center;
+color:#6f6f6f;
+background:#3c3c3c;
+-webkit-box-shadow:#211d1e 0 -1px 0,inset rgba(255,255,255,0.05) 0 -1px 0;
+-moz-box-shadow:#211d1e 0 -1px 0,inset rgba(255,255,255,0.05) 0 -1px 0;
+box-shadow:#211d1e 0 -1px 0,inset rgba(255,255,255,0.05) 0 -1px 0;
+-webkit-border-radius:7px;
+-moz-border-radius:7px;
+border-radius:7px;
+cursor:pointer}
+
+form div.help .ui-tooltip-top,form div.help .ui-tooltip-bottom{
+z-index:1000;
+opacity:0;
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+-webkit-transition:250ms ease-in-out opacity;
+-moz-transition:250ms ease-in-out opacity;
+transition:250ms ease-in-out opacity}
+
+form div.help .ui-tooltip-top{
+position:fixed;
+top:-1000px;
+right:0}
+
+form div.help .ui-tooltip-bottom{
+bottom:-1000px}
+
+form div.help:hover .ui-tooltip-top{
+position:absolute;
+top:25px;
+right:-15px;
+opacity:1;
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100)}
+
+form div.help:hover .ui-tooltip-bottom{
+position:absolute;
+bottom:25px;
+right:-17px;
+opacity:1;
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100)}
+
+form ul.rows{
+padding:11px 9px 1px 3px;
+zoom:1;
+position:relative;
+}
+
+form ul.rows:before,form ul.rows:after{
+content:"";
+display:table}
+
+form ul.rows:after{
+clear:both}
+
+form ul.rows li.row{
+float:left;
+margin:0 0 10px 14px;
+height:40px;
+line-height:40px;
+width:491px;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px;
+background:rgba(40,40,40,0.70);
+-webkit-box-shadow:inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px,rgba(255,255,255,0.07) 0 1px 0;
+-moz-box-shadow:inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px,rgba(255,255,255,0.07) 0 1px 0;
+box-shadow:inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px,rgba(255,255,255,0.07) 0 1px 0;
+position:relative;
+zoom:1;
+}
+
+form ul.rows li.row:before,form ul.rows li.row:after{
+content:"";
+display:table}
+
+form ul.rows li.row:after{
+clear:both}
+
+form ul.rows li.row.hover{
+background:rgba(40,40,40,0.50)}
+
+form ul.rows li.row.disabled{
+background:rgba(40,40,40,0.80)}
+
+form ul.rows li.row .light{
+position:absolute;
+top:8px;
+left:4px}
+
+form ul.rows li.row label{
+font:bold 13px/40px "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+color:#a0a0a0;
+text-shadow:rgba(0,0,0,0.99) 0 -1px 0;
+-webkit-font-smoothing:antialiased;
+position:absolute;
+left:30px}
+
+form ul.rows li.row input[type=text],form ul.rows li.row input[type=email],form ul.rows li.row input[type=number],form ul.rows li.row input[type=password]{
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+position:absolute;
+top:8px;
+left:28px;
+right:26px;
+bottom:8px;
+border:none;
+height:24px;
+padding:6px .5em 5px;
+font:bold 13px/1 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+color:#fff;
+-webkit-font-smoothing:antialiased;
+background:#1e1e1e;
+-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 0,inset rgba(0,0,0,0.07) 0 0 7px;
+-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 0,inset rgba(0,0,0,0.07) 0 0 7px;
+box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 0,inset rgba(0,0,0,0.07) 0 0 7px;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px}
+
+form ul.rows li.row a.selectBox{
+display:block !important;
+position:absolute;
+top:2px;
+right:28px;
+width:98px;
+height:24px;
+background:#1e1e1e;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px;
+-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;
+-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;
+box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;
+padding-left:8px;
+}
+
+form ul.rows li.row a.selectBox span.selectBox-label{
+line-height:24px}
+
+form ul.rows li.row a.selectBox span.selectBox-arrow{
+top:3px;
+right:3px}
+
+form ul.rows li.row .help{
+position:absolute;
+top:13px;
+right:7px}
+
+form ul.rows li.row.half{
+width:239px;
+}
+
+form ul.rows li.row.half.button
+{
+  height: 42px;
+}
+
+form ul.rows li.row.half input{
+right:7px}
+
+form ul.rows li.row.big{
+height:45px;
+}
+
+form ul.rows li.row.big .light{
+top:11px}
+
+form ul.rows li.row.big input{
+height:29px;
+padding:8px .5em 7px;
+font:bold 14px/1 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif}
+
+form ul.rows li.row.big .help{
+top:15px}
+
+.popup .content{
+zoom:1;
+overflow:visible;
+}
+
+.popup .content:before,.popup .content:after{
+content:"";
+display:table}
+
+.popup .content:after{
+clear:both}
+
+.popup .content .jspPane{
+margin:0 !important}
+
+.popup.window .content{
+height:360px}
+
+.popup.miniwindow .content{
+height:230px}
+
+.popup.slideshow .content{
+overflow-y:scroll}
+
+.popup.message .content{
+height:83px;
+overflow:visible;
+}
+
+.popup.message .content .msg{
+padding:34px 0;
+text-align:center;
+position:relative;
+}
+
+.popup.message .content .msg p{
+font:bold 15px/15px "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+color:#fff;
+-webkit-font-smoothing:antialiased}
+
+.popup.message .content .msg .help{
+position:absolute;
+top:34px;
+right:15px}
+

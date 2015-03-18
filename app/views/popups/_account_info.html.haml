@@ -1,0 +1,50 @@
+%form.popup.window.account.account-info
+  %header
+    %ul
+      %li.title Account Information
+      %li.exit
+        %a.exit{:href => "#"} Exit
+  .content
+    %ul.rows
+      %li.row
+        %label Edit your Account Information below.
+        .help
+          %span.icon ?
+          %span.ui-tooltip-bottom This information below is the person who is authorized to act on behalf of the band.
+      %li.row.band-name
+        %label Band Name
+        %input{:placeholder => "TheKillers", :type => "text"}
+          .help
+            %span.icon ?
+            %span.ui-tooltip-bottom No spaces please. This should be your real Band Name so your fans can easily find you.
+      %li.desc.spindal-url Your public Spindal web address is: www.Spindal.com/BandName
+      %li.row.half.first-name
+        %label First Name
+        %input{:placeholder => "Brandon", :type => "text"}/
+      %li.row.half.last-name
+        %label Last Name
+        %input{:placeholder => "Flowers", :type => "text"}/
+      %li.row.big.username
+        %label Username
+        %input{:placeholder => "brandonflowers@gmail.com", :type => "text"}
+          .help
+            %span.icon ?
+            %span.ui-tooltip-bottom This needs to be a valid email address.
+      %li.row.big.password
+        %label Password
+        %input{:placeholder => "********", :type => "text"}
+          .help
+            %span.icon ?
+            %span.ui-tooltip-bottom Must be at least 6 characters.
+      %li.row.big.confirm.password
+        %label Confirm Password
+        %input{:type => "password"}
+          .help
+            %span.icon ?
+            %span.ui-tooltip-bottom Must match your password above
+  %footer
+    %ul
+      %li
+        %a.save Save
+      %li
+        %a.cancel Cancel

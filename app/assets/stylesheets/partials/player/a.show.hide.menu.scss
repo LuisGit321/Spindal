@@ -1,0 +1,98 @@
+a.spindal, a.pane {
+  top:25px;
+  position:absolute;
+  display:block;
+}
+
+a.spindal.show, a.pane.show {
+  z-index:1;
+  height:55px;
+  width:53px;
+  background:url("/assets/show-menu.png") no-repeat;
+  text-indent:-999em;
+  left:-53px;
+  top: 25px;
+}
+a.spindal.show.active {
+  left: 0;
+}
+
+a.spindal.hide, a.nav-profile {
+  top: 43px;
+  z-index: 10;
+  width: 20px; 
+  height: 20px;
+  opacity: 0;
+  text-indent: -999em;
+}
+
+header.artist:hover a.spindal.hide,
+header.artist:hover a.nav-profile {
+  opacity: 1
+}
+a.spindal.hide {
+  left: 4px;
+  background: url("/assets/button-arrow-left.png") top left no-repeat;
+}
+a.nav-profile {
+  position:absolute;
+  left: 276px;
+  background: url("/assets/button-arrow-down.png") top left no-repeat;
+}
+
+a.newsPane.hide
+{
+ 
+  top:20px;
+  right:0; 
+  z-index:10;
+  width:20px; 
+  height:20px;
+  opacity:.9;
+  filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  margin-right: 6px;
+  float: right;
+}
+
+a.pane.hide img
+{
+  margin-top: -5px;
+  float: right;
+  right: 8px;
+  position: relative;
+}
+
+a.pane.hide{
+  /*top:25px; */
+  right:0; 
+  z-index:10;
+  /* 
+  width:25px; 
+  height:49px;
+  opacity:0;
+  filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);*/
+}
+
+a.spindal.hide:hover, a.nav-profile:hover {background-position: 0 -20px}
+a.spindal.hide:active, a.nav-profile:active {background-position: 0 -40px}
+a.nav-profile.active {background-position: 0 -60px}
+  
+a.pane.hide:hover {
+  opacity:.8;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80)
+  }
+
+a.pane.hide:active {opacity:.9;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90)}
+
+.spindal.pane:hover a.spindal.hide,
+.spindal.pane:hover a.pane.hide {
+  opacity:.4;
+  filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+}
+
+
+.spindal.pane:hover a.spindal.hide:hover,
+.spindal.pane:hover a.pane.hide:hover {opacity:.8;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80)}
+
+.spindal.pane:hover a.spindal.hide:active,
+header.artist:hover a.pane.hide:active,
+.spindal.pane:hover a.pane.hide:active {opacity:.9;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90)}

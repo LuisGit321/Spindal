@@ -1,0 +1,72 @@
+%form.popup.window.profile.news
+  %header
+    %ul
+      %li.title News
+      %li.exit
+        %a.exit{:href => "#"} Exit
+  .content
+    %ul.rows
+      %li.row.label
+        %label Enter your information below to feed into your News section.
+        .help
+          %span.icon ?
+          %span.ui-tooltip-bottom Enter your information below to feed into your News Section.
+      %li.row.half.blog
+        .light
+        %label Blog
+        %select
+          %option{:selected => ""} Blogger
+          %option Wordpress
+        .help
+          %span.icon ?
+          %span.ui-tooltip-bottom Select your existing Blog Platform below. You can turn on and off the Blog feed into your News section by clicking the blue light.
+      %li.row.half.blog.url
+        %label Blog URL
+        %input{:placeholder => "www.yourblog.blogs", :type => "text"}
+          .help
+            %span.icon ?
+            %span.ui-tooltip-bottom Enter or paste the URL of your current Blog.
+      %li.row.half.facebook
+        .light
+        %label Facebook
+        %input{:placeholder => "Username", :type => "text"}
+          .help
+            %span.icon ?
+            %span.ui-tooltip-bottom Enter your Facebook Username below. This will allow your Facebook Wall infor mation to appear in your News section. You can turn on and off the Facbook feed by clicking on the blue light.
+      %li.row.half.twitter
+        .light
+        %label Twitter
+        %input{:placeholder => "Username", :type => "text"}
+          .help
+            %span.icon ?
+            %span.ui-tooltip-bottom Enter your Twitter Username. Your Twitter posts will appear in your News Feed. You can turn on and off the feed by clicking on the blue light.
+      %li.row.email.signup
+        .light
+        %label Email Sign Up Field
+        %select
+          %option{:selected => ""} MailChimp
+          %option Constant Contact
+        .help
+          %span.icon ?
+          %span.ui-tooltip-bottom Select from the supported Email providers below. This will allow you to easily collect your fans email addresses. The email field will appear in the menu in the News section. You hide the email field by clicking the blue light.
+      %li.row.email.list
+        %label Email List
+        %select
+          %option{:selected => ""} List Name
+          %option  
+          %option  
+        .help
+          %span.icon ?
+          %span.ui-tooltip-bottom Select where you would like your email addresses to be saved from the lists below. The list will FIRST need to be created in your Email Provider (MailChimp or Constant Contact). The list name will automatically appear below once it has been set up.
+      %li.row.api
+        %label API KEY
+        %input{:placeholder => "EXAMPLE: ecd93fe0e1b18949a6c41e08be0f80e2-us1", :type => "text"}
+          .help
+            %span.icon ?
+            %span.ui-tooltip-bottom You will need to enter or paste your API Key below to capture email addresses. Your API Key is found within your account settings of your Email Provider (MailChimp or Constant Contact). For instructions on how to find your API Key, click here to go to the support page.
+  %footer
+    %ul
+      %li
+        %a.save Save
+      %li
+        %a.cancel Cancel

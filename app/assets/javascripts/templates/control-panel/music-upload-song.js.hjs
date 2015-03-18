@@ -1,0 +1,58 @@
+<header>
+  <ul>
+    <li class="title"> <span>Upload Song</span>
+    <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+  </ul>
+</header>
+<div class="content">
+  <ul class="rows">
+  	<li class="row label">
+        <label>Choose a Song File Format to Upload</label>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">FLAC = High Defination format. Most fans will want the MP3 file. but by uploading a high quality audio file we are able to convert to both the types: MP3 and FLAC.  Fans will have the option to download MP3 or FLAC</span>
+ 	    </div>
+ 	 </li>
+ 	 <li class="row half label button">
+ 	 	<a class="create upload-song mp3" {{action "selectSongFile" on="click"}}></a>
+ 	 </li>	
+ 	 <li class="row half label button">
+ 	 	<a class="create upload-song flac" {{action "selectSongFile" on="click"}}>
+ 	 	</a>
+ 	 </li> 
+ 	 <li class="row-flat">
+ 	 	<table>
+ 	 		<tr>
+ 	 			<td><img src="/assets/check.png" /></td>
+ 	 			<td>
+ 	 				<span>
+ 	 					 = Successfully uploaded, encoded and ready to play and sell in your player.
+ 	 				</span>
+ 	 				<span id="sucess-note">
+ 	 					Note: FLAC are larger files, and will take longer to upload and encode
+ 	 				</span>
+ 	 			</td>
+ 	 		</tr>
+ 	 		<tr>
+ 	 			<td><img id ="error-icon" src="/assets/error.png"/></td>
+ 	 			<td>
+ 	 				<span>
+ 	 					= Problem uploading and encoding your file. Check file and try again
+ 	 				</span>	
+ 	 			</td>
+ 	 		</tr>
+ 	 	</table>
+ 	 	
+ 	 		
+ 	 </li>
+ 	   	
+  </ul>	  
+</div>
+<footer>
+  <ul>
+    <li><a class="cancel" {{action "close" on="click"}}>Cancel</a>
+    <form class="hidden" action="javascript:void(0);" method="post">
+      <input class="song-file" name="song[file]" type="file" accept="audio/mp3,audio/mpeg3,audio/x-mpeg-3,audio/flac,audio/aac" {{action "startUpload" on="change"}} />
+    </form>
+  </ul>
+</footer>

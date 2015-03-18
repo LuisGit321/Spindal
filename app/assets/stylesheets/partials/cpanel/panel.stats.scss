@@ -1,0 +1,224 @@
+#stats-panel ul.tabs{
+height:57px;
+width:650px;
+padding:9px 7px 10px 16px;
+position:relative;
+}
+
+#stats-panel ul.tabs:after{
+position:absolute;
+bottom:0;
+left:0;
+width:650px;
+height:5px;
+content:'';
+display:block;
+background:url("/assets/cp/gallery-bg-shadow.png") no-repeat}
+
+#stats-panel ul.tabs li.row{
+height:38px;
+margin:0 11px 0 0;
+float:left;
+background:rgba(0,0,0,0.25);
+-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;
+-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;
+box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;
+}
+
+#stats-panel ul.tabs li.row.time{
+width:382px;
+}
+
+#stats-panel ul.tabs li.row.time label{
+color:#fff;
+line-height:38px;
+text-shadow:rgba(0,0,0,0.80) 0 -1px 1px;
+left:11px}
+
+#stats-panel ul.tabs li.row.time .select-time{
+width:232px;
+position:absolute;
+top:7px;
+left:143px;
+height:24px;
+background:#1e1e1e;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px;
+-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;
+-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;
+box-shadow:rgba(255,255,255,0.07) 0 1px 0,inset rgba(0,0,0,0.37) 0 1px 1px,inset rgba(0,0,0,0.07) 0 0 7px;
+zoom:1;
+}
+
+#stats-panel ul.tabs li.row.time .select-time:before,#stats-panel ul.tabs li.row.time .select-time:after{
+content:"";
+display:table}
+
+#stats-panel ul.tabs li.row.time .select-time:after{
+clear:both}
+
+#stats-panel ul.tabs li.row.time .select-time .select-container{
+float:left;
+position:relative;
+height:24px;
+width:112px;
+}
+
+#stats-panel ul.tabs li.row.time .select-time .select-container:hover:after{
+cursor:pointer;
+background-position:0 -18px}
+
+#stats-panel ul.tabs li.row.time .select-time .select-container:active:after,#stats-panel ul.tabs li.row.time .select-time .select-container:focus:after{
+cursor:pointer;
+background-position:0 -18px}
+
+#stats-panel ul.tabs li.row.time .select-time .select-container input{
+vertical-align:top;
+border:none;
+background:transparent;
+height:24px;
+width:110px;
+text-align:left;
+font:bold 13px/24px "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+color:#fff;
+padding:0 0 0 4px;
+margin:0;
+position:relative;
+cursor:pointer;
+z-index:999999}
+
+#stats-panel ul.tabs li.row.time .select-time .select-container:after{
+content:'';
+display:block;
+position:absolute;
+top:3px;
+right:3px;
+width:19px;
+height:18px;
+background:url("/assets/cp/song-select-arrow.png") top left no-repeat;
+cursor:pointer;
+z-index:0}
+
+#stats-panel ul.tabs li.row.time .select-time .divider{
+float:left;
+height:24px;
+line-height:24px;
+width:8px;
+text-align:center;
+color:#fff}
+
+#stats-panel ul.tabs li.row.analytics{
+width:223px;
+}
+
+#stats-panel ul.tabs li.row.analytics a{
+margin:7px;
+display:block;
+width:209px;
+height:24px;
+font:bold 1em/24px "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+text-shadow:rgba(0,0,0,0.99) 0 -1px 0;
+color:#fff;
+text-align:center;
+background:#666 url("/assets/cp/google-analytics.png") no-repeat;
+-webkit-box-shadow:rgba(0,0,0,0.75) 0 1px 3px;
+-moz-box-shadow:rgba(0,0,0,0.75) 0 1px 3px;
+box-shadow:rgba(0,0,0,0.75) 0 1px 3px;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+}
+
+#stats-panel ul.tabs li.row.analytics a:hover,#stats-panel ul.tabs li.row.analytics a:focus{
+background-position:0 -24px}
+
+#stats-panel ul.tabs li.row.analytics a:active,#stats-panel ul.tabs li.row.analytics a.active{
+background-position:0 -48px}
+
+#stats-panel div.panel{
+overflow-y:scroll;
+height:460px;
+width:650px;
+background:#363636 url("/assets/cp/gallery-bg.png") no-repeat;
+padding-top:11px;
+zoom:1;
+}
+
+#stats-panel div.panel:before,#stats-panel div.panel:after{
+content:"";
+display:table}
+
+#stats-panel div.panel:after{
+clear:both}
+
+#stats-panel div.panel .split{
+float:left;
+width:300px;
+margin-left:16px}
+
+#stats-panel div.panel .module{
+background:#212121;
+-webkit-box-shadow:rgba(0,0,0,0.99) 0 1px 6px,inset rgba(255,255,255,0.07) 0 1px 0;
+-moz-box-shadow:rgba(0,0,0,0.99) 0 1px 6px,inset rgba(255,255,255,0.07) 0 1px 0;
+box-shadow:rgba(0,0,0,0.99) 0 1px 6px,inset rgba(255,255,255,0.07) 0 1px 0;
+width:300px;
+display:inline-block;
+margin-bottom:11px;
+}
+
+#stats-panel div.panel .module .header{
+font:bold 16px "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+line-height:39px;
+color:#fff;
+padding:0 14px;
+border-bottom:1px solid #000;
+text-shadow:rgba(0,0,0,0.80) 0 -1px 1px}
+
+#stats-panel div.panel .module .content{
+border-top:1px solid rgba(255,255,255,0.05);
+padding:0;
+}
+
+#stats-panel div.panel .module .content p{
+padding:0 14px;
+}
+
+#stats-panel div.panel .module .content p.big{
+font:bold 40px/1.5 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+color:#fff;
+letter-spacing:-1px;
+}
+
+#stats-panel div.panel .module .content p.big.bb{
+border-bottom:1px solid #333}
+
+#stats-panel div.panel .module .content p.small{
+font:bold 16px/1.5 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+color:#666;
+margin:-.33em 0 .66em}
+
+#stats-panel div.panel .module .content table{
+margin:14px;
+width:272px;
+}
+
+#stats-panel div.panel .module .content table.green td{
+color:#cfc}
+
+#stats-panel div.panel .module .content table.blue td{
+color:#9cf}
+
+#stats-panel div.panel .module .content table caption{
+text-align:left;
+font:bold 14px/1.5 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+color:#ccc}
+
+#stats-panel div.panel .module .content table tr td{
+font:11px/1.5 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+width:50%;
+}
+
+#stats-panel div.panel .module .content table tr td.value{
+text-align:right}
+

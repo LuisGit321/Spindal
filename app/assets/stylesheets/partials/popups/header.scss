@@ -1,0 +1,155 @@
+.popup header{
+border-bottom:1px solid #141414;
+background:#1c1c1c;
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #272727), color-stop(0.5, #232323), color-stop(0.5, #1d1d1d), color-stop(1, #191919));
+background:-webkit-linear-gradient(top, #272727 0%, #232323 50%, #1d1d1d 50%, #191919 100%);
+background:-moz-linear-gradient(top, #272727 0%, #232323 50%, #1d1d1d 50%, #191919 100%);
+background:linear-gradient(top, #272727 0%, #232323 50%, #1d1d1d 50%, #191919 100%);
+-webkit-border-radius:4px 4px 0 0;
+-moz-border-radius:4px 4px 0 0;
+border-radius:4px 4px 0 0;
+-webkit-box-shadow:rgba(0,0,0,0.25) 0 3px 1px;
+-moz-box-shadow:rgba(0,0,0,0.25) 0 3px 1px;
+box-shadow:rgba(0,0,0,0.25) 0 3px 1px;
+}
+
+.popup header ul{
+zoom:1;
+border-bottom:1px solid #272727;
+height:38px;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+.popup header ul:before,.popup header ul:after{
+content:"";
+display:table}
+
+.popup header ul:after{
+clear:both}
+
+.popup header ul li{
+float:left;
+}
+
+.popup header ul li.title{
+text-indent:-99999em;
+overflow:hidden;
+text-align:left;
+width:220px;
+height:37px;
+background-repeat:no-repeat}
+
+.popup header ul li.name{
+float:none;
+position:absolute;
+top:0;
+left:0;
+width:100%;
+text-align:center;
+font:bold 13px/37px "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+-webkit-font-smoothing:antialiased;
+color:#fff}
+
+.popup header ul li.exit a.exit{
+display:block;
+height:25px;
+width:25px;
+text-indent:-99999em;
+overflow:hidden;
+text-align:left;
+cursor:pointer;
+position:absolute;
+top:7px;
+right:7px;
+background:url("/assets/popups/exit.png");
+-webkit-box-shadow:rgba(255,255,255,0.07) 0 1px 0;
+-moz-box-shadow:rgba(255,255,255,0.07) 0 1px 0;
+box-shadow:rgba(255,255,255,0.07) 0 1px 0;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px;
+}
+
+.popup header ul li.exit a.exit:hover,.popup header ul li.exit a.exit:focus{
+background-position:0 -25px}
+
+.popup header ul li.exit a.exit:active,.popup header ul li.exit a.exit.active{
+background-position:0 -50px}
+
+.popup.album-settings header li.title{
+background-image:url("/assets/popups/form-album-settings.png")}
+
+.popup.slideshow header li.title{
+background-image:url("/assets/popups/form-slideshow.png")}
+
+.popup.lyrics header li.title{
+background-image:url("/assets/popups/form-lyrics.png")}
+
+.popup.video header li.title{
+background-image:url("/assets/popups/form-video.png")}
+
+.popup.custom-price header li.title{
+background-image:url("/assets/popups/form-custom-price.png")}
+
+.popup.account-info header li.title{
+background-image:url("/assets/popups/form-account-info.png")}
+
+.popup.billing-info header li.title{
+background-image:url("/assets/popups/form-billing-info.png")}
+
+.popup.plan header li.title{
+background-image:url("/assets/popups/form-plan.png")}
+
+.popup.security-code header li.title{
+background-image:url("/assets/popups/form-security-code.png")}
+
+.popup.band-logo header li.title{
+background-image:url("/assets/popups/form-band-logo.png")}
+
+.popup.news header li.title{
+background-image:url("/assets/popups/form-news.png")}
+
+.popup.bio header li.title{
+background-image:url("/assets/popups/form-bio.png")}
+
+.popup.live header li.title{
+background-image:url("/assets/popups/form-live.png")}
+
+.popup.facebook header li.title{
+background-image:url("/assets/popups/form-facebook.png")}
+
+.popup.twitter header li.title{
+background-image:url("/assets/popups/form-twitter.png")}
+
+.popup.store header li.title{
+background-image:url("/assets/popups/form-store.png")}
+
+.popup.upload-song header li.title{
+background-image:url("/assets/upload-icon.png");
+margin-top: 6px;
+margin-left: 10px;
+
+}
+
+.popup.itunes-song-link header li.title{
+background-image:url("/assets/popups/form-itunes-song-link.png")}
+
+.popup.itunes-album-link header li.title{
+background-image:url("/assets/popups/form-itunes-album-link.png")}
+
+.popup.amazon-link header li.title{
+background-image:url("/assets/popups/form-amazon-link.png")}
+
+.popup.cancel-account header li.title{
+background-image:url("/assets/popups/form-cancel-account.png")}
+
+.popup.confirm-plan header li.title{
+background-image:url("/assets/popups/form-confirm-plan.png")}
+
+.popup.google-analytics header li.title{
+background-image:url("/assets/popups/form-google-analytics.png")}
+

@@ -1,0 +1,72 @@
+%form.popup.window.album-settings
+  %header
+    %ul
+      %li.title Album Settings
+      %li.exit
+        %a.exit{:href => "#"} Exit
+  .content
+    %ul.rows
+      %li.row.album-name
+        .light
+        %input{:placeholder => "Album Name", :type => "text"}
+          .help
+            %span.icon ?
+            %span.ui-tooltip-bottom Show or Hide the Album in the Player and enter an Album Name.
+          %li.row.cover-art
+            .light
+            .upload-cover-art
+              %a.upload{:href => "#"} Upload Cover Art
+            .help
+              %span.icon ?
+              %span.ui-tooltip-bottom Upload the Album cover image. The image size should be at least 195 pixels by 195 pixels and square.
+          %li.row.short.select
+            .light
+            %label Download Album
+            %select
+              %option Free
+              %option{:value => "custom"} $ Custom
+              %option $ 9.99
+              %option $ 12.99
+              %option{:value => "itunes-album-link"} iTunes
+              %option{:value => "amazon-link"} Amazon
+            .help
+              %span.icon ?
+              %span.ui-tooltip-bottom Enable the Album to be downloaded and set the price.
+          %li.row.short
+            .light
+            %label Share Album and Songs
+            .help
+              %span.icon ?
+              %span.ui-tooltip-bottom Enable and show the Share button in the Player. The Facebook and Twitter settings will need to be set up in the Profile section.
+          %li.row.short
+            .light
+            %label Number of Song Plays
+            .help
+              %span.icon ?
+              %span.ui-tooltip-bottom Show the number of times a song has been played in the Player.
+          %li.row.short
+            .light
+            %label Parental Advisory Warning
+            .help
+              %span.icon ?
+              %span.ui-tooltip-bottom Show the Parental Advisory Warning graphic in the Player.
+          %li.row
+            .light
+            %input{:placeholder => "Release Date", :type => "text"}
+              .help
+                %span.icon ?
+                %span.ui-tooltip-bottom Show and enter the Release Date for the Album in the Player.
+          %li.row
+            .light
+            %input{:placeholder => "Record Label", :type => "text"}
+              .help
+                %span.icon ?
+                %span.ui-tooltip-bottom Show and enter the Record Label in the Player.
+  %footer
+    %ul
+      %li.left
+        %a.delete Delete Album
+      %li
+        %a.save Save
+      %li
+        %a.cancel Cancel

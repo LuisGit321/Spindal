@@ -1,0 +1,94 @@
+.popup.slideshow
+  .content
+    ul.rows
+      pr 0
+      relative()
+      z 10000
+      li.row
+        w 240px
+        &.transition-time
+          input
+            d block
+            position absolute
+            top 8px
+            right auto
+            bottom auto
+            left 116px
+            w 54px
+            h 24px
+            m 0
+            p 6px 0 6px 8px
+            bg m30
+            b none
+            border-radius 3px
+            box-shadow w7 0 1px 0, inset b75 0 1px 1px, inset b13 0 0 7px
+            f bold 12px/1 sans
+          input[type=number]::-webkit-inner-spin-button
+            bg url(../i/popups/input-number.png) top left
+            h 8px
+            w 16px
+            -webkit-appearance none
+          input[type=number]::-webkit-outer-spin-button
+            -webkit-appearance none
+          span.unit
+            f bold 13px/40px sans
+            pl 7px
+            c m160
+            text-shadow b99 0 -1px 0
+            aa()
+            absolute top 0 left 170px
+        &.transition-style
+          ml 9px
+        label
+          left 11px
+    ul.images
+      clearfix()
+      p 0 0 0 11px
+      li.image
+        r 89px
+        m 0 5px 11px 6px
+        fl()
+        bg m30
+        relative()
+        &.empty, &.add
+          cursor pointer
+          box-shadow w7 0 1px 0, inset  b37 0 1px 1px, inset b7 0 0 7px
+          &:before
+            d block
+            content ''
+        &.empty
+          &:before
+            relative top 28px
+            content 'Upload Image'
+            f bold 14px/1.2 sans
+            ta center
+            c m70
+            text-shadow b99 0 -1px 0
+            aa()
+          a.upload
+            d block
+            bg url(../i/popups/screenshot-upload.png) -12px -12px
+            r 65px
+            m 12px
+            opacity 0
+            hide-text()
+            &:hover
+              bgp -12px -101px
+            &:active
+              bgp -12px -190px
+          &:hover
+            &:before
+              d none
+            a.upload
+              opacity 1
+          
+        &.add
+          &:before
+            r 41px
+            relative top 24px left 24px
+            bg url(../i/popups/screenshot-add.png)
+            box-shadow b22 0 2px 2px
+          &:hover:before, &:focus:before
+            bgp 0 -41px
+          &:active:before
+            bgp 0 -82px

@@ -1,0 +1,107 @@
+.spindal.pane{
+background:rgba(255,255,255,0.80);
+width:505px;
+padding:80px 35px 20px 0px;
+z-index:99;
+min-height:100%;
+-webkit-box-shadow:rgba(0,0,0,0.25) 1px 0 3px;
+-moz-box-shadow:rgba(0,0,0,0.25) 1px 0 3px;
+box-shadow:rgba(0,0,0,0.25) 1px 0 3px;
+-webkit-transition:1s ease all;
+-moz-transition:1s ease all;
+transition:1s ease all;
+position:absolute;
+top:0;
+left:-505px;
+}
+
+.spindal.pane.active{
+left:299px}
+
+.spindal.pane h1{
+font:bold 18px/2 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif}
+
+.spindal.pane .body{
+font:13px/1.5 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+overflow-y:auto;
+margin-left: 22px;
+margin-top: 22px;
+margin-right: 22px;
+}
+
+.spindal.pane.live,.spindal.pane.news,.spindal.pane.bio,.spindal.pane.lyrics{
+width:505px;
+position:absolute;
+top:0;
+left:-505px;
+}
+
+.spindal.pane.live.active,.spindal.pane.news.active,.spindal.pane.bio.active,.spindal.pane.lyrics.active {
+left:299px}
+
+/*
+.spindal.pane.news{
+padding:0px 35px 20px;
+}
+*/
+.spindal.pane h1{
+font:bold 18px/2 "Helvetica Neue",Arial,Helvetica,Arial,sans-serif;
+text-transform:capitalize;}
+/*
+.spindal.pane.live{
+padding:72px 0 0;
+}
+*/
+
+.spindal.pane.live table{
+width:100%;
+border-bottom:1px solid rgba(255,255,255,0.40);
+border-collapse:separate;
+}
+
+.spindal.pane.live table tr th,.spindal.pane.live table tr td{
+padding-left:13px;
+}
+
+.spindal.pane.live table tr th.date,.spindal.pane.live table tr td.date{
+width:120px;
+padding-left: 22px;
+}
+
+.spindal.pane.live table tr th.loc,.spindal.pane.live table tr td.loc{
+width:160px}
+
+.spindal.pane.live table tr th.venue,.spindal.pane.live table tr td.venue{
+width:140px}
+
+.spindal.pane.live table tr th.tickets,.spindal.pane.live table tr td.tickets{
+width:85px;
+text-align:center;
+}
+
+.spindal.pane.live table tr th.tickets a,.spindal.pane.live table tr td.tickets a{
+font-weight:bold;
+color:#666;
+text-shadow:rgba(255,255,255,0.80) 0 1px 0}
+
+.spindal.pane.live table thead tr th{
+font-weight:bold;
+text-transform:capitalize;
+text-align:left;
+color:#000;
+line-height:2em;
+border-bottom:1px solid rgba(0,0,0,0.20)}
+
+.spindal.pane.live table tbody tr td{
+border-top:1px solid rgba(255,255,255,0.40);
+border-bottom:1px solid rgba(0,0,0,0.20);
+font:12px/38px "Helvetica Neue",Arial,Helvetica,Arial,sans-serif}
+
+
+td.tickets ul li
+{
+  border-top: none;
+  border-bottom: none;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}

@@ -1,0 +1,96 @@
+  <header>
+    <ul>
+      <li class="title">Album Settings
+      <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="rows">
+      <li class="row album-name">
+        {{view App.Views.ControlPanel.Light disabledBinding="album.title_disabled" classBinding="this.disabled" }}
+        {{view Ember.TextField valueBinding="album.title" placeholder="Album Name"}}
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Show or Hide the Album in the Player and enter an Album Name.</span>
+        </div>
+      
+      <li class="row cover-art">
+        {{view App.Views.ControlPanel.Light disabledBinding="album.visibility_disabled" classBinding="this.disabled" }}
+        <div class="help hide-album">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Hide this Album by clicking the blue light.</span>
+        </div>
+
+        {{#if album.cover_image.preview.url}}
+          <div class="upload-cover-art" style="background: url('{{unbound album.cover_image.preview.url}}')">
+          </div>
+          <a href="#" class="delete" {{action "deleteCover" on="click"}}>
+            <img src="/assets/delete-x.png"/>
+          </a>
+        {{else}}
+          <div class="upload-cover-art empty" >
+            <a class="upload" {{action "selectCover" on="click"}}></a>
+            <input class="album-cover" name="album[cover_image]" type="file" accept="image/*" {{action "uploadCover" on="change"}} />
+          </div>
+        {{/if}}
+
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Upload the Album cover image. The image size should be at least 195 pixels by 195 pixels and square.</span>
+        </div>
+      <li class="row short select">
+        {{view App.Views.ControlPanel.Light disabledBinding="album.download_disabled" classBinding="this.disabled" }}
+        <label>Download Album</label>
+        {{view App.Views.ControlPanel.SpindalSelect
+        name="downloadType"
+        contentBinding="App.Constants.ControlPanel.albumDownloadTypes"
+        optionLabelPath="content.name"
+        optionValuePath="content.value"
+        initValBinding="album.download_type" selectionBinding="album.selected_download_type"}}
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enable the Album to be downloaded and set the price.</span>
+        </div>
+      <li class="row short">
+        {{view App.Views.ControlPanel.Light disabledBinding="album.share_disabled" classBinding="this.disabled" }}
+        <label>Share Album and Songs</label>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enable and show the Share button in the Player. The Facebook and Twitter settings will need to be set up in the Profile section.</span>
+        </a>
+      <li class="row short">
+        {{view App.Views.ControlPanel.Light disabledBinding="album.num_song_plays_disabled" classBinding="this.disabled" }}
+        <label>Number of Song Plays</label>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Show the number of times a song has been played in the Player.</span>
+        </div>
+      <li class="row short">
+        {{view App.Views.ControlPanel.Light disabledBinding="album.parental_advisory_disabled" classBinding="this.disabled" }}
+        <label>Parental Advisory Warning</label>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Show the Parental Advisory Warning graphic in the Player.</span>
+        </div>
+      <li class="row">
+        {{view App.Views.ControlPanel.Light disabledBinding="album.release_date_disabled" classBinding="this.disabled" }}
+        {{view Ember.TextField valueBinding="album.release_year" placeholder="Release Date"}}
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Show and enter the Release Date for the Album in the Player.</span>
+        </div>
+      <li class="row">
+        {{view App.Views.ControlPanel.Light disabledBinding="album.record_label_disabled" classBinding="this.disabled" }}
+        {{view Ember.TextField valueBinding="album.record_label" placeholder="Record Label"}}
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Show and enter the Record Label in the Player.</span>
+        </div>
+    </ul>
+  </div>
+  <footer>
+    <ul>
+      <li class="left"><a class="delete" {{action "deleteAlbum" on="click"}}>Delete Album</a>
+      <li><a class="save" {{action "close" on="click"}}>OK</a>
+    </ul>
+  </footer>

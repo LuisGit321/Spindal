@@ -1,0 +1,8 @@
+#cpanel #bottom-bar{
+  height:17px;
+  box-shadow:rgba(0,0,0,0.50) 0 -1px 2px,inset rgba(255,255,255,0.05) 0 1px 0;
+  background:#000 -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,0.15)), color-stop(1, rgba(255,255,255,0.01)));
+  background:#000 -webkit-linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.01) 100%);
+  background:#000 -moz-linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.01) 100%);
+  background:#000 linear-gradient(top, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.01) 100%)
+}

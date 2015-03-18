@@ -1,0 +1,286 @@
+#music-panel
+  #albums
+    relative()
+    p 19px 32px
+    ul.albums
+      clearfix()
+      h 175px
+      w 100%
+      li.album
+        d inline-block
+        r 175px
+        w 195px
+        relative()
+        &.active
+          &:before
+            content ''
+            d block
+            r 190px
+            absolute top -8px left 2px
+            bg url(../i/cp/album-click.png)
+          > a
+              &:hover, &:focus
+                bgp 0 0
+              span.settings
+                opacity 1
+        > a
+          m 0 10px
+          d block
+          r 175px
+          bg url(../i/cp/album-bg.jpg)
+          ti -999em
+          box-shadow w7 0 1px 0
+          position relative
+          &:hover, &:focus
+            bgp 0 -175px
+            span.settings
+              opacity 1
+          > img
+            position absolute
+            left 0
+            height 100%
+          span.settings
+            d block
+            opacity 0
+            absolute bottom 14px right 28px
+            h 35px
+            w 140px
+            hide-text()
+            bg url(../i/cp/album-settings.png) top left
+            box-shadow b50 0 2px 7px
+            border-radius 17px
+            &:hover
+              bgp 0 -35px
+            &:active
+              bgp 0 -70px
+
+    nav.nav
+      a
+        d block
+        w 26px
+        h 41px
+        bg #000 url(../i/cp/album-nav.png)
+        ti -999em
+        absolute()
+        z 100
+      
+        &.prev-set
+          absolute top 85px left 8px
+          &:hover, &:focus
+            bgp 0 -41px
+          &:active
+            bgp 0 -82px
+        &.next-set
+          absolute top 85px right 8px
+          bgp 26px 0
+          &:hover, &:focus
+            bgp 26px -41px
+          &:active
+            bgp 26px -82px
+    menu.rollover
+      d none
+      transition()
+      a
+        d block
+        w 26px
+        h 24px
+        bg #000 url(../i/cp/album-rollover.png)
+        ti -999em
+        &.add
+          absolute top 18px right 8px
+          &:hover, &:focus
+            bgp 0 -24px
+          &:active
+            bgp 0 -48px
+        &.help
+          absolute bottom 17px right 8px
+          bgp 26px 0
+          &:hover, &:focus
+            bgp 26px -24px
+          &:active
+            bgp 26px -48px
+    &:hover, &:focus
+      menu.rollover
+        d block
+
+  ul.thead
+    bg url(../i/cp/songs-th.png) top left no-repeat
+    lhh 26px
+    relative()
+    li
+      float left
+      ta center
+      c transparent
+      &.add-song
+        absolute top 0 right 0
+        min-width 40px
+        bgp -610px 0
+        a.add-song
+          d block
+          h 26px
+          w 40px
+          bg url(../i/cp/song-add.png) no-repeat
+          hide-text()
+          &:hover, &:focus
+            bgp 0 -26px
+          &:active, &.active
+            bgp 0 -52px
+
+  #songs
+    max-height 270px + 7px
+    overflow hidden
+    overflow-x hidden
+    overflow-y scroll
+    relative()
+    z-index 0
+    table
+      tr
+        th, td
+          &.name
+            max-width 186px
+            cursor text
+          &.upload
+            min-width 98px
+          &.download
+            min-width 114px
+          &.lyrics
+            min-width 60px
+          &.fullscreen
+            min-width 152px
+          &.status
+            min-width 40px
+      tbody
+        tr
+          bg rgb(52,54,56)
+          &:nth-of-type(even)
+            bg rgb(62,64,66)
+          td
+            .light
+              m 6px 3px 9px
+            select
+              m 6px 0 9px
+            &.name
+              white-space nowrap
+              overflow hidden
+              text-overflow ellipsis
+              span.num
+                f bold 12px/35px sans
+                c m160
+                text-shadow b80 0 -1px 0
+                w 18px
+                ta right
+                d inline-block
+              .light
+                m 6px 0 9px 3px
+              input.name
+                d inline-block
+                bxs()
+                w 150px
+                h 24px
+                m 5px -14px 6px 0
+                p 6px 2px
+                bg transparent
+                b 0
+                f bold 12px/1 sans
+                aa()
+                c #fff
+                &:focus
+                  background linear-gradient(top, m50, m38)
+                  box-shadow w7 0 1px 0, inset b13 0 1px 2px
+            &.upload
+              ta center
+              a
+                d inline-block
+                ti -999em
+                r 26px
+                m 5px 0 4px
+                bg url(../i/cp/song-upload.png) top left no-repeat
+                &:hover, &:focus
+                  bgp 0 -26px
+                &:active
+                  bgp 0 -52px
+            &.download
+              .selectBox-dropdown
+                w 76px
+                bg url(../i/cp/song-download-bg.png) top left no-repeat
+                
+            &.lyrics
+              a.add
+                d inline-block
+                r 21px
+                m 7px 0
+                bg url(../i/cp/song-lyrics.png) top left no-repeat
+                ti -999em
+                &:hover, &:focus
+                  bgp 0 -21px
+                &:active
+                  bgp 0 -42px
+
+            &.fullscreen
+              .selector
+                w 114px
+                d inline-block
+                relative()
+
+                .selector-dropdown
+                  w 114px
+                  h 21px
+                  bg url(../i/cp/song-fullscreen-bg.png) top left no-repeat
+                  pl 1px
+                  &:hover, &:focus
+                    .selector-label
+                      c m235
+
+                  &.active
+                    h 40px
+                    bgp 0 -22px
+                    box-shadow inset b13 0 0 7px, b60 2px 2px 4px
+                    bb none
+                    border-radius 3px
+                    absolute top 0 left 0
+                    z-index 999999
+                    .selector-options li a.video
+                      d block
+                    .selector-arrow
+                      bgp 0 -36px
+
+                  .selector-arrow
+                    cursor pointer
+                    &:hover
+                      bgp 0 -18px
+
+                  .selector-dropdown-menu
+                    bg transparent
+                    box-shadow none
+
+                  .selector-options li a
+                    d block
+                    m 2px 0
+                    w 91px
+                    lhh 17px
+                    text-shadow b80 0 -1px 0
+                    bg url(../i/cp/song-fullscreen-button.png) top left no-repeat
+                    ta center
+                    &:hover, &:focus
+                      bgp 0 -17px
+                      c m235
+                    &:active
+                      bgp 0 -34px
+                      c m180
+                    &.video
+                      d none
+                            
+              
+            &.status
+              ta center
+              a.delete
+                d inline-block
+                h 21px
+                w 19px
+                m 7px 2px 7px 0
+                bg url(../i/cp/song-delete.png) top left no-repeat
+                ti -999em
+                &:hover, &:focus
+                  bgp 0 -21px
+                &:active
+                  bgp 0 -42px

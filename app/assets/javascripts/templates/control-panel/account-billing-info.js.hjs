@@ -1,0 +1,76 @@
+<header>
+  <ul>
+    <li class="title">Billing Information
+    <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+  </ul>
+</header>
+<div class="content">
+  <ul class="rows">
+    <li class="row">
+      <label>Edit your Billing Information below.</label>
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-bottom">Enter your Billing Information below. Click Save to save your settings.</span>
+      </div>
+    <li class="row half card-type">
+      <label>Card Type</label>
+      {{view App.Views.ControlPanel.SpindalSelect
+      contentBinding="App.Constants.ControlPanel.cardTypes"
+      optionLabelPath="content.name"
+      optionValuePath="content._id"
+      prompt="Card Type" initValBinding="App.Controllers.ControlPanel.account.creditCard.type"
+      selectionBinding="App.Controllers.ControlPanel.account.creditCard.selected_type"
+      }}
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-bottom">Select your card type.</span>
+      </div>
+    <li class="row big card-number">
+      <label>Card Number</label>
+      {{view Ember.TextField valueBinding="creditCard.number" placeholder="**** **** **** 7865" }}
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-bottom">Enter your credit card number.</span>
+      </div>
+    <li class="row big security-code">
+      <label>Security Code</label>
+      <input type="number" {{bindAttr value="creditCard.security_code"}}>
+      <a class="what-is-this security-code" href="#">What is this?</a>
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-bottom">Enter the security code found on your credit card. <a class="security-code" href="#">What is this?</a></span>
+      </div>
+    <li class="row big expiration-date">
+      <label>Expiration Date</label>
+      {{view App.Views.ControlPanel.SpindalSelect class="month" contentBinding="App.Constants.ControlPanel.cardExpiryMonths"
+      optionLabelPath="content.name"
+      optionValuePath="content.value"
+      prompt="Month" initValBinding="creditCard.expiry_month"
+      selectionBinding="App.Controllers.ControlPanel.account.creditCard.selected_expiry_month"
+      }}
+
+      {{view App.Views.ControlPanel.SpindalSelect class="year" contentBinding="App.Constants.ControlPanel.cardExpiryYear"
+      optionLabelPath="content.name"
+      optionValuePath="content.value"
+      prompt="Year" initValBinding="creditCard.expiry_year"
+      selectionBinding="App.Controllers.ControlPanel.account.creditCard.selected_expiry_year"
+      }}
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-bottom">Enter the expiration date on your card.</span>
+      </div>
+    <li class="row big zip-code">
+      <label>Billing Zip Code</label>
+      <input type="number" {{bindAttr value="creditCard.billing_zip_code"}}>
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-bottom">Enter the Billing Zip/Postal Code.</span>
+      </div>
+  </ul>
+</div>
+<footer>
+  <ul>
+    <li><a class="save" {{action "save" on="click"}}>Save</a>
+    <li><a class="cancel" {{action "close" on="click"}}>Cancel</a>
+  </ul>
+</footer>

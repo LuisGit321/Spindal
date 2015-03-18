@@ -1,0 +1,23 @@
+  <header>
+    <ul>
+      <li class="title">Amazon Link
+      <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="rows">
+      <li class="row url">
+        <label>Amazon Link</label>amazon_store_link
+        {{view Ember.TextField valueBinding="media.amazon_store_link" placeholder="http://www.amazon.com/Beast-Boys/" class="validate"}}
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">You can directly link your album to your existing Amazon page for your fans to purchase your music. 
+        </div>
+    </ul>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="save" {{action "setAmazonLink" on="click"}}>Save</a>
+      <li><a class="cancel" {{action "close" on="click"}}>Cancel</a>
+    </ul>
+  </footer>

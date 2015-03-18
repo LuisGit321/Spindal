@@ -1,0 +1,11 @@
+<a href="#" class="delete" {{action "delete" on="click"}}> <img src="/assets/delete-x.png"/></a>
+{{#unless empty}}
+	<span>
+	  <img {{bindAttr src="video.img_url"}} {{bindAttr class="video.provider"}}/>
+	  <label class="title">{{video.title}}</label>
+	</span>
+{{else}}
+  <a class="upload" {{action "embed" on="click"}}>Upload</a>
+{{/unless}}
+<input type="hidden" name="order" {{bindAttr value="video.order"}}>
+<input type="hidden" name="_id" {{bindAttr value="video._id"}}>

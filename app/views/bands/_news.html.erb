@@ -1,0 +1,133 @@
+<div id="news-widget">
+	<div id="news-menu">
+		<div id="title">
+			<h1>News</h1>	
+		</div>
+		
+		<div id="menu">
+			<ul>
+				<li>
+					<a id="all-news" class="selected" href="#">All</a>					
+				</li>
+				<li>
+					<a id="fb-news" href="#">	
+						Facebook
+					</a>
+				</li>
+				<li>
+					<a id="twitter-news" href="#">
+						Twitter
+					<a>
+				</li>
+				<li>
+					<a id="instagram-news" href="#">
+						Instagram
+					</a>
+				</li>
+				<li>
+					<a id="blog-news" href="#">
+						Blog
+					</a>
+				</li>
+			</ul>
+			
+			
+		</div>	
+	</div>		
+	<div id="loading-container">
+		<div id="loading">
+			loading...
+		</div>
+	</div>	
+	<div id="news-container">
+							
+	</div>	
+</div>
+
+<script type="text/javascript">
+	 /*
+	 $(document).ready(function() {
+        $('#all-news').click(function() {
+        	$('#news-container').hide();
+          	$('#loading-container').show();
+          	$.ajax(
+				{
+					url: "/news",
+			  		type: "GET",
+			  		success: function(data) 
+			  		{	
+						console.log('fetching all rss fields');
+			    		
+			  		}
+				});
+          
+        });
+        
+        $('#fb-news').click(function() {
+        	$('#news-container').hide();
+          	$('#loading-container').show();
+          	$.ajax(
+				{
+					url: "/news?type=facebook",
+			  		type: "GET",
+			  		success: function(data) 
+			  		{	
+						console.log('fetching facebook rss fields');
+			    		
+			  		}
+				});
+          
+        });
+        
+        $('#twitter-news').click(function() {
+        	$('#news-container').hide();
+          	$('#loading-container').show();
+          	$.ajax(
+				{
+					url: "/news?type=twitter",
+			  		type: "GET",
+			  		success: function(data) 
+			  		{	
+						console.log('fetching twitter rss fields');
+			    		
+			  		}
+				});
+          
+        });
+        
+        $('#instagram-news').click(function() 
+        {
+        	$('#news-container').hide();
+          	$('#loading-container').show();
+          	$.ajax(
+				{
+					url: "/news?type=inst",
+			  		type: "GET",
+			  		success: function(data) 
+			  		{	
+						console.log('fetching instagram rss fields');
+			    		
+			  		}
+				});
+          
+        });
+        
+        $('#blog-news').click(function() {
+        	$('#news-container').hide();
+          	$('#loading-container').show();
+          	$.ajax(
+				{
+					url: "/news?type=blog",
+			  		type: "GET",
+			  		success: function(data) 
+			  		{	
+						console.log('fetching blog rss fields');
+			    		
+			  		}
+				});
+          
+        });
+    });
+	*/
+</script>
+

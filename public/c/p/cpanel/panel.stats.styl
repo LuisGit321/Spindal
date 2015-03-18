@@ -1,0 +1,162 @@
+#stats-panel
+  ul.tabs
+    h 57px
+    w 650px
+    p 9px 7px 10px 16px
+    relative()
+    &:after
+      absolute bottom 0px left 0
+      w 650px
+      h 5px
+      content ''
+      d block
+      bg url(../i/cp/gallery-bg-shadow.png) no-repeat
+    li.row
+      h 38px
+      m 0 11px 0 0
+      fl()
+      bg b25
+      box-shadow w7 0 1px 0, inset b37 0 1px 1px, inset b7 0 0 7px
+      &.time
+        w 382px
+        label
+          c #fff
+          lh 38px
+          text-shadow b80 0 -1px 1px
+          left 11px
+        .select-time
+          w 232px
+          absolute top 7px left 143px
+          h 24px
+          bg #1e1e1e
+          border-radius 3px
+          box-shadow w7 0 1px 0, inset b37 0 1px 1px, inset b7 0 0 7px
+          clearfix()
+
+          .select-container
+            float left
+            relative()
+            h 24px
+            w 112px
+            &:hover:after
+              cursor pointer
+              bgp 0 -18px
+            &:active:after
+            &:focus:after
+              cursor pointer
+              bgp 0 -18px
+
+            input
+              vertical-align top
+              border none
+              bg transparent
+              h 24px
+              w 110px
+              ta left
+              f bold 13px/24px sans
+              c #fff
+              p 0 0 0 4px
+              m 0
+              relative()
+              cursor pointer
+              z 999999
+
+            &:after
+              content ''
+              d block
+              absolute top 3px right 3px
+              w 19px
+              h 18px
+              bg url(../i/cp/song-select-arrow.png) top left no-repeat
+              cursor pointer
+              z 0
+
+          .divider
+            float left
+            lhh 24px
+            w 8px
+            ta center
+            c #fff
+            
+      &.analytics
+        w 223px
+        a
+          m 7px
+          d block
+          w 209px
+          h 24px
+          f bold 1em/24px sans
+          text-shadow b99 0 -1px 0
+          c #fff
+          ta center
+          bg #666 url(../i/cp/google-analytics.png) no-repeat
+          box-shadow b75 0 1px 3px
+          border-radius 5px
+          &:hover, &:focus
+            bgp 0 -24px
+          &:active, &.active
+            bgp 0 -48px
+
+  div.panel
+    overflow-y scroll
+    h 460px
+    w 650px
+    bg m54 url(../i/cp/gallery-bg.png) no-repeat
+    pt 11px
+    clearfix()
+
+    .split
+      float left
+      w 300px
+      ml 16px
+    
+    .module
+      bg m33
+      box-shadow b99 0 1px 6px, inset w7 0 1px 0
+      w 300px
+      d inline-block
+      mb 11px
+
+      .header
+        f bold 16px sans
+        lh 39px
+        c #fff
+        p 0 14px
+        bb 1px solid #000
+        text-shadow b80 0 -1px 1px
+
+      .content
+        bt 1px solid w5
+        p 0
+
+        p
+          p 0 14px
+          &.big
+            f bold 40px/1.5 sans
+            c #fff
+            ls -1px
+            &.bb
+              bb 1px solid #333
+          &.small
+            f bold 16px/1.5 sans
+            c #666
+            m -.33em 0 .66em
+
+        table
+          m 14px
+          w 300px - 28px
+          &.green td
+            c #ccffcc
+          &.blue td
+            c #99ccff
+
+          caption
+            ta left
+            f bold 14px/1.5 sans
+            c #ccc
+
+          tr td
+            f 11px/1.5 sans
+            w 50%
+            &.value
+              ta right

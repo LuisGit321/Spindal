@@ -1,0 +1,23 @@
+<li {{bindAttr class="band.bio_disabled:invisible"}}>
+    <a class="show bio" href="#" {{action "showBioInfo" on="click"}}>Bio</a>
+<li {{bindAttr class="band.live_shows_disabled:invisible"}}>
+   <a class="show live" href="#" {{action "showLiveInfo" on="click"}}>Live</a>
+<li class="nav-gallery">
+  <a class="nav-gallery" href="#">Gallery</a>
+  <div class="links">
+    <span id="gallery-photos-button" class="show-gallery-arrows button-inset" {{action "photosClicked"}}>Photos</span>
+    <span id="gallery-videos-button" class="show-gallery-arrows button-inset" {{action "videosClicked"}}>Videos</span>
+  </div>
+<li class="nav-news">
+  <div {{bindAttr class="band.news_disabled:invisible"}}>
+   	<a id="nav-news" class="show news" href="#" {{action "showNewsPane"}}>News</a>
+    <div id="email_subscribe"  {{bindAttr class="band.news_email_disabled:invisible"}}>
+      <input id="news_subscribe_email" type="text" placeholder="Enter Email for Exclusive Updates">
+      <input type="submit" {{action "subscribe_email" on="click"}} >
+    </div>
+  </div>
+</li>  
+
+<li {{bindAttr class="band.fb_disabled:invisible"}}><a {{bindAttr href="band.fb_url"}} target="_blank">Facebook </a>
+<li {{bindAttr class="band.twitter_disabled:invisible"}}><a {{bindAttr href="band.twitter_url"}} target="_blank">Twitter</a>
+<li {{bindAttr class="band.store_disabled:invisible"}}><a {{bindAttr href="band.store_url"}} target="_blank">Store</a>

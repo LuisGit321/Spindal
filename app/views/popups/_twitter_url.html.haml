@@ -1,0 +1,25 @@
+%form.popup.window.profile.twitter.url
+  %header
+    %ul
+      %li.title Twitter
+      %li.exit
+        %a.exit{:href => "#"} Exit
+  .content
+    %ul.rows
+      %li.row.label
+        %label Write or paste your Twitter URL below.
+        .help
+          %span.icon ?
+          %span.ui-tooltip-bottom Enter or paste your Twitter web URL below so your fans be linked directly to your Twitter page.
+      %li.row.big.url
+        %label Twitter URL
+        %input{:placeholder => "www.twitter.com/#!/yourpage", :type => "text"}
+          .help
+            %span.icon ?
+            %span.ui-tooltip-bottom Enter your Twitter web URL below.
+  %footer
+    %ul
+      %li
+        %a.save Save
+      %li
+        %a.cancel Cancel

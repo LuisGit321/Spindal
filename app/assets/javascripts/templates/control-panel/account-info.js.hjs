@@ -1,0 +1,57 @@
+<header>
+  <ul>
+    <li class="title">Account Information
+    <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+  </ul>
+</header>
+<div class="content">
+  <ul class="rows">
+    <li class="row">
+      <label>Edit your Account Information below.</label>
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-bottom">This information below is the person who is authorized to act on behalf of the band.</span>
+      </div>
+    <li class="row band-name">
+      <label>Band Name</label>
+      {{view Ember.TextField valueBinding="band.name" placeholder="Band Name"}}
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-bottom">No spaces please. This should be your real Band Name so your fans can easily find you. </span>
+      </div>
+    <li class="desc spindal-url"> Your public Spindal web address is: {{band.spindle_url}}
+    <li class="row half first-name">
+      <label>First Name</label>
+      {{view Ember.TextField valueBinding="user.first_name" placeholder="First Name"}}
+    <li class="row half last-name">
+      <label>Last Name</label>
+      {{view Ember.TextField valueBinding="user.last_name" placeholder="Last Name"}}
+    <li class="row big username">
+      <label>Username</label>
+      {{view Ember.TextField valueBinding="user.email" placeholder="email@youraddress.com"}}
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-bottom">This needs to be a valid email address.</span>
+      </div>
+    <li class="row big password">
+      <label>Password</label>
+      <input type="text" placeholder="********">
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-bottom">Must be at least 6 characters.</span>
+      </div>
+    <li class="row big confirm password">
+      <label>Confirm Password</label>
+      <input type="password">
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-bottom">Must match your password above</span>
+      </div>
+  </ul>
+</div>
+<footer>
+  <ul>
+    <li><a class="save" {{action "save" on="click"}}>Save</a>
+    <li><a class="cancel" {{action "close" on="click"}}>Cancel</a>
+  </ul>
+</footer>

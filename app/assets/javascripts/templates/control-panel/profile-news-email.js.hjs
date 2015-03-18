@@ -1,0 +1,37 @@
+  <header>
+    <ul>
+      <li class="title">Constant Contact
+      <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="rows">
+      <li class="row label">
+        <label>Please specifiy Constant Contact authentication info.</label>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enter constant Contact authenticate info to enable email subscrition </span>
+        </div>
+      <li class="row email">
+        <label>Username</label>
+          {{view Ember.TextField valueBinding="news.email_api_username" }}
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enter your constact contact username below.</span>
+        </div>
+      <li class="row email">
+        <label>Password</label>
+          {{view Ember.TextField type="password" valueBinding="news.email_api_password" }}
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-bottom">Enter Constant Contact password.</span>
+        </div>  
+        
+    </ul>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="save" {{action "save" on="click"}}>Save</a>
+      <li><a class="cancel" {{action "close" on="click"}}>Cancel</a>
+    </ul>
+  </footer>

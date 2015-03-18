@@ -1,0 +1,88 @@
+.albums
+  relative()
+  h 100%
+
+  ul.albums
+    h 100%
+    li.album
+      w 245px
+      .album.cover
+        p 0 x*2 6px
+        img
+          r 189px
+          b 2px solid #fff
+          border-radius 2px
+          box-shadow b45 2px 2px 4px
+          d block
+
+        ul.switch
+          absolute top 0 left x*2
+          r 189px
+          transition()
+          z-index 1000
+          o 0
+          &:hover
+            o 1
+          li
+            a
+              d block
+              w 41px
+              h 60px
+              absolute top 62px + 2px
+              z-index 100
+              ti -999em
+              bg b80 url(../i/album-nav-arrows.png) left top no-repeat
+              transition()
+              &.prev-album
+                left 2px
+                border-radius 0 2px 2px 0
+              &.next-album
+                right 2px
+                bgp -41px 0
+                border-radius 2px 0 0 2px
+              &:hover, &:focus
+                bgc hsla(212,78,47,.8)
+              &:active
+                bgc hsla(212,78,47,.9)
+
+      .album.title
+        h2
+          p 0 2em
+          fw bold
+          lh x*2
+          cursor pointer
+          bt 1px solid transparent
+          &:hover
+            bg hsla(0,0,71,.6)
+          &:active, &.active
+            bg hsla(0,0,71,.8)
+
+        .data
+          p 0 2em .5em
+          d none
+          bg hsla(0,0,71,.8)
+          box-shadow inset b5 0 -2px 2px
+          > ul
+            font 11px/1.5 sans
+            > li
+              &.links
+                p .5em 0 0
+                > a
+                  mr 1em
+                  fs 12px
+                  &.button
+                    d inline-block
+                    background linear-gradient(top, #3985c1, #0767b1)
+                    border-radius 2px
+                    f bold 12px/1.25 sans
+                    w 120px
+                    ta center
+                    c #fff
+                    aa()
+                    text-shadow b40 0 -1px 0
+                    b 1px solid b15
+                    box-shadow b45 1px 1px 2px
+                .menu.share
+                  ul
+                    left auto
+                    right -49%

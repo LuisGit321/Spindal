@@ -1,0 +1,13 @@
+  <td class="date">
+    <!--
+    <span class="num">2</span>-->
+    <input class="datepicker add" {{bindAttr valueBinding="liveShow.day"}}>
+  <td class="venue">
+      {{view Ember.TextField valueBinding="liveShow.venue" placeholder="Venue"}}
+  <td class="location">
+    {{view Ember.TextField class="location" valueBinding="liveShow.location" placeholder="City,State"}}
+  <td class="tickets">
+    {{view App.Views.ControlPanel.Light disabledBinding="liveShow.tickets_disabled" classBinding="this.disabled"}}
+    {{view Ember.TextField class="url"  valueBinding="liveShow.ticket_url" placeholder="http://buyticketshere"}}
+  <td class="status">
+    <a class="delete" {{action "erase" on="click"}}>Delete<a>

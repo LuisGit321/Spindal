@@ -1,0 +1,113 @@
+ul#cpanel-tabs{
+zoom:1;
+}
+
+ul#cpanel-tabs:before,ul#cpanel-tabs:after{
+content:"";
+display:table}
+
+ul#cpanel-tabs:after{
+clear:both}
+
+ul#cpanel-tabs li{
+float:left;
+-webkit-box-shadow:rgba(0,0,0,0.75) 0 1px 3px;
+-moz-box-shadow:rgba(0,0,0,0.75) 0 1px 3px;
+box-shadow:rgba(0,0,0,0.75) 0 1px 3px;
+background:url("/assets/cp/main-menu.png") top left no-repeat;
+}
+
+ul#cpanel-tabs li a{
+display:block;
+width:103px;
+height:31px;
+text-indent:-999em}
+
+ul#cpanel-tabs.tabs li.minimize a
+{
+  width:30px !important; 
+}
+
+ul#cpanel-tabs li.ui-tabs-selected,ul#cpanel-tabs li:active{
+-webkit-box-shadow:#000 0 0 0;
+-moz-box-shadow:#000 0 0 0;
+box-shadow:#000 0 0 0}
+
+ul#cpanel-tabs li.home:hover,ul#cpanel-tabs li.home:focus{
+background-position:0 -31px}
+
+ul#cpanel-tabs li.home:active,ul#cpanel-tabs li.home.ui-tabs-selected{
+background-position:0 -62px}
+
+ul#cpanel-tabs li.profile{
+background-position:-103px 0;
+}
+
+ul#cpanel-tabs li.profile:hover,ul#cpanel-tabs li.profile:focus{
+background-position:-103px -31px}
+
+ul#cpanel-tabs li.profile:active,ul#cpanel-tabs li.profile.ui-tabs-selected{
+background-position:-103px -62px}
+
+ul#cpanel-tabs li.music{
+background-position:-206px 0;
+}
+
+ul#cpanel-tabs li.music:hover,ul#cpanel-tabs li.music:focus{
+background-position:-206px -31px}
+
+ul#cpanel-tabs li.music:active,ul#cpanel-tabs li.music.ui-tabs-selected{
+background-position:-206px -62px}
+
+ul#cpanel-tabs li.gallery{
+background-position:-309px 0;
+}
+
+ul#cpanel-tabs li.gallery:hover,ul#cpanel-tabs li.gallery:focus{
+background-position:-309px -31px}
+
+ul#cpanel-tabs li.gallery:active,ul#cpanel-tabs li.gallery.ui-tabs-selected{
+background-position:-309px -62px}
+
+ul#cpanel-tabs li.stats{
+background-position:-412px 0;
+}
+
+ul#cpanel-tabs li.stats:hover,ul#cpanel-tabs li.stats:focus{
+background-position:-412px -31px}
+
+ul#cpanel-tabs li.stats:active,ul#cpanel-tabs li.stats.ui-tabs-selected{
+background-position:-412px -62px}
+
+ul#cpanel-tabs li.account{
+width:104px;
+background-position:-515px 0;
+}
+
+ul#cpanel-tabs li.account:hover,ul#cpanel-tabs li.account:focus{
+background-position:-515px -31px}
+
+ul#cpanel-tabs li.account:active,ul#cpanel-tabs li.account.ui-tabs-selected{
+background-position:-515px -62px}
+
+ul#cpanel-tabs li.minimize{
+width:31px;
+background-position:-619px 0;
+}
+
+ul#cpanel-tabs li.minimize:hover,ul#cpanel-tabs li.minimize:focus{
+background-position:-619px -31px}
+
+ul#cpanel-tabs li.minimize:active{
+background-position:-619px -62px}
+
+ul#cpanel-tabs li.minimize.minimized{
+background-position:-649px 0;
+}
+
+ul#cpanel-tabs li.minimize.minimized:hover,ul#cpanel-tabs li.minimize.minimized:focus{
+background-position:-649px -31px}
+
+ul#cpanel-tabs li.minimize.minimized:active{
+background-position:-649px -62px}
+

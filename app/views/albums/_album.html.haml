@@ -1,0 +1,30 @@
+%li.album
+  .album.cover
+    %ul.switch
+      %li.prev
+        %a.prev-album{:href => "#", :title => "Previous Album"} Prev
+      %li.next
+        %a.next-album{:href => "#", :title => "Next Album"} Next Album
+    = image_tag album.cover_image if album.cover_image
+  .album.title
+    %h2.title= album.title
+    .data
+      %ul
+        %li Released: Jun 15, #{album.release_year}
+        %li © 2010 SideOneDummy Records
+        %li.links
+          %a.button{:href => "#"} Buy Album $9.99
+          .menu.share
+            %span.label Share
+            %ul
+              %li
+                %a{:href => "#"} Facebook
+              %li
+                %a{:href => "#"} Twitter
+              %li
+                %a{:href => "#"} Copy Link
+              %li
+                %a{:href => "#"} Like on Facebook
+  .tracks.menu
+    .tracks.accordion
+      = render partial: 'songs/song', collection: album.songs

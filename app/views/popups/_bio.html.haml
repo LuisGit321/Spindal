@@ -1,0 +1,37 @@
+%form.popup.window.profile.bio.textarea
+  %header
+    %ul
+      %li.title Bio
+      %li.exit
+        %a.exit{:href => "#"} Exit
+  .content
+    %ul.rows
+      %li.row
+        %label Write or paste your band Biography.
+        .help
+          %span.icon ?
+          %span.ui-tooltip-bottom Write or paste your band Biography. Include any information you want your fans to know about your band.
+      %li.row.textarea
+        .textarea-scroll
+          %textarea
+            :preserve
+
+              EXAMPLE:
+
+              METALLICA
+
+              Formed in 1981 when James Hetfield responded to an advertisement that
+              drummer Lars Ulrich had posted in a local newspaper.
+
+              James Hetfield - Lead Vocals, Guitar
+
+              Kirk Hammet - Lead Guitarist
+
+              Lars Ulrich - Drums
+
+              Robert Trujillo - Bass  %footer
+    %ul
+      %li
+        %a.save Save
+      %li
+        %a.cancel Cancel

@@ -1,0 +1,6 @@
+App.configure do
+  config.s3_access_key_id     = '50m3r4nd0m4cc355k3y'
+  config.s3_secret_access_key = '53cr3t4cc355k3y'
+  config.s3_bucket            = 'spinal-dev'
+  config.s3_region            = 'us-east-1'
+end

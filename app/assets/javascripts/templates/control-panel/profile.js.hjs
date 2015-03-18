@@ -1,0 +1,139 @@
+  <ul class="rows">
+    <li class="row third background">
+      <div class="home-background-image">
+        <img class="thumbnail" {{bindAttr src="band.bg_image.thumb.url"}}/>
+        <p>Home Background Image</p>
+        <a class="upload" {{action "selectBackground" on="click"}}></a>
+        <input class="background-file" name="band[bg_image]" type="file" accept="image/*" {{action "uploadBackground" on="change"}} />
+      </div>
+      {{view App.Views.ControlPanel.Light disabledBinding="band.play_button_disabled" classBinding="this.disabled"}}
+      <label>Large Play Button</label>
+    <li class="section band-name">
+      <h2>{{band.name}}</h2>
+      <p class="url">{{band.spindle_url}}</p>
+      <div class="help">
+        <span class="icon">?</span>
+        <div class="ui-tooltip-top">Share this with your fans for direct access to your Spindal Profile Player.</div>
+      </div>
+    <li class="row third genre">
+      <label>Genre</label>
+      {{view App.Views.ControlPanel.SpindalSelect
+        viewName="band_genre"
+        contentBinding="App.Controllers.ControlPanel.appConstants.bandGenre"
+        optionLabelPath="content.name"
+        optionValuePath="content._id"
+        prompt="Genre"
+        initValBinding="App.Controllers.ControlPanel.band.details.genre._id"
+        selectionBinding="App.Controllers.ControlPanel.band.details.selected_genre"
+        }}
+
+    <li class="row third sub genre">
+      <label>Sub Genre</label>
+        {{view App.Views.ControlPanel.SpindalSelect
+          viewName="band_sub_genre"
+          contentBinding="App.Controllers.ControlPanel.appConstants.bandSubGenreFiltered"
+          optionLabelPath="content.name"
+          optionValuePath="content._id"
+          prompt="Sub Genre" initValBinding="App.Controllers.ControlPanel.band.details.sub_genre._id"
+          selectionBinding="App.Controllers.ControlPanel.band.details.selected_sub_genre"
+          }}
+    <li class="row two-third location">
+      {{view Ember.TextField class="city" valueBinding="band.city" target="parentView" placeholder="City"}}
+      {{view Ember.TextField valueBinding="band.state" target="parentView" placeholder="State" class="state"}}
+      {{view Ember.TextField class="country"valueBinding="band.country" target="parentView" placeholder="Country"}}
+
+      <div class="help">
+        <span class="icon">?</span>
+        <div class="ui-tooltip-bottom">Fill out your location for fans to easily find you by location search.</div>
+      </div>
+    <li class="row two-third band-logo">
+      {{view App.Views.ControlPanel.Light disabledBinding="band.logo_disabled" classBinding="this.disabled" }}
+      <label>Band Logo</label>
+      <div class="selector">
+        <div class="selector-dropdown">
+          <ul class="selector-options selector-dropdown-menu">
+            <li><a class="create band-logo" href="#" {{action "showLogo" on="click"}}>Create Logo</a></li>
+            <li>
+              <a class="upload band-logo" href="#" {{action "selectLogo" on="click"}}>Upload Logo</a>
+              <input class="logo-file" name="logo[file]" type="file" style="display:none" accept="image/*" {{action "uploadLogo" on="change"}} />
+            </li>
+          </ul>
+          <div class="selector-arrow"></div>
+        </div>
+      </div>
+      <div class="help">
+        <span class="icon">?</span>
+        <div class="ui-tooltip-bottom">Create your own band logo or Upload your own logo. To upload your logo it must be a minimum of 195 pixels wide, and must have a white background.</div>
+      </div>
+    <li class="row third bio">
+      {{view App.Views.ControlPanel.Light disabledBinding="band.bio_disabled" classBinding="this.disabled"}}
+      <a class="edit bio" href="#" {{action "showBio" on="click"}}>Bio</a>
+      <div class="help">
+        <span class="icon">?</span>
+        <div class="ui-tooltip-bottom">Click the Bio button and enter your bands biography.</div>
+      </div>
+    <li class="row third live">
+      {{view App.Views.ControlPanel.Light disabledBinding="band.live_shows_disabled" classBinding="this.disabled"}}
+      <a class="edit live" href="#" {{action "showLiveShows" on="click"}}>Live</a>
+      <div class="help">
+        <span class="icon">?</span>
+        <div class="ui-tooltip-bottom">Click the Live button to enter your Live concert information.</div>
+      </div>
+    <li class="row third news">
+        {{view App.Views.ControlPanel.Light disabledBinding="band.news_disabled" classBinding="this.disabled"}}
+      <a class="edit news" href="#" {{action "showNews" on="click"}}>News</a>
+      <div class="help">
+        <span class="icon">?</span>
+        <div class="ui-tooltip-bottom">Click the News button to configure your news feeds.</div>
+      </div>
+    <li class="row third facebook">
+      {{view App.Views.ControlPanel.Light disabledBinding="band.fb_disabled" classBinding="this.disabled"}}
+      <a class="edit facebook" href="#" {{action "showFB" on="click"}}>Facebook</a>
+      <div class="help">
+        <span class="icon">?</span>
+        <div class="ui-tooltip-bottom">Click the Facebook button to configure your Facebook settings.</div>
+      </div>
+    <li class="row third twitter">
+      {{view App.Views.ControlPanel.Light disabledBinding="band.twitter_disabled" classBinding="this.disabled"}}
+      <a class="edit twitter" href="#" {{action "showTwitter" on="click"}}>Twitter</a>
+      <div class="help">
+        <span class="icon">?</span>
+        <div class="ui-tooltip-bottom">Click the Twitter button to configure your Twitter settings.</div>
+      </div>
+    <li class="row third store">
+      {{view App.Views.ControlPanel.Light disabledBinding="band.store_disabled" classBinding="this.disabled"}}
+      <a class="edit store" {{action "showStore" on="click"}}>Store</a>
+      <div class="help">
+        <span class="icon">?</span>
+        <div class="ui-tooltip-bottom">Click the Store button to configure your Store settings.</div>
+      </div>
+    <li class="get-paid section">
+      <h2>Get Paid</h2>
+    <li class="row half paypal">
+      <label>PayPal Email</label>
+      {{view Ember.TextField valueBinding="band.paypal_email" action="change" on="change" target="parentView" placeholder="you@email.com" type="email"}}
+      <div class="help">
+        <span class="icon">?</span>
+        <div class="ui-tooltip-bottom">All sales will go directly to your payPal account. You will need a valid PayPal account to receive payments directly from your fans.</div>
+      </div>
+    <li class="row half currency">
+      <label>Currency</label>
+      {{view App.Views.ControlPanel.SpindalSelect
+          viewName="band_currency"
+          class="currency"
+          contentBinding="App.Constants.ControlPanel.currencies"
+          optionLabelPath="content.name"
+          optionValuePath="content.value"
+          prompt="Currency"
+          initValBinding="band.paypal_currency" 
+          selectionBinding="band.selected_currency" 
+          }}
+      <div class="help">
+        <span class="icon">?</span>
+        <div class="ui-tooltip-bottom">Please select a currency. All sales of your music will use the currency selected below.</div>
+      </div>
+    <li class="desc">
+      By entering your PayPal email address above you will be able to receive money directly from your fans.<br>
+      <strong>IMPORTANT:</strong> You will need to update your PayPal account to receive small payments (ex: $0.99).<br>
+      The update is free. <strong><a class="update-paypal" href="#">CLICK HERE</a></strong> to learn how.
+  </ul>

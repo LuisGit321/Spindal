@@ -1,0 +1,41 @@
+  <header>
+    <ul>
+      <li class="title">Slideshow
+      <li class="name">Song Name
+      <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <ul class="rows">
+      <li class="row transition-time select">
+        <label>Transition Time</label>
+        <input type="number" class="transition-time" {{action "slideshowTransitionChanged" on="click"}} {{action "slideshowTransitionChanged" on="change"}} {{bindAttr value="song.slideshow_trans_time"}} step="0.5">
+        <span class="unit">sec.</span>
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-top">Help.</span>
+        </div>
+      <li class="row transition-style select">
+        <label>Transition Style</label>
+        {{view App.Views.ControlPanel.SpindalSelect
+          contentBinding="App.Constants.ControlPanel.transitionStyles"
+          optionLabelPath="content.name"
+          optionValuePath="content.value"
+          initValBinding="song.slideshow_trans_style" selectionBinding="song.selected_transition_style"}}
+        <div class="help">
+          <span class="icon">?</span>
+          <span class="ui-tooltip-top">Help.</span>
+        </div>
+    </ul>
+    <ul class="images">
+      {{#each song.slideshow}}
+        {{view App.Views.ControlPanel.Photo photoBinding="this"}}
+      {{/each}}
+    <li class="image add" {{action "addPhotoSlot" on="click"}}>
+    </ul>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="save" {{action "close" on="click"}}>OK</a>
+    </ul>
+  </footer>

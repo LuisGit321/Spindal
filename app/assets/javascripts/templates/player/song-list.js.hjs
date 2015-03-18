@@ -1,0 +1,5 @@
+<div class="tracks accordion ac-container">
+  {{#each songs}}
+		{{ view App.Views.Sidebar.Song songBinding="this"}}
+	{{/each}}
+</div>

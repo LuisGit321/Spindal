@@ -1,0 +1,35 @@
+.title
+  %a.play.toggle{:href => "#"} Play
+  %h3.track.title= song.title
+.data
+  %form.volume.toggle{:href => "#"}
+    %span.label Volume
+    .input
+      .volume
+        .slider{:style => "top: 50%"}
+  .track.length
+    .buffer{:style => "width: 67%"} Buffer 67%
+    .played{:style => "width: 33%"} Played 33%
+    .slider{:style => "left: 33%"} Slider
+  %ul.track.stats
+    %li.length.played 1:15
+    %li.total.plays 3,506 plays
+    %li.length.unplayed 3:46
+  .menu.track
+    %ul
+      %li.lyrics
+        %a.show.lyrics{:href => "#"} Lyrics
+      %li.share.menu
+        .menu.share
+          %span.label Share
+          %ul
+            %li
+              %a{:href => "#"} Facebook
+            %li
+              %a{:href => "#"} Twitter
+            %li
+              %a{:href => "#"} Copy Link
+            %li
+              %a{:href => "#"} Like on Facebook
+      %li.buy
+        %a{:href => "#"} Buy $0.99

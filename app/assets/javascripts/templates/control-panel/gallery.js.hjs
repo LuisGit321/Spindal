@@ -1,0 +1,53 @@
+<ul class="rows tabs">
+  <li class="row">
+    {{view App.Views.ControlPanel.Light disabledBinding="settings.g_photos_disabled" classBinding="this.disabled" }}
+    <a id="gallery-photos-tab" href="#gallery-photos">Photos</a>
+  <li class="row">
+    {{view App.Views.ControlPanel.Light disabledBinding="settings.g_videos_disabled" classBinding="this.disabled" }}
+    <a id="gallery-videos-tab" href="#gallery-videos">Videos</a>
+</ul>
+<div id="gallery-photos" class="ui-tabs-hide panel">
+  <ul class="rows">
+    <li class="row transition-time select">
+      <label>Transition Time</label>
+      <input type="number" class="transition-time" {{action "transitionChanged" on="click"}} {{action "transitionChanged" on="change"}} {{bindAttr value="settings.g_transition_time"}} step="0.5">
+      <span class="unit">sec.</span>
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-top">Help.</span>
+      </div>
+    <li class="row transition-style select">
+      <label>Transition Style</label>
+      {{view App.Views.ControlPanel.SpindalSelect
+        contentBinding="App.Constants.ControlPanel.transitionStyles"
+        optionLabelPath="content.name"
+        optionValuePath="content.value"
+        initValBinding="settings.g_transition_style" selectionBinding="settings.selected_transition_style"}}
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-top">Help.</span>
+      </div>
+  </ul>
+  <ul class="images">
+    {{#each photoList}}
+      {{view App.Views.ControlPanel.Photo photoBinding="this"}}
+    {{/each}}
+    <li class="image add" {{action "addPhotoSlot" on="click"}}>
+  </ul>
+</div>
+<div id="gallery-videos" class="ui-tabs-hide panel">
+  <ul class="rows">
+    <li class="row label">
+      <label>Embed Videos from Youtube&reg; or Vimeo&reg; below.</label>
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-top">Help.</span>
+      </div>
+  </ul>
+  <ul class="video">
+    {{#each videoList }}
+        {{view App.Views.ControlPanel.Video videoBinding="this"}}
+    {{/each}}
+    <li class="video add" {{action "addVideoSlot" on="click"}}>
+  </ul>
+</div>

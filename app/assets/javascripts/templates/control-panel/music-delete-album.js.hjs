@@ -1,0 +1,20 @@
+  <header>
+    <ul>
+      <li class="exit"><a class="exit" href="#"  {{action "close" on="click"}}>Exit</a>
+    </ul>
+  </header>
+  <div class="content">
+    <div class="msg">
+      <p>Are you sure you want to Delete this Album?</p>
+      <div class="help">
+        <span class="icon">?</span>
+        <span class="ui-tooltip-bottom">All Songs within this Album including associated MP3s, lyrics, photos and videos will be deleted.</span>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <ul>
+      <li><a class="yes" {{action "deleteAlbum" on="click"}}>Yes</a>
+      <li><a class="cancel" {{action "close" on="click"}}>Cancel</a>
+    </ul>
+  </footer>

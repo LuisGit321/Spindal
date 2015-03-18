@@ -1,0 +1,26 @@
+<header>
+  <ul>
+    <li class="title">Cancel Account Confirmation
+    <li class="exit"><a class="exit" href="#" {{action "close" on="click"}}>Exit</a>
+  </ul>
+</header>
+<div class="content">
+  <div class="msg">
+    <p>Are you sure you want to cancel your Spindal account?</p>
+    <div class="help">
+      <span class="icon">?</span>
+      <span class="ui-tooltip-bottom">Please read carefully. If you have any questions, please <a href="#">click here</a>.</span>
+    </div>
+    <small>
+      <p><strong>Once your account is cancelled, all of your information will be permanetly deleted. THIS CAN NOT BE REVERSED.</strong></p>
+      <p>You won’t be charged again on your next billing cycle, but you are responsible for any charges already incurred. Questions? <a href="#">Click here</a>.</p>
+      <p>Thank you for trying Spindal.</p>
+    </small>
+  </div>
+</div>
+<footer>
+  <ul>
+    <li><a class="ok" {{action "cancelAccount" on="click"}}>Cancel Account</a>
+    <li><a class="cancel" {{action "close" on="click"}}>Cancel</a>
+  </ul>
+</footer>

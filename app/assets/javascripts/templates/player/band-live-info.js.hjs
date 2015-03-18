@@ -1,0 +1,34 @@
+  <a class="pane hide" href="#" {{action "toggleLivePane" on="click"}}>
+   <img src="/assets/arrow-left.png" alt="Hide menu">
+  </a>
+  
+  
+<div class="pane-widget">
+	<div class="pane-menu">
+		<div class="title">
+			<h1>Live Shows</h1>	
+		</div>
+	</div>	
+		
+	<div class="pane-container">
+		<div>
+ 			<table class="events">
+		      <thead>
+		        <tr>
+		          <th class="date">Date
+		          <th class="loc">City, State
+		          <th class="venue">Venue
+		          <th class="tickets">&nbsp;
+		      <tbody>
+		      {{#each App.Controllers.ControlPanel.liveShowList}}
+		        <tr>
+		          <td class="date"> {{datetime this.day format= "dddd, MMMM Do YYYY"}}
+		          <td class="loc"> {{ this.city }}, {{ this.state }}
+		          <td class="venue"> {{ this.venue }}
+		          <td class="tickets"> <ul> <li {{bindAttr class="this.tickets_disabled:invisible"}}> <a {{bindAttr  href="ticket_url"}} target="_blank">  TICKETS </a>  </ul>
+		        </tr>
+		      {{/each}}
+	      	</table>
+		</div>					
+	</div>	
+</div>

@@ -1,0 +1,42 @@
+%form.popup.window.lyrics.textarea
+  %header
+    %ul
+      %li.title Lyrics
+      %li.exit
+        %a.exit{:href => "#"} Exit
+  .content
+    %ul.rows
+      %li.row.transition-style.select
+        %label Write or paste Lyrics below.
+        .help
+          %span.icon ?
+          %span.ui-tooltip-top Enter the Lyrics below and space out text to be read clearly.
+      %li.row.textarea
+        .textarea-scroll
+          %textarea
+            :preserve
+
+              Lyrics Sample:
+
+              I can't stand it I know you planned it
+              I'm gonna set it straight, this watergate
+              I can't stand rocking when I'm in here
+              Because your crystal ball ain't so crystal clear
+              So while you sit back and wonder why
+              I got this f*cking thorn in my side
+              Oh my, it's a mirage
+              I'm tellin' y'all it's sabotage
+
+              So listen up 'cause you can't say nothin'
+              You'll shut me down with a push of your button?
+              But yo I'm out and I'm gone
+              I'll tell you now I keep it on and on
+
+              'cause what you see you might not get
+              And we can bet so don't you get souped yet
+              You're scheming on a thing that's a mirage  %footer
+    %ul
+      %li
+        %a.save Save
+      %li
+        %a.cancel Cancel

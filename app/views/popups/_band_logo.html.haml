@@ -1,0 +1,69 @@
+%form.popup.window.profile.band-logo
+  %header
+    %ul
+      %li.title Band Logo
+      %li.exit
+        %a.exit{:href => "#"} Exit
+  .content
+    %ul.rows
+      %li.row
+        %label Create Your Band Logo.
+        .help
+          %span.icon ?
+          %span.ui-tooltip-bottom Create your Band Logo by entering the information below.
+      %li.row.band-name
+        %label Band Name
+        %input{:placeholder => "Name", :type => "text"}
+          .help
+            %span.icon ?
+            %span.ui-tooltip-bottom Enter your Band Name to appear in your Profile Player.
+      %li.row.half.font.face
+        %label Font
+        %select
+          %option Arial
+          %option Arial Bold
+          %option Clarendon
+          %option Clarendon Bold
+          %option Courier
+          %option Courier Bold
+          %option{:selected => ""} Helvetica
+          %option Franklin Gothic
+          %option Lucida Sans
+          %option Meta
+          %option Meta Bold
+          %option Times New Roman
+          %option Times New Roman Bold
+          %option Verdana
+          %option Verdana Bold
+        .help
+          %span.icon ?
+          %span.ui-tooltip-bottom Select from the fonts below to best represent your Band.
+      %li.row.half.font.color
+        %label Font Color
+        %select
+          %option{:selected => ""} #000000
+        .help
+          %span.icon ?
+          %span.ui-tooltip-bottom Select from the color chart below to best represent your Band.
+      %li.row.half.font.size
+        %label Font Size
+        %input{:type => "number", :value => "12"}
+          %span.unit px
+          .help
+            %span.icon ?
+            %span.ui-tooltip-bottom Adjust the font size below.
+      %li.row.half.font.alignment
+        %label Alignment
+        %select
+          %option{:selected => ""} Left
+          %option Center
+          %option Right
+        .help
+          %span.icon ?
+          %span.ui-tooltip-bottom Select the Alignment below.
+  %footer
+    %ul
+      %li
+        %a.save Save
+      %li
+        %a.cancel Cancel

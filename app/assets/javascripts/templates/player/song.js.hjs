@@ -1,0 +1,76 @@
+<input id="ac-{{unbound domID}}" type="radio" name="accordion-song" {{bindAttr checked="activateSong"}}/>
+<label for="ac-{{unbound domID}}" {{bindAttr class="song.disabled:invisible"}}>
+  {{song.track_no}}. {{song.title}}
+</label>
+
+<div id="{{unbound domID}}" class="data" {{bindAttr class="song.disabled:invisible"}}>
+  <div class="jp-player"></div>
+  <div class="jp-audio">
+    <div class="jp-type-single">
+      <div class="jp-gui jp-interface">
+        <ul class="jp-controls">
+          <li>
+            <a href="#" class="jp-play">Play</a>
+          </li>
+          <li>
+            <a href="#" class="jp-pause">Pause</a>
+          </li>
+          <li>
+            <a href="#" class="jp-volume-max"></a>
+          </li>
+        </ul>
+        <div class="jp-progress">
+          <div class="jp-seek-bar">
+            <div class="jp-play-bar">
+            </div>
+          </div>
+        </div>
+
+        <div class="jp-volume-bar invisible"></div>
+
+        <div class="jp-time-holder">
+          <div class="jp-current-time"></div><!-- /.jp-current-time -->
+          <div class="jp-duration"></div><!-- /.jp-duration -->
+        </div><!-- /.jp-volume-bar -->
+
+        <div class="jp-no-solution"></div><!-- /.jp-no-solution -->
+
+        <div class="num-of-plays">
+          {{#unless album.num_song_plays_disabled}}
+            <span>3,506 plays</span>
+          {{/unless}}
+        </div><!-- /.num-of-plays -->
+
+        <div class="menu track">
+          <ul>
+            <li class="lyrics" {{bindAttr class="song.lyrics_disabled:invisible"}}>
+              <a class="show lyrics" href="#">Lyrics</a>
+            </li>
+            <li class="share menu">
+              <div class="menu share">
+                <span class="label">Share</span>
+                <ul>
+                  <li>
+                    <a href="#">Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#">Twitter</a>
+                  </li>
+                  <li>
+                    <a href="#">Copy Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Like on Facebook</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="buy" {{action "getSong" on="click"}} {{bindAttr class="song.download_disabled:invisible"}}>
+              <a>{{buyLinkText}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

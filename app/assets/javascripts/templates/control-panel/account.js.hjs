@@ -1,0 +1,58 @@
+<section class="band-info">
+      <header><h2>{{band.name}}</h2></header>
+      <div class="content">
+        <p class="url">Spindal.com/{{band.name}}</p>
+        <div class="account info">
+          <ul>
+            <li>Band Name: <span class="band-name">{{band.name}}</span>
+            <li>Name: <span class="name">{{user.first_name  user.last_name}}</span>
+            <li>Username: <span class="username">{{user.email}}</span>
+            <li>Password: <span class="password">********</span>
+          </ul>
+          <a class="change account info" href="#" {{action "changeInfo" on="click"}}>Change</a>
+        </div>
+        <div class="billing info">
+          <ul>
+            <li>Card Type: <span class="card-type">Visa</span>
+            <li>Card Number: <span class="card-number">**** **** **** {{creditCard.numberLastFour}}</span>
+            <li>Expiration Date: <span class="expiration-date">{{creditCard.expiry_month}}/{{creditCard.expiry_year}}</span>
+          </ul>
+          <a class="change billing info" href="#" {{action "changeBillingInfo" on="click"}}>Change</a>
+        </div>
+      </div>
+</section>
+<section class="custom-domain">
+  <header><h2>Custom Domain</h2></header>
+  <div class="content">
+    <p>You can point your own custom domain to your Spindal Profile Player by following the instructions on the CUSTOM DOMAIN support page. After you have followed the instructions and changed your settings, enter your domain below:</p>
+    <form>
+      <ul class="rows">
+        <li class="row">
+          <label>Enter Your Domain</label>
+          {{view Ember.TextField valueBinding="band.custom_domain" placeholder="www.yourdomain.com"}}
+          <a id="test-domain" class="button dim">Test</a>
+          <div class="help">
+            <span class="icon">?</span>
+            <div class="ui-tooltip-bottom">Message.</div>
+          </div>
+      </ul>
+    </form>
+  </div>
+</section>
+<section class="your-plan">
+  <header><h2>Your Plan</h2></header>
+  <div class="content">
+    <p>You currently have an active Spindal {{plan.capName}} Plan account subscription. Your subscription will automatically renew and you will be charged $8.00 on December 8th, 2011 unless you <a class="cancel-account" href="#" {{action "confirmCancelAccount" on="click"}}>cancel</a> your recurring payment.</p>
+    <form>
+      <ul class="rows">
+        <li class="row">
+          <label>{{plan.capName}} Plan</label>
+          <a id="change-plan" {{action "changePlan" on="click"}} class="button dim">Change Plan</a>
+          <div class="help">
+            <span class="icon">?</span>
+            <div class="ui-tooltip-bottom">Message.</div>
+          </div>
+      </ul>
+    </form>
+  </div>
+</section>
